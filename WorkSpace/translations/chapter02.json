@@ -1,0 +1,1357 @@
+[
+  {
+    "id": "ch02:sprite165:frame65:talk1",
+    "owner_sprite": 165,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_165/frame_65/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov1.txt2"
+    ],
+    "[JPN]": "KOS-MOSを破壊し、少女を連れ去ってしまったドクトゥス。兄さんの話では、グノーシス襲撃現場でも彼女の襲撃を受けたという。",
+    "[KOR]": "KOS-MOS를 파괴하고 소녀를 데려가 버린 도크투스. 오빠의 말에 따르면 그노시스 습격 현장에서도 그녀의 공격을 받았다고 한다.",
+    "scene_candidates": [
+      "ch02:2nd"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite165:frame65:talk2",
+    "owner_sprite": 165,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_165/frame_65/DoAction.as",
+    "line": 30,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov1.txt3"
+    ],
+    "[JPN]": "\n\nでも何故、彼女は執拗に少女を狙うのか？",
+    "[KOR]": "\n\n하지만 왜 그녀는 그토록 집요하게 소녀를 노리는 걸까?",
+    "scene_candidates": [
+      "ch02:2nd"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite165:frame65:talk3",
+    "owner_sprite": 165,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_165/frame_65/DoAction.as",
+    "line": 48,
+    "function": "txt3",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov1.txt4"
+    ],
+    "[JPN]": "\n\nドクトゥスが少女の事を「グリモアの少女」と呼称していることから、少女の過去について何らかの情報を持っていることは明白であった。",
+    "[KOR]": "\n\n도크투스가 소녀를 「그리모어의 소녀」라고 부르는 것으로 보아 소녀의 과거에 관한 정보를 어느 정도 가지고 있는 것은 분명했다.",
+    "scene_candidates": [
+      "ch02:2nd"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite165:frame65:talk4",
+    "owner_sprite": 165,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_165/frame_65/DoAction.as",
+    "line": 68,
+    "function": "txt4",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov1.txt5"
+    ],
+    "[JPN]": "\n\n私はユリさんから提出された報告書の中から、必死に少女と今回の事件に関する手がかりを見つけようとしていた。",
+    "[KOR]": "\n\n나는 유리 씨가 제출한 보고서에서 소녀와 이번 사건에 관한 단서를 찾으려고 필사적으로 애쓰고 있었다.",
+    "scene_candidates": [
+      "ch02:2nd"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite165:frame65:talk5",
+    "owner_sprite": 165,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_165/frame_65/DoAction.as",
+    "line": 86,
+    "function": "txt5",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov1.last"
+    ],
+    "[JPN]": "\n\nこの時、私自身の心にわだかまっていた少女に対する不安が、徐々に薄れていくのを感じていた。",
+    "[KOR]": "\n\n그때 나는 마음에 맺혀 있던 소녀에 대한 불안이 조금씩 옅어지는 것을 느꼈다.",
+    "scene_candidates": [
+      "ch02:2nd"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite187:frame51:talk1",
+    "owner_sprite": 187,
+    "frame": 51,
+    "source": "assets/scripts/DefineSprite_187/frame_51/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov4.txt2"
+    ],
+    "[JPN]": "保護された「グリモアの少女」と呼称されている少女だが、14年前にU-TIC機関によって製作されていた特異タイプのレアリエンと酷似する部分が多く見受けられる。",
+    "[KOR]": "보호 중인 「그리모어의 소녀」라 불리는 소녀는 14년 전 U-TIC 기관에서 제작했던 특수 타입 리얼리언과 매우 흡사한 점이 여럿 관찰된다.",
+    "scene_candidates": [
+      "ch02:4th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite187:frame51:talk2",
+    "owner_sprite": 187,
+    "frame": 51,
+    "source": "assets/scripts/DefineSprite_187/frame_51/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov4.txt3"
+    ],
+    "[JPN]": "\n\nしかし、このタイプに関する当時の記録が残されていない為、彼女が同一のレアリエンであるかは特定できていない。",
+    "[KOR]": "\n\n그러나 이 타입에 관한 당시 기록이 남아 있지 않아 동일한 리얼리언인지는 특정하지 못했다.",
+    "scene_candidates": [
+      "ch02:4th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite187:frame51:talk3",
+    "owner_sprite": 187,
+    "frame": 51,
+    "source": "assets/scripts/DefineSprite_187/frame_51/DoAction.as",
+    "line": 46,
+    "function": "txt3",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov4.txt4"
+    ],
+    "[JPN]": "\n\n彼女の記憶素子内のデータに関しても、記録のほとんどが削除された状態であり、いくつかの記憶の残滓が断片的に残る程度で、事件に関する重要な情報を得られるに至っていない。",
+    "[KOR]": "\n\n기억 소자 안의 데이터도 대부분 삭제된 상태다. 기억의 잔재가 일부 단편적으로 남아 있을 뿐이며 사건에 관한 중요한 정보는 얻지 못했다.",
+    "scene_candidates": [
+      "ch02:4th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite187:frame51:talk4",
+    "owner_sprite": 187,
+    "frame": 51,
+    "source": "assets/scripts/DefineSprite_187/frame_51/DoAction.as",
+    "line": 64,
+    "function": "txt4",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov4.last"
+    ],
+    "[JPN]": "\n\n当初記憶の消失に関して、14年前の紛争が原因であろうと考えられたが、人為的に記録を改竄された形跡が発見され、今回の彼女の行動と関わりがあるものと考えられる",
+    "[KOR]": "\n\n당초 기억 소실의 원인은 14년 전 분쟁으로 추정됐다. 그러나 인위적으로 기록을 조작한 흔적이 발견됐으며 이번 소녀의 행동과 관련이 있는 것으로 보인다",
+    "scene_candidates": [
+      "ch02:4th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite215:frame31:talk1",
+    "owner_sprite": 215,
+    "frame": 31,
+    "source": "assets/scripts/DefineSprite_215/frame_31/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov5.txt2"
+    ],
+    "[JPN]": "グリモア・ヴェルムによって製作されたグノーシス召還プログラムで、ある特殊波長を発生させ、その波長がグノーシスの行動に干渉することが可能である。",
+    "[KOR]": "그리모어 베룸이 제작한 그노시스 소환 프로그램이다. 특수한 파장을 발생시켜 그노시스의 행동에 간섭할 수 있다.",
+    "scene_candidates": [
+      "ch02:5th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite215:frame31:talk2",
+    "owner_sprite": 215,
+    "frame": 31,
+    "source": "assets/scripts/DefineSprite_215/frame_31/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov5.txt3"
+    ],
+    "[JPN]": "\n\n数千年前、ゾハルとグノーシスとの関連性を調査する為に、研究利用されたが、実験は失敗。\nロスト・エルサレムの消滅の原因である局所事象変移を引き起こす結果となった。",
+    "[KOR]": "\n\n수천 년 전 조하르와 그노시스의 연관성을 조사하는 연구에 이용됐으나 실험은 실패했다.\n그 결과 로스트 예루살렘 소멸의 원인인 국소 사상 변이를 일으켰다.",
+    "scene_candidates": [
+      "ch02:5th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite215:frame31:talk3",
+    "owner_sprite": 215,
+    "frame": 31,
+    "source": "assets/scripts/DefineSprite_215/frame_31/DoAction.as",
+    "line": 48,
+    "function": "txt3",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov5.txt4"
+    ],
+    "[JPN]": "\n\nレメゲトン自体はロスト・エルサレム脱出時にヴェクターにより回収され、同社において厳重保管されていたが、ゾハルプロジェクトの発動によりミズラヒ脳物理学研究所への引き渡しが行われた。\nその後、同研究所のヨアキム・ミズラヒ博士によりプログラムが復元され、ネピリムの歌声装置の基礎が完成する。",
+    "[KOR]": "\n\n레메게톤 자체는 로스트 예루살렘 탈출 당시 벡터가 회수해 엄중히 보관하고 있었다. 그러나 조하르 프로젝트가 발동되면서 미즈라히 뇌물리학 연구소로 인계됐다.\n이후 그 연구소의 요아킴 미즈라히 박사가 프로그램을 복원해 네피림의 노랫소리 장치의 기초를 완성했다.",
+    "scene_candidates": [
+      "ch02:5th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite215:frame31:talk4",
+    "owner_sprite": 215,
+    "frame": 31,
+    "source": "assets/scripts/DefineSprite_215/frame_31/DoAction.as",
+    "line": 68,
+    "function": "txt4",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov5.last"
+    ],
+    "[JPN]": "\n\nユリ・ミズラヒ博士からの情報によれば、プログラムの復元の際、特異タイプのレアリエンを献体としその疑似脳にプログラムを移植、レメゲトンの制御と波動の調整を行っていたとのことだが、実際の研究記録は残っておらず事実確認にはいたっていない。",
+    "[KOR]": "\n\n유리 미즈라히 박사의 정보에 따르면 프로그램을 복원할 때 특수 타입 리얼리언을 실험체로 삼아 모의 뇌에 프로그램을 이식하고 레메게톤의 제어와 파동 조정을 수행했다고 한다. 다만 실제 연구 기록은 남아 있지 않아 사실 여부는 확인하지 못했다.",
+    "scene_candidates": [
+      "ch02:5th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite215:frame625:talk1",
+    "owner_sprite": 215,
+    "frame": 625,
+    "source": "assets/scripts/DefineSprite_215/frame_625/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov5.txt2"
+    ],
+    "[JPN]": "本名グリモア・ヴェルム。\nヴェクターのゾハル研究プロジェクトの技術主任であり、グノーシス召還プログラム「レメゲトン」を製作したプログラマー。\nその他のパーソナルデータは不明。\n彼の情報はロスト・エルサレムの消滅の際に紛失したモノと思われ、彼自身も消滅時に死亡したと推測される。",
+    "[KOR]": "본명은 그리모어 베룸.\n벡터의 조하르 연구 프로젝트 기술 주임이자 그노시스 소환 프로그램 「레메게톤」을 제작한 프로그래머.\n그 밖의 신상 정보는 불명.\n그의 정보는 로스트 예루살렘이 소멸했을 때 유실된 것으로 보이며 본인도 당시 사망한 것으로 추정된다.",
+    "scene_candidates": [
+      "ch02:5th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite215:frame625:talk2",
+    "owner_sprite": 215,
+    "frame": 625,
+    "source": "assets/scripts/DefineSprite_215/frame_625/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov5.last"
+    ],
+    "[JPN]": "\n\n実の娘をレメゲトンの献体としグノーシス召喚プログラムを完成させるが、その実験中の事故によりゾハルが暴走し、結果ロスト・エルサレム消失の直接の原因である局所事象変異を引き起こした人物とされる。\n献体であった娘もその事故で死亡している。",
+    "[KOR]": "\n\n친딸을 레메게톤의 실험체로 삼아 그노시스 소환 프로그램을 완성했으나, 실험 중 사고로 조하르가 폭주했다. 그 결과 로스트 예루살렘 소실의 직접적인 원인인 국소 사상 변이를 일으킨 인물로 알려져 있다.\n실험체였던 딸도 그 사고로 사망했다.",
+    "scene_candidates": [
+      "ch02:5th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite217:frame85:talk1",
+    "owner_sprite": 217,
+    "frame": 85,
+    "source": "assets/scripts/DefineSprite_217/frame_85/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov6.txt2"
+    ],
+    "[JPN]": "本名グリモア・ヴェルム。\nヴェクターのゾハル研究プロジェクトの技術主任であり、グノーシス召還プログラム「レメゲトン」を製作したプログラマー。\nその他のパーソナルデータは不明。\n彼の情報はロスト・エルサレムの消滅の際に紛失したモノと思われ、彼自身も消滅時に死亡したと推測される。",
+    "[KOR]": "본명은 그리모어 베룸.\n벡터의 조하르 연구 프로젝트 기술 주임이자 그노시스 소환 프로그램 「레메게톤」을 제작한 프로그래머.\n그 밖의 신상 정보는 불명.\n그의 정보는 로스트 예루살렘이 소멸했을 때 유실된 것으로 보이며 본인도 당시 사망한 것으로 추정된다.",
+    "scene_candidates": [
+      "ch02:6th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite217:frame85:talk2",
+    "owner_sprite": 217,
+    "frame": 85,
+    "source": "assets/scripts/DefineSprite_217/frame_85/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov6.last"
+    ],
+    "[JPN]": "\n\n実の娘をレメゲトンの献体としグノーシス召喚プログラムを完成させるが、その実験中の事故によりゾハルが暴走し、結果ロスト・エルサレム消失の直接の原因である局所事象変移を引き起こした人物とされる。\n献体であった娘もその事故で死亡している。",
+    "[KOR]": "\n\n친딸을 레메게톤의 실험체로 삼아 그노시스 소환 프로그램을 완성했으나, 실험 중 사고로 조하르가 폭주했다. 그 결과 로스트 예루살렘 소실의 직접적인 원인인 국소 사상 변이를 일으킨 인물로 알려져 있다.\n실험체였던 딸도 그 사고로 사망했다.",
+    "scene_candidates": [
+      "ch02:6th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite219:frame65:talk1",
+    "owner_sprite": 219,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_219/frame_65/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov7.txt2"
+    ],
+    "[JPN]": "今回の襲撃事件にかかわる「グリモア」という人物。",
+    "[KOR]": "이번 습격 사건에 관여한 「그리모어」라는 인물.",
+    "scene_candidates": [
+      "ch02:7th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite219:frame65:talk2",
+    "owner_sprite": 219,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_219/frame_65/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov7.txt3"
+    ],
+    "[JPN]": "\n\nそして、グリモアという人物により製作され、14年前にヨアキム・ミズラヒによって復元されたプログラム「レメゲトン」。「グリモアの少女」と呼称されるレアリエン。",
+    "[KOR]": "\n\n그리고 그리모어라는 인물이 제작하고 14년 전 요아킴 미즈라히가 복원한 프로그램 「레메게톤」. 「그리모어의 소녀」라 불리는 리얼리언.",
+    "scene_candidates": [
+      "ch02:7th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite219:frame65:talk3",
+    "owner_sprite": 219,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_219/frame_65/DoAction.as",
+    "line": 46,
+    "function": "txt3",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov7.txt4"
+    ],
+    "[JPN]": "\n\nまだ漠然とではあったが、これらの情報が徐々に一つに繋がりつつあった。",
+    "[KOR]": "\n\n아직 막연하기는 했지만 이 정보들은 조금씩 하나로 이어지고 있었다.",
+    "scene_candidates": [
+      "ch02:7th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite219:frame65:talk4",
+    "owner_sprite": 219,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_219/frame_65/DoAction.as",
+    "line": 64,
+    "function": "txt4",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov7.txt5"
+    ],
+    "[JPN]": "\n\nユリさんと兄さんは、さらわれた少女救出の指揮をとっている。少女を必死に助けようとしているユリさん。おそらく彼女は、さらわれた少女にモモちゃんの面影を重ねているのだろう。",
+    "[KOR]": "\n\n유리 씨와 오빠는 납치된 소녀의 구출을 지휘하고 있다. 필사적으로 소녀를 구하려는 유리 씨. 아마 그녀는 그 소녀에게서 모모의 모습을 보고 있는 것이리라.",
+    "scene_candidates": [
+      "ch02:7th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite219:frame65:talk5",
+    "owner_sprite": 219,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_219/frame_65/DoAction.as",
+    "line": 82,
+    "function": "txt5",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov7.txt6"
+    ],
+    "[JPN]": "\n\n私はといえば、まだ少女の救出に参加するのを迷っており、兄さんが提出した襲撃事件の時の少女に関するレポートに目を通していた。",
+    "[KOR]": "\n\n정작 나는 아직 소녀 구출에 참여하기를 망설이며 오빠가 제출한 보고서를 읽고 있었다. 습격 사건 당시의 소녀에 관한 내용이었다.",
+    "scene_candidates": [
+      "ch02:7th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite219:frame65:talk6",
+    "owner_sprite": 219,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_219/frame_65/DoAction.as",
+    "line": 100,
+    "function": "txt6",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov7.last"
+    ],
+    "[JPN]": "\n\nそこには私のよく知っているある人物の名が記されていた。",
+    "[KOR]": "\n\n거기에는 내가 잘 아는 어떤 인물의 이름이 적혀 있었다.",
+    "scene_candidates": [
+      "ch02:7th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite228:frame65:talk1",
+    "owner_sprite": 228,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_228/frame_65/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov8.txt2"
+    ],
+    "[JPN]": "襲撃現場にて、「グリモアの少女」と呼称される少女を保護。\n特に目立った外傷はないが、記憶を失っているらしく自分の名前以外の事を覚えていない。\n事件のショックによる一時的なモノとも思われるが、専門的な診断が必要であると思われる。",
+    "[KOR]": "습격 현장에서 「그리모어의 소녀」라 불리는 소녀를 보호했다.\n눈에 띄는 외상은 없으나 기억을 잃은 듯하며 자기 이름 외에는 아무것도 기억하지 못한다.\n사건의 충격으로 인한 일시적인 현상일 수도 있지만 전문적인 진단이 필요할 것으로 보인다.",
+    "scene_candidates": [
+      "ch02:8th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite228:frame65:talk2",
+    "owner_sprite": 228,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_228/frame_65/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov8.txt3"
+    ],
+    "[JPN]": "\n\nまた、この少女に関していくつか奇妙な点がある。\n少女は複数の人物から命を狙われており、それらの人物は少女の事を「グリモアの少女」と呼称している。\nしかし本人はその名前を否定し、自らを「ネピリム」と名乗り「グリモア」と呼ばれる人物に対し助けを求めている。",
+    "[KOR]": "\n\n또한 소녀에게는 몇 가지 기묘한 점이 있다.\n여러 인물이 소녀의 목숨을 노리고 있으며 이들은 소녀를 「그리모어의 소녀」라고 부른다.\n그러나 본인은 그 이름을 부정하며 자신을 「네피림」이라고 소개했고, 「그리모어」라는 인물에게 도움을 청하고 있다.",
+    "scene_candidates": [
+      "ch02:8th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite228:frame65:talk3",
+    "owner_sprite": 228,
+    "frame": 65,
+    "source": "assets/scripts/DefineSprite_228/frame_65/DoAction.as",
+    "line": 46,
+    "function": "txt3",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov8.last"
+    ],
+    "[JPN]": "\n\n過去に私が知り得た「ネピリム」の特徴とは大きな差違があり、彼女が同一人物とは考えづらい。\nまた、襲撃事件と関係があると思われる「グリモア」と言う人物と彼女との間にどのような関連性があるのかも不明である。",
+    "[KOR]": "\n\n과거에 내가 알게 된 「네피림」의 특징과는 크게 달라 동일 인물로 보기는 어렵다.\n또한 습격 사건과 관련된 것으로 보이는 「그리모어」라는 인물과 소녀 사이에 어떤 연관이 있는지도 불명이다.",
+    "scene_candidates": [
+      "ch02:8th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite258:frame64:talk1",
+    "owner_sprite": 258,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_258/frame_64/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov10.txt2"
+    ],
+    "[JPN]": "ネピリム─私の前に度々出現する幻影の少女。さらわれた少女は、自らを「ネピリム」と名乗ったという。",
+    "[KOR]": "네피림─내 앞에 종종 나타나는 환영의 소녀. 납치된 소녀는 자신을 「네피림」이라고 소개했다고 한다.",
+    "scene_candidates": [
+      "ch02:10th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite258:frame64:talk2",
+    "owner_sprite": 258,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_258/frame_64/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov10.txt3"
+    ],
+    "[JPN]": "\n\nネピリムと少女にどんな関わりがあるのか？もし、少女が14年前のミルチア紛争とネピリムに関わりがあるのならば、私にとっても決して無関係な存在ではないはず。",
+    "[KOR]": "\n\n네피림과 그 소녀는 어떤 관계일까? 만약 소녀가 14년 전 미르치아 분쟁과 네피림에 관련돼 있다면 나와도 결코 무관한 존재는 아닐 것이다.",
+    "scene_candidates": [
+      "ch02:10th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite258:frame64:talk3",
+    "owner_sprite": 258,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_258/frame_64/DoAction.as",
+    "line": 48,
+    "function": "txt3",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov10.last"
+    ],
+    "[JPN]": "\n\nそして、その少女を狙うドクトゥスというエージェント。彼女は、少女とネピリムに関する情報も握っているかもしれない。",
+    "[KOR]": "\n\n그리고 그 소녀를 노리는 도크투스라는 에이전트. 그녀는 소녀와 네피림에 관한 정보도 쥐고 있을지 모른다.",
+    "scene_candidates": [
+      "ch02:10th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite258:frame154:talk1",
+    "owner_sprite": 258,
+    "frame": 154,
+    "source": "assets/scripts/DefineSprite_258/frame_154/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov10.last"
+    ],
+    "[JPN]": "「グリモアの少女」を襲撃した女性エージェント。\nその装備と身のこなしから専門の訓練を受けていると推測されるが、彼女が何故少女の命を狙うのか、その目的は不明。また、彼女の行動が単独によるものなのか組織的なものなのかも不明。\n彼女が少女の事を「グリモアの少女」と呼称している事から、「グリモア」と言う人物と襲撃事件に関わりがあると推測される。",
+    "[KOR]": "「그리모어의 소녀」를 습격한 여성 에이전트.\n장비와 몸놀림으로 보아 전문 훈련을 받은 것으로 추정되나 소녀의 목숨을 노리는 목적은 불명이다. 또한 단독으로 행동하는지 조직적으로 움직이는지도 불명이다.\n소녀를 「그리모어의 소녀」라고 부르는 것으로 보아 「그리모어」라는 인물 및 습격 사건과 관련된 것으로 추정된다.",
+    "scene_candidates": [
+      "ch02:10th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite286:frame64:talk1",
+    "owner_sprite": 286,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_286/frame_64/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov12.txt2"
+    ],
+    "[JPN]": "ヴェクターからの指示により、破損したKOS-MOSはバージョン3への躯体換装の為、一度本社へ帰還させる事となった。",
+    "[KOR]": "벡터의 지시에 따라 파손된 KOS-MOS는 버전 3 기체로 교체하기 위해 일단 본사로 돌려보내기로 했다.",
+    "scene_candidates": [
+      "ch02:12th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite286:frame64:talk2",
+    "owner_sprite": 286,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_286/frame_64/DoAction.as",
+    "line": 28,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov12.txt3"
+    ],
+    "[JPN]": "\n\nKOS-MOSがいないのは不安ではあったが、それよりも少女の存在が、私の心の中で確実に大きくなっているのを感じていた。そして私は、兄さんと共に少女の救出に参加する事を決めたのだった。",
+    "[KOR]": "\n\nKOS-MOS가 없는 것은 불안했다. 하지만 그보다 내 마음속에서 소녀의 존재가 분명히 커지고 있다는 것이 느껴졌다. 그리고 나는 오빠와 함께 소녀를 구하러 가기로 했다.",
+    "scene_candidates": [
+      "ch02:12th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite286:frame64:talk3",
+    "owner_sprite": 286,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_286/frame_64/DoAction.as",
+    "line": 46,
+    "function": "txt3",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov12.last"
+    ],
+    "[JPN]": "\n\n一方ユリさんは、少女を捜索する為の方法として少女の脳から発せられるレメゲトンの波長パターンの特性を利用しレメゲトンの断章と共鳴させることによって、少女の位置を割り出す事に成功した。",
+    "[KOR]": "\n\n한편 유리 씨는 소녀의 뇌에서 나오는 레메게톤 파장 패턴의 특성을 이용해 레메게톤의 단편과 공명시키는 방법으로 소녀의 위치를 알아내는 데 성공했다.",
+    "scene_candidates": [
+      "ch02:12th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite301:frame64:talk1",
+    "owner_sprite": 301,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_301/frame_64/DoAction.as",
+    "line": 10,
+    "function": "txt1",
+    "delay_ms_expression": "50",
+    "mode": "reset",
+    "preceding_wait_ms": 1000,
+    "callback_calls": [
+      "_root.mov14.txt2"
+    ],
+    "[JPN]": "少女が囚われていると思われる戦艦を確認した私と兄さんは、敵に気づかれる前にと、急ぎ内部への突入を開始した。",
+    "[KOR]": "소녀가 갇혀 있는 것으로 보이는 전함을 확인한 나와 오빠는 적이 눈치채기 전에 서둘러 내부로 진입하기 시작했다.",
+    "scene_candidates": [
+      "ch02:14th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:sprite301:frame64:talk2",
+    "owner_sprite": 301,
+    "frame": 64,
+    "source": "assets/scripts/DefineSprite_301/frame_64/DoAction.as",
+    "line": 30,
+    "function": "txt2",
+    "delay_ms_expression": "50",
+    "mode": "add",
+    "preceding_wait_ms": 2000,
+    "callback_calls": [
+      "_root.mov14.last"
+    ],
+    "[JPN]": "\n\nだがまもなく、私達の行動は迂闊であったと思い知らされることとなった。",
+    "[KOR]": "\n\n하지만 머지않아 우리는 성급하게 행동했다는 사실을 뼈저리게 깨닫게 됐다.",
+    "scene_candidates": [
+      "ch02:14th"
+    ],
+    "kind": "script_dialogue",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text23",
+    "kind": "dynamic_text",
+    "symbol_id": 23,
+    "source": "plain_text/23.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "",
+    "[KOR]": "",
+    "review_status": "empty_source_runtime_text_field"
+  },
+  {
+    "id": "ch02:text34",
+    "kind": "static_text",
+    "symbol_id": 34,
+    "source": "plain_text/34.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "LOADING",
+    "[KOR]": "불러오는 중",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text36",
+    "kind": "static_text",
+    "symbol_id": 36,
+    "source": "plain_text/36.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n.",
+    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text37",
+    "kind": "static_text",
+    "symbol_id": 37,
+    "source": "plain_text/37.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n..",
+    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n..",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text38",
+    "kind": "static_text",
+    "symbol_id": 38,
+    "source": "plain_text/38.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n...",
+    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n...",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text39",
+    "kind": "static_text",
+    "symbol_id": 39,
+    "source": "plain_text/39.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n....",
+    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n....",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text48",
+    "kind": "static_text",
+    "symbol_id": 48,
+    "source": "plain_text/48.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "グノーシス",
+    "[KOR]": "그노시스",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text50",
+    "kind": "dynamic_text",
+    "symbol_id": 50,
+    "source": "plain_text/50.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "人類に対して敵対行動をとるという事実以外、全てが謎に包まれている存在。\n実在事象とは切り離された“ある領域”に存在するため、通常、接触できない。",
+    "[KOR]": "인류에게 적대적으로 행동한다는 사실 외에는 모든 것이 수수께끼에 싸인 존재.\n실재 사상과 분리된 “어떤 영역”에 존재하므로 보통은 접촉할 수 없다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text60",
+    "kind": "static_text",
+    "symbol_id": 60,
+    "source": "plain_text/60.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "接触小委員会",
+    "[KOR]": "접촉 소위원회",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text61",
+    "kind": "dynamic_text",
+    "symbol_id": 61,
+    "source": "plain_text/61.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "グノーシス現象に対処するため、連邦政府によって設立された研究委員会。\n小委員会といっても、その構成人員は各関係省庁、財界人、各専門分野の研究者達と多岐にわたり、全体数で約２０００人。\nその中枢機能である専門委員は７名で構成されており、ユリ・ミズラヒもその一人である。",
+    "[KOR]": "그노시스 현상에 대처하기 위해 연방 정부가 설립한 연구 위원회.\n소위원회라지만 구성원은 관계 부처와 재계 인사, 각 분야 연구자 등으로 다양하며 전체 인원은 약 2000명이다.\n중추 기능을 맡는 전문 위원은 7명이며 유리 미즈라히도 그중 한 명이다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text65",
+    "kind": "static_text",
+    "symbol_id": 65,
+    "source": "plain_text/65.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "シオン・ウヅキ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：前田愛）",
+    "[KOR]": "시온 우즈키(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 마에다 아이)",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text66",
+    "kind": "dynamic_text",
+    "symbol_id": 66,
+    "source": "plain_text/66.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "T.C.4745生まれ。22歳。\nヴェクター・インダストリー第一開発局、KOS-MOS開発計画統合オペレーションシステム開発室主任。T.C.4763に18歳でヴェクター第一開発局に入局。　アレンより2歳年下だが、飛び級のためヴェクターでは1年先輩にあたる。\n一見運動音痴のように見えるが、血筋のせいか実は運動神経は抜群。特に、そのしなやかな脚から繰り出されるハイキックは強烈で、並の男なら一発で卒倒させるだけの威力を持っている。祖父直伝の柔術系の特技を持っているらしい。",
+    "[KOR]": "T.C. 4745년생. 22세.\n벡터 인더스트리 제1 개발국 KOS-MOS 개발 계획 통합 오퍼레이션 시스템 개발실 주임. T.C. 4763, 18세에 벡터 제1 개발국에 입사했다. 알렌보다 2살 어리지만 월반했기에 벡터에서는 1년 선배다.\n얼핏 운동에는 소질이 없어 보이지만, 혈통 때문인지 실제 운동 신경은 뛰어나다. 특히 유연한 다리로 날리는 하이킥은 강력해서 보통 남자라면 한 방에 기절시킬 위력이 있다. 할아버지에게 직접 전수받은 유술 계통의 특기를 지닌 모양이다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text72",
+    "kind": "static_text",
+    "symbol_id": 72,
+    "source": "plain_text/72.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ジン・ウヅキ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：田中秀幸）",
+    "[KOR]": "진 우즈키(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 타나카 히데유키)",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text73",
+    "kind": "dynamic_text",
+    "symbol_id": 73,
+    "source": "plain_text/73.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "T.C.4732生まれ。35歳。\nシオンの実兄。現在は第ニミルチアで古書店を営んでいるが休業中。接触小委員会の依頼を受け、グノーシス事件を調査している。元星団連邦特殊作戦軍情報部大尉で、軍籍当時はマーグリスの部下であった。マーグリスとは祖父オウガ・ウヅキの下で共に剣術を学んだ相弟子の関係。ミルチア紛争の折、星団連邦軍・ヘルマー中将（現：ミルチア代表討議員）の麾下で諜報活動を行っていた。ケイオスやカナンとはその折に知己の関係となる。軍人時代にペレグリーとは深い関係にあったようだが、その詳細は不明。",
+    "[KOR]": "T.C. 4732년생. 35세.\n시온의 친오빠. 현재 제2 미르치아에서 고서점을 운영하지만 휴업 중이다. 접촉 소위원회의 의뢰로 그노시스 사건을 조사하고 있다. 전 성단 연방 특수 작전군 정보부 대위로 군적에 있을 때는 마굴리스의 부하였다. 마굴리스와는 조부 오가 우즈키에게 함께 검술을 배운 동문이다. 미르치아 분쟁 당시 성단 연방군 헬머 중장(현 미르치아 대표 토의 위원)의 휘하에서 첩보 활동을 했다. 케이오스, 가나안과도 그때 알게 됐다. 군인 시절 펠레그리와 깊은 관계였던 듯하지만 자세한 사정은 불명이다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text75",
+    "kind": "static_text",
+    "symbol_id": 75,
+    "source": "plain_text/75.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "百式（量産型）",
+    "[KOR]": "백식(양산형)",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text76",
+    "kind": "dynamic_text",
+    "symbol_id": 76,
+    "source": "plain_text/76.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "対グノーシス用索敵レアリエン。\n主に艦船用に開発されたD.S.S.S.とヒルベルトエフェクトを統合した「百式システム」のパーソナルデバイスの役割を持つ。\n出力は弱いが、単体でのヒルベルトエフェクト使用も可能。",
+    "[KOR]": "대그노시스용 탐색 리얼리언.\n주로 함선용으로 개발된 D.S.S.S.와 힐베르트 이펙트를 통합한 「백식 시스템」의 개인용 단말 역할을 한다.\n출력은 약하지만 단독으로 힐베르트 이펙트를 사용할 수도 있다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text78",
+    "kind": "static_text",
+    "symbol_id": 78,
+    "source": "plain_text/78.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "U-TIC\n--- RECORDSEPARATOR ---\n機関",
+    "[KOR]": "U-TIC\n--- RECORDSEPARATOR ---\n 기관",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text79",
+    "kind": "dynamic_text",
+    "symbol_id": 79,
+    "source": "plain_text/79.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "ゾハルの統御による星団支配を目論む組織。\nミルチア紛争後、一度は表舞台から姿を消すが復活する。\nネピリムの歌声を完成させ、ゾハルをコントロールしようとしている。\nオルムスの隠れ蓑。",
+    "[KOR]": "조하르를 제어해 성단을 지배하려는 조직.\n미르치아 분쟁 후 한때 세간에서 자취를 감췄으나 다시 나타났다.\n네피림의 노랫소리를 완성해 조하르를 제어하려 한다.\n오르무스의 위장 조직.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text81",
+    "kind": "static_text",
+    "symbol_id": 81,
+    "source": "plain_text/81.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "レアリエン",
+    "[KOR]": "리얼리언",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text82",
+    "kind": "dynamic_text",
+    "symbol_id": 82,
+    "source": "plain_text/82.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "合成人間。分子工学の集大成ともいえる存在で、その体組織構造も、炭素ベースの人間に近いタイプから、珪素や果ては液体金属ベースのタイプまで、その用途別に様々な種類が存在する。\nミルチア紛争後は、軍隊や惑星改造といった特殊かつ過酷な環境下で使用されるレアリエン以外は感情抑制が施されておらず、その基本的人権も法的に認められている。\nただし、初期設定時に多少のバイアスをかけられている為、比較的同系好悪の人格を形成するようである。\nこのバイアス処理には、レアリエンによる犯罪を未然に防ぐ意味合いと、それぞれの用途に特化した能力に限定されているとはいえ、結果的に劣らざるを得ない人間達に対する配慮も含まれている。\nレアリエンの製造を行っている企業は多数存在するが、基本的にその基幹プログラム—つまり中枢神経系は全てヴェクターのＯＥＭである。\nこれはブラックボックスとなっており、メンテ、調整の範疇を超えた次元の処置、改造はヴェクター本社でしか出来ない構造となっている。",
+    "[KOR]": "합성 인간. 분자 공학의 집대성이라 할 존재다. 신체 조직도 탄소를 기반으로 인간과 비슷하게 만든 타입부터 규소, 나아가 액체 금속을 기반으로 한 타입까지 용도에 따라 다양하다.\n미르치아 분쟁 이후 군대나 행성 개조처럼 특수하고 가혹한 환경에서 사용하는 리얼리언을 제외하면 감정 억제 처리를 하지 않으며 기본적 인권도 법으로 인정받는다.\n다만 초기 설정에서 어느 정도 편향이 부여되므로 대체로 비슷한 취향의 인격을 형성하는 듯하다.\n이 편향 처리에는 리얼리언의 범죄를 미리 막으려는 뜻과 함께, 각 용도에 특화된 능력에 한정된다 해도 결과적으로 뒤처질 수밖에 없는 인간들을 배려하려는 뜻도 담겨 있다.\n리얼리언을 제조하는 기업은 많지만 기본적으로 핵심 프로그램, 즉 중추 신경계는 모두 벡터의 OEM이다.\n이 부분은 블랙박스여서 유지·조정의 범위를 넘어서는 처치나 개조는 벡터 본사에서만 할 수 있는 구조다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text86",
+    "kind": "static_text",
+    "symbol_id": 86,
+    "source": "plain_text/86.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "14\n--- RECORDSEPARATOR ---\n年前の紛争",
+    "[KOR]": "14\n--- RECORDSEPARATOR ---\n년 전 분쟁",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text87",
+    "kind": "dynamic_text",
+    "symbol_id": 87,
+    "source": "plain_text/87.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "ツォアル事変の最終局面となる紛争で、シオンの故郷であるミルチアが戦場となり、連邦政府軍とU-TIC機関との激戦が繰り広げられた“ミルチア紛争”を指す。\n連邦政府軍は、ミルチアに対し三度の降下作戦を実施し、第三次降下作戦の実施には、特殊部隊であるU.R.T.V.も投入している。\n記録では、第三次降下作戦の折にU-TIC機関創設者であるヨアキム・ミズラヒによって引き起こされたゾハルの暴走が原因で、局所事象変移が起こったとされている。",
+    "[KOR]": "소알 사변의 최종 국면인 분쟁. 시온의 고향 미르치아가 전장이 돼 연방 정부군과 U-TIC 기관 사이에 격전이 벌어진 “미르치아 분쟁”을 가리킨다.\n연방 정부군은 미르치아에 세 차례 강하 작전을 수행했고 제3차 작전에는 특수 부대 U.R.T.V.도 투입했다.\n기록상으로는 제3차 강하 작전 당시 U-TIC 기관의 창설자 요아킴 미즈라히가 일으킨 조하르 폭주로 국소 사상 변이가 발생했다고 한다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text89",
+    "kind": "static_text",
+    "symbol_id": 89,
+    "source": "plain_text/89.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ユリ・ミズラヒ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：進藤尚美）",
+    "[KOR]": "유리 미즈라히(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 신도 나오미)",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text92",
+    "kind": "dynamic_text",
+    "symbol_id": 92,
+    "source": "plain_text/92.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "T.C.4723生まれ。44歳。\n星団連邦接触小委員会、専門委員の一人。故ヨアキム・ミズラヒの妻であり、ヨアキムと共に百式観測器開発に携わっていたが、ヨアキムとの娘サクラの治療に対するアプローチの違いから百式開発から退く。\n夫であるヨアキムにより引き起こされたミルチア紛争の後、拡散するグノーシス現象を憂慮した彼女は、自ら進んで接触小委員会の設立を提唱した。モモの保護者。旧姓はニワシロ。",
+    "[KOR]": "T.C. 4723년생. 44세.\n성단 연방 접촉 소위원회의 전문 위원 중 한 명. 고 요아킴 미즈라히의 아내로 남편과 함께 백식 관측기 개발에 참여했다. 그러나 딸 사쿠라의 치료 방침을 둘러싼 견해차로 백식 개발에서 물러났다.\n남편 요아킴이 일으킨 미르치아 분쟁 이후 확산하는 그노시스 현상을 우려해 자발적으로 접촉 소위원회 설립을 제창했다. 모모의 보호자다. 결혼 전 성은 니와시로.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text94",
+    "kind": "static_text",
+    "symbol_id": 94,
+    "source": "plain_text/94.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ドクトゥス（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：朴\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n美）",
+    "[KOR]": "도크투스(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 박\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n로미)",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text97",
+    "kind": "dynamic_text",
+    "symbol_id": 97,
+    "source": "plain_text/97.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "地下組織スキエンティアに所属する冷静沈着なエージェント。",
+    "[KOR]": "지하 조직 스키엔티아에 소속된 냉정하고 침착한 에이전트.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text100",
+    "kind": "static_text",
+    "symbol_id": 100,
+    "source": "plain_text/100.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "KOS-MOS\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：鈴木麻里子）",
+    "[KOR]": "KOS-MOS\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 스즈키 마리코)",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text103",
+    "kind": "dynamic_text",
+    "symbol_id": 103,
+    "source": "plain_text/103.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "星間コングロマリット「ヴェクター・インダストリー」によって開発された女性型戦闘用アンドロイド。　レアリエン技術の発達したこの時代において、全てが機械部品で構成されている希有な存在。凡てに於いて論理、効率、任務の三原則を優先し、開発者であるシオンを無条件に護る為に行動する。円滑に他者とのコミュニケーションをはかる為『模擬人格OS』が実装されており、その口調は、人間という主に従属しているアンドロイド的な喋り方だが、実際は論理や効率を優先させているだけなので扱いづらい時も多々ある。　KOS-MOSとは、対グノーシス用に開発された戦闘システムの総称であり、正式名称は“Kosmos　Obey　Strategical　Multiple　Operation Systems”直訳すると“秩序に従属する戦略的多目的制御体系”となる。模擬戦筐体（ver.1）を経て、実戦筐体（ver.2）に換装、ver.3への換装準備中だったが—。",
+    "[KOR]": "성간 복합 기업 「벡터 인더스트리」가 개발한 여성형 전투용 안드로이드. 리얼리언 기술이 발달한 이 시대에 모든 것이 기계 부품으로 구성된 보기 드문 존재다. 모든 일에서 논리·효율·임무의 세 원칙을 우선하며 개발자인 시온을 무조건 지키기 위해 행동한다. 타인과 원활히 소통하도록 『모의 인격 OS』를 탑재했다. 말투는 인간이라는 주인에게 종속된 안드로이드 같지만 실제로는 논리와 효율을 우선할 뿐이어서 다루기 어려울 때도 많다. KOS-MOS는 대그노시스용 전투 시스템의 총칭으로 정식 명칭은 “Kosmos Obey Strategical Multiple Operation Systems”, 직역하면 “질서에 종속되는 전략적 다목적 제어 체계”다. 모의전 기체(ver.1)를 거쳐 실전 기체(ver.2)로 교체했고 ver.3로 교체할 준비 중이었으나—.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text105",
+    "kind": "static_text",
+    "symbol_id": 105,
+    "source": "plain_text/105.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "謎のレアリエンの少女",
+    "[KOR]": "정체불명의 리얼리언 소녀",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text108",
+    "kind": "dynamic_text",
+    "symbol_id": 108,
+    "source": "plain_text/108.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "小委員会に保護された謎の少女",
+    "[KOR]": "소위원회가 보호한 정체불명의 소녀",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text110",
+    "kind": "static_text",
+    "symbol_id": 110,
+    "source": "plain_text/110.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ロスト・エルサレム",
+    "[KOR]": "로스트 예루살렘",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text111",
+    "kind": "dynamic_text",
+    "symbol_id": 111,
+    "source": "plain_text/111.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "遥か数千年前に失われた、人類の故郷。\n地球。\n現在はその場所がどこにあったのかさえ判らなくなっている。",
+    "[KOR]": "수천 년 전 잃어버린 인류의 고향.\n지구.\n지금은 그 위치가 어디였는지조차 알 수 없다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text113",
+    "kind": "static_text",
+    "symbol_id": 113,
+    "source": "plain_text/113.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "局所事象変移",
+    "[KOR]": "국소 사상 변이",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text114",
+    "kind": "dynamic_text",
+    "symbol_id": 114,
+    "source": "plain_text/114.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "実数領域と相反する領域である虚数領域との境界が曖昧となり、空間の構造体そのものが変化する現象。\n劇中で、ゾハルの暴走等によって引き起こされる現象であり、ミルチアやアリアドネ、ロスト・エルサレムの消滅も局所事象変移によるものである。\nこの局所変移は、EPRレーダーによって確認することができる",
+    "[KOR]": "실수 영역과 상반되는 허수 영역 사이의 경계가 모호해져 공간의 구조 자체가 변하는 현상.\n작중 조하르의 폭주 등으로 발생하며 미르치아, 아리아드네, 로스트 예루살렘의 소멸도 국소 사상 변이로 인한 것이다.\n이 국소 변이는 EPR 레이더로 확인할 수 있다",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text116",
+    "kind": "static_text",
+    "symbol_id": 116,
+    "source": "plain_text/116.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ヴェクター",
+    "[KOR]": "벡터",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text117",
+    "kind": "dynamic_text",
+    "symbol_id": 117,
+    "source": "plain_text/117.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "正式名称：ヴェクター・インダストリー。\n食品、薬品、各種ソフトウェア、ハードウェア、果ては兵器や通信に至るまで、およそ文化文明に関する全ての物の生産流通を手がける連邦最大の巨大企業体。多数の部門に分かれており、その中核を成すのが第一開発局、第二開発局、第三開発局である。\n最高責任者はCEOであるヴィルヘルムで、その拠点は、全長1000kmに及ぶ、自由軌道コロニー『曙光』。\nU.M.N.の構築やレアリエンの開発、A.G.W.S.、KOS-MOSを製造するなど、軍事と通信を掌握しており、CEOであるヴィルヘルムがかつて枢機院議長を務めていたこともあり、連邦政府や各自冶政府に対して強い発言権を持つ。",
+    "[KOR]": "정식 명칭은 벡터 인더스트리.\n식품·약품·각종 소프트웨어와 하드웨어, 나아가 병기와 통신까지 문화 문명에 관한 거의 모든 물품의 생산·유통을 담당하는 연방 최대의 거대 기업체다. 여러 부문으로 나뉘며 그 핵심은 제1 개발국, 제2 개발국, 제3 개발국이다.\n최고 책임자는 CEO 빌헬름이고 거점은 전장 1000km의 자유 궤도 콜로니 『아침놀』이다.\nU.M.N. 구축, 리얼리언 개발, A.G.W.S.와 KOS-MOS 제조 등 군사와 통신을 장악하고 있다. CEO 빌헬름이 과거 추기원 의장을 맡았던 적도 있어 연방 정부와 각 자치 정부에 강한 발언권을 지닌다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text119",
+    "kind": "static_text",
+    "symbol_id": 119,
+    "source": "plain_text/119.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ミズラヒ脳物理学研究所",
+    "[KOR]": "미즈라히 뇌물리학 연구소",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text120",
+    "kind": "dynamic_text",
+    "symbol_id": 120,
+    "source": "plain_text/120.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "U−TIC機関が設立される以前、ヨアキム・ミズラヒが所長を務めていた研究所。脳神経学と事象物理学とを統合した特殊な研究所で、ヴェクターがそのスポンサードをしていた。\nレメゲトンを再生させ、ネピリムの歌声システムを完成させるが、その際に特異タイプのレアリエンを献体として使用している。",
+    "[KOR]": "U-TIC 기관이 설립되기 전 요아킴 미즈라히가 소장을 맡았던 연구소. 뇌신경학과 사상 물리학을 통합한 특수 연구소로 벡터가 후원했다.\n레메게톤을 복원해 네피림의 노랫소리 시스템을 완성했으며 그 과정에서 특수 타입 리얼리언을 실험체로 사용했다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text122",
+    "kind": "static_text",
+    "symbol_id": 122,
+    "source": "plain_text/122.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ヨアキム・ミズラヒ",
+    "[KOR]": "요아킴 미즈라히",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text123",
+    "kind": "dynamic_text",
+    "symbol_id": 123,
+    "source": "plain_text/123.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "モモの生みの親。\nヒルベルト理論を構築し、D.S.S.S．を開発した稀代の天才。\nその研究がヴィルヘルムの目にとまりプロジェクトゾハルへ参画することになるが、計画の危険性に気付いたヨアキムは、愛娘の死を契機に研究グループを脱退する。\nその後、惑星ミルチアにある自分の研究所「ミズラヒ脳物理学研究所」に隠遁していたところ、秘密結社オルムスからの接触を受け、U-TIC機関を設立。\n再びゾハルの研究に手を染めることになり、M．O．M．O．シリーズを生み出す。\n亡くした娘に出逢う為の研究──—天へと至る道—──を続けていたヨアキムは、その過程で大宇宙の本質的構造とゾハルとの関係に気付くことになるのだが、結果的にグノーシスを呼び寄せてしまう。",
+    "[KOR]": "모모를 만든 사람.\n힐베르트 이론을 정립하고 D.S.S.S.를 개발한 불세출의 천재.\n빌헬름이 그의 연구에 주목하면서 프로젝트 조하르에 참여했으나 계획의 위험성을 깨닫고 사랑하는 딸의 죽음을 계기로 연구진을 떠났다.\n그 후 행성 미르치아의 자기 연구소 「미즈라히 뇌물리학 연구소」에 은거하다 비밀 결사 오르무스의 접촉을 받아 U-TIC 기관을 설립했다.\n다시 조하르 연구에 손을 대 M.O.M.O. 시리즈를 만들어 냈다.\n죽은 딸을 만나기 위한 연구──—하늘에 이르는 길—──를 계속하던 중 대우주의 본질적인 구조와 조하르의 관계를 깨닫게 되지만, 결과적으로 그노시스를 불러들이고 만다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text125",
+    "kind": "static_text",
+    "symbol_id": 125,
+    "source": "plain_text/125.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ユリ・ミズラヒ",
+    "[KOR]": "유리 미즈라히",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text126",
+    "kind": "dynamic_text",
+    "symbol_id": 126,
+    "source": "plain_text/126.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "連邦接触小委員会、専門委員の一人。\nT.C.4752年、拡散するグノーシス現象を憂慮した彼女は、自ら進んで接触小委員会の設立を提唱する。\n現在のM.O.M.O.の保護者でもあり、百式レアリエンは彼女の亡夫ヨアキムによって開発された。",
+    "[KOR]": "연방 접촉 소위원회의 전문 위원 중 한 명.\nT.C. 4752년, 확산하는 그노시스 현상을 우려해 자발적으로 접촉 소위원회 설립을 제창했다.\n현재 M.O.M.O.의 보호자이기도 하다. 백식 리얼리언은 죽은 남편 요아킴이 개발했다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text128",
+    "kind": "static_text",
+    "symbol_id": 128,
+    "source": "plain_text/128.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ネピリム",
+    "[KOR]": "네피림",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text129",
+    "kind": "dynamic_text",
+    "symbol_id": 129,
+    "source": "plain_text/129.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "度々シオンの前に現れる謎の少女。\nその容姿からは想像できないほどの大人びた物腰。\nシオン達に対し度々助言するが、その目的ははっきりとしていない。\n実体はなく、意識のみの存在。",
+    "[KOR]": "시온 앞에 종종 나타나는 정체불명의 소녀.\n외모에서는 상상하기 어려울 만큼 어른스러운 태도를 보인다.\n시온 일행에게 때때로 조언하지만 목적은 분명하지 않다.\n실체 없이 의식만 존재한다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text131",
+    "kind": "static_text",
+    "symbol_id": 131,
+    "source": "plain_text/131.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ネピリム（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：冬馬由美）",
+    "[KOR]": "네피림(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 토마 유미)",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text134",
+    "kind": "dynamic_text",
+    "symbol_id": 134,
+    "source": "plain_text/134.txt",
+    "source_tag": "DefineEditTextTag",
+    "[JPN]": "鈴の音と共に、度々シオンの前に現れる幻影の少女。その容姿からは想像できないほどの大人びた物腰で、シオンに対し度々助言を告げるが、その目的ははっきりとしていない。\n彼女は、虚数領域に存在し、実体はなく、意識のみの存在。現実世界に対し物理的に干渉する事はできない。KOS-MOSのメインフレームにシオンがエンセフェロンダイブした際、過去の光景、未来に起こりうる可能性の一つとしてのウ・ドゥ復活の映像を見せ、まだ未来は変えることができるとシオンに語りかけ行動を促した。",
+    "[KOR]": "방울 소리와 함께 시온 앞에 종종 나타나는 환영의 소녀. 외모에서는 상상하기 어려울 만큼 어른스러운 태도로 시온에게 때때로 조언하지만 목적은 분명하지 않다.\n허수 영역에 있으며 실체 없이 의식만 존재한다. 현실 세계에 물리적으로 간섭할 수는 없다. 시온이 KOS-MOS의 메인프레임에 엔세페론 다이브했을 때 과거의 광경과 미래에 일어날 수 있는 가능성 중 하나인 U-DO 부활의 영상을 보여 줬다. 아직 미래는 바꿀 수 있다며 시온에게 행동을 촉구했다.",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text145",
+    "kind": "static_text",
+    "symbol_id": 145,
+    "source": "plain_text/145.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "NEXT",
+    "[KOR]": "다음",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text160",
+    "kind": "static_text",
+    "symbol_id": 160,
+    "source": "plain_text/160.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "キャラクター紹介\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\nシオン\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nKOS-MOS\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nユリ",
+    "[KOR]": "인물 소개\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\n시온\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\nKOS-MOS\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n유리",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text185",
+    "kind": "static_text",
+    "symbol_id": 185,
+    "source": "plain_text/185.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "事件現場において保護した少女について",
+    "[KOR]": "사건 현장에서 보호한 소녀에 관하여",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text191",
+    "kind": "static_text",
+    "symbol_id": 191,
+    "source": "plain_text/191.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "レメゲトンの詳細について",
+    "[KOR]": "레메게톤의 상세 정보에 관하여",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text200",
+    "kind": "static_text",
+    "symbol_id": 200,
+    "source": "plain_text/200.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "用語解説\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\nグノーシス\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nロスト・エルサレム\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\n局所事象変移\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nヴェクター",
+    "[KOR]": "용어 해설\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\n그노시스\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n로스트 예루살렘\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n국소 사상 변이\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n벡터",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text203",
+    "kind": "static_text",
+    "symbol_id": 203,
+    "source": "plain_text/203.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "ミズラヒ脳物理学研究所\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nヨアキム・ミズラヒ\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nユリ・ミズラヒ",
+    "[KOR]": "미즈라히 뇌물리학 연구소\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n요아킴 미즈라히\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n유리 미즈라히",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text211",
+    "kind": "static_text",
+    "symbol_id": 211,
+    "source": "plain_text/211.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "グリモアに関する個人情報",
+    "[KOR]": "그리모어의 신상 정보",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text214",
+    "kind": "static_text",
+    "symbol_id": 214,
+    "source": "plain_text/214.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "用語解説\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\nヴェクター\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nグノーシス\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nロスト・エルサレム\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\n局所事象変移",
+    "[KOR]": "용어 해설\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\n벡터\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n그노시스\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n로스트 예루살렘\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n국소 사상 변이",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text221",
+    "kind": "static_text",
+    "symbol_id": 221,
+    "source": "plain_text/221.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "グリモアの少女に関する考察",
+    "[KOR]": "그리모어의 소녀에 관한 고찰",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text226",
+    "kind": "static_text",
+    "symbol_id": 226,
+    "source": "plain_text/226.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "用語解説\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\nネピリム",
+    "[KOR]": "용어 해설\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\n네피림",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text239",
+    "kind": "static_text",
+    "symbol_id": 239,
+    "source": "plain_text/239.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "キャラクター紹介\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\nネピリム",
+    "[KOR]": "인물 소개\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\n네피림",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text248",
+    "kind": "static_text",
+    "symbol_id": 248,
+    "source": "plain_text/248.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "キャラクター紹介\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\nドクトゥス",
+    "[KOR]": "인물 소개\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\n도크투스",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text251",
+    "kind": "static_text",
+    "symbol_id": 251,
+    "source": "plain_text/251.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "謎のエージェントに関して",
+    "[KOR]": "정체불명의 에이전트에 관하여",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text256",
+    "kind": "static_text",
+    "symbol_id": 256,
+    "source": "plain_text/256.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "兄さんは\n--- RECORDSEPARATOR ---\n、\n--- RECORDSEPARATOR ---\nレポートを読み終えた\n--- RECORDSEPARATOR ---\n私にその時の事を語ってくれた\n--- RECORDSEPARATOR ---\n−−−",
+    "[KOR]": "오빠는\n--- RECORDSEPARATOR ---\n, \n--- RECORDSEPARATOR ---\n보고서를 다 읽은\n--- RECORDSEPARATOR ---\n내게 그때의 일을 들려주었다\n--- RECORDSEPARATOR ---\n−−−",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text284",
+    "kind": "static_text",
+    "symbol_id": 284,
+    "source": "plain_text/284.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "キャラクター紹介\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\nジン",
+    "[KOR]": "인물 소개\n--- RECORDSEPARATOR ---\n…\n--- RECORDSEPARATOR ---\n진",
+    "review_status": "text_reviewed_runtime_not_retested"
+  },
+  {
+    "id": "ch02:text314",
+    "kind": "static_text",
+    "symbol_id": 314,
+    "source": "plain_text/314.txt",
+    "source_tag": "DefineTextTag",
+    "[JPN]": "TO BE CONTINUED...",
+    "[KOR]": "다음에 계속…",
+    "review_status": "text_reviewed_runtime_not_retested"
+  }
+]
