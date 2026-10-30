@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 4761
+ymax 4460
+wordwrap 1
+multiline 1
+readonly 1
+font 115
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 20
+]無類のゲーム好き少年。常に新しい刺激を求め続けネットワークでグリモアと出会い、新たな刺激を得るために自ら望んでグリモアの手先となったようである。

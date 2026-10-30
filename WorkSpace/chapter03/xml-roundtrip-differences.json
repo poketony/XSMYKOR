@@ -1,0 +1,32 @@
+[
+  {
+    "tag_path": "root/25:22",
+    "original_bytes": 144,
+    "rebuilt_bytes": 143
+  },
+  {
+    "tag_path": "root/27:48",
+    "original_bytes": 23,
+    "rebuilt_bytes": 21
+  },
+  {
+    "tag_path": "root/75:48",
+    "original_bytes": 702,
+    "rebuilt_bytes": 702
+  },
+  {
+    "tag_path": "root/78:48",
+    "original_bytes": 6800,
+    "rebuilt_bytes": 6800
+  },
+  {
+    "tag_path": "root/88:48",
+    "original_bytes": 18962,
+    "rebuilt_bytes": 18962
+  },
+  {
+    "tag_path": "root/90:48",
+    "original_bytes": 23,
+    "rebuilt_bytes": 21
+  }
+]

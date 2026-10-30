@@ -1,0 +1,30 @@
+[
+xmin 15
+ymin 3
+xmax 4511
+ymax 312
+][
+font 103
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]スオウ・ウヅキ[
+font 103
+height 280
+letterspacing 0
+]（[space 62][
+resetspacing
+spacingpair "c" "v" 68
+spacingpair "v" "" 68
+]cv[
+resetspacing
+spacingpair "：" "中" 62
+spacingpair "中" "多" 62
+spacingpair "多" "" 62
+]：中多 [space 23][
+resetspacing
+spacingpair "和" "宏" 62
+spacingpair "宏" "）" 62
+spacingpair "）" "" 62
+]和宏）

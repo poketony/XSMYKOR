@@ -1,0 +1,23 @@
+[
+xmin 24
+ymin 3
+xmax 4408
+ymax 313
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]シオン・ウヅキ（[
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "前" 71
+spacingpair "前" "田" 71
+spacingpair "田" "愛" 71
+spacingpair "愛" "）" 71
+spacingpair "）" "" 71
+]：前田愛）

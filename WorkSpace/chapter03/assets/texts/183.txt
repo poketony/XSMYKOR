@@ -1,0 +1,12 @@
+[
+xmin 19
+ymin 15
+xmax 2545
+ymax 307
+][
+font 58
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]セシリーとキャス

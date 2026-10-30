@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 4761
+ymax 4460
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 20
+]8歳の時のシオン。ミルチア紛争前に母親であるアオイを見舞うために、父であるスオウと共に、重篤神経症治療施設に頻繁に来ていた。フェブロニアと出会ったのもこの頃であり、その後の彼女の人生に影響を与えるほどのトラウマを抱えた時期でもある。

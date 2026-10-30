@@ -1,0 +1,12 @@
+[
+xmin 19
+ymin 14
+xmax 2545
+ymax 307
+][
+font 113
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]メリス・オルタス

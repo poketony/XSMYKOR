@@ -1,0 +1,53 @@
+[
+xmin 9
+ymin 38
+xmax 2870
+ymax 923
+][
+font 49
+height 220
+color #ffffff
+y 220
+spacingpair "キ" "ャ" 32
+spacingpair "ャ" "ラ" 1
+spacingpair "ラ" "ク" 16
+spacingpair "ク" "タ" 12
+spacingpair "タ" "ー" 18
+spacingpair "ー" "紹" 32
+spacingpair "紹" "介" 49
+spacingpair "介" "" 49
+]キャラクター紹介…[space 24][
+color #ffcc00
+x 0
+y 560
+spacingpair "ヨ" "ア" -6
+spacingpair "ア" "キ" 16
+spacingpair "キ" "ム" 32
+spacingpair "ム" "・" 30
+spacingpair "・" "ミ" -61
+spacingpair "ミ" "ズ" -6
+spacingpair "ズ" "ラ" 42
+spacingpair "ラ" "ヒ" 16
+spacingpair "ヒ" "" -7
+]ヨアキム・ミズラヒ[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "フ" "ェ" 13
+spacingpair "ェ" "ブ" 1
+spacingpair "ブ" "ロ" 32
+spacingpair "ロ" "ニ" 11
+spacingpair "ニ" "ア" 37
+spacingpair "ア" "" 16
+]フェブロニア[
+x 0
+y 900
+spacingpair "セ" "シ" 28
+spacingpair "シ" "リ" 24
+spacingpair "リ" "ー" -26
+spacingpair "ー" "と" 32
+spacingpair "と" "キ" 2
+spacingpair "キ" "ャ" 31
+spacingpair "ャ" "ス" 1
+spacingpair "ス" "" 35
+]セシリーとキャス

@@ -1,0 +1,12 @@
+[
+xmin 3
+ymin 6
+xmax 1910
+ymax 314
+][
+font 103
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]局所事象変移

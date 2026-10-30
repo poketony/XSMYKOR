@@ -1,0 +1,45 @@
+[
+xmin -1630
+ymin 931
+xmax 4354
+ymax 3500
+translatex -1650
+][
+font 288
+height 280
+letterspacing 62
+color #ffffff
+x 300
+y 1160
+]彼女はヒルベルトエフェクトを発動し自らを[
+x 720
+y 1640
+]固着させたが、救う術はなく、私は、[
+letterspacing 0
+x 1580
+y 2100
+spacingpair "完" "全" 62
+spacingpair "全" "に" 62
+spacingpair "に" "グ" 62
+spacingpair "グ" "ノ" 17
+spacingpair "ノ" "ー" 54
+spacingpair "ー" "シ" 62
+spacingpair "シ" "ス" 48
+spacingpair "ス" "化" 62
+spacingpair "化" "し" 62
+spacingpair "し" "た" 62
+spacingpair "た" "" 62
+]完全にグノーシス化した[
+letterspacing 62
+x 560
+y 2560
+]ソレを斬ることしか出来なかった[
+resetspacing
+spacing "−" 3
+]−−−。[space 62][
+x 0
+y 3480
+]その直後、私はグリモアの少女と出会った[
+resetspacing
+spacing "−" 3
+]−−−。[space 62]

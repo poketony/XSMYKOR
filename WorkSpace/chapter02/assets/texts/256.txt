@@ -1,0 +1,32 @@
+[
+xmin -1278
+ymin 7
+xmax 4281
+ymax 712
+translatex -1282
+][
+font 255
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]兄さんは、[space -89][
+resetspacing
+spacingpair "レ" "ポ" 71
+spacingpair "ポ" "ー" 71
+spacingpair "ー" "ト" 71
+spacingpair "ト" "を" 71
+spacingpair "を" "読" 71
+spacingpair "読" "み" 71
+spacingpair "み" "終" 71
+spacingpair "終" "え" 71
+spacingpair "え" "た" 71
+spacingpair "た" "" 71
+]レポートを読み終えた[
+letterspacing 83
+x 0
+y 680
+]私にその時の事を語ってくれた[
+resetspacing
+spacing "−" 104
+]−−−

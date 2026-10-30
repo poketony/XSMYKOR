@@ -1,0 +1,24 @@
+[
+xmin 21
+ymin 6
+xmax 3727
+ymax 298
+][
+font 103
+height 320
+color #ffffff
+y 280
+spacing "O" 47
+spacing "S" 101
+spacingpair "K" "O" 47
+spacingpair "-" "M" 11
+spacingpair "M" "O" 53
+spacingpair " " "" 26
+]KOS-MOS [
+resetspacing
+spacingpair "バ" "ー" 71
+spacingpair "ー" "ジ" 71
+spacingpair "ジ" "ョ" 71
+spacingpair "ョ" "ン" 71
+spacingpair "ン" "" 71
+]バージョン3[space 101]

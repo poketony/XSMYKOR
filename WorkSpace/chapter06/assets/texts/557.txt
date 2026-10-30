@@ -1,0 +1,734 @@
+[
+xmin 0
+ymin 48
+xmax 5187
+ymax 31277
+][
+font 555
+height 240
+color #ffffff
+y 220
+spacingpair "V" "o" -13
+spacingpair "i" "c" 1
+spacingpair " " "A" -13
+spacingpair "A" "c" 1
+]~Voice Actor[
+x 0
+y 540
+spacingpair "h" "i" 1
+spacingpair "i" "o" 1
+spacingpair "o" "n" 1
+spacingpair "n" " " 1
+spacingpair " " " " -1
+spacingpair " " "M" -1
+spacingpair "e" "d" 1
+spacingpair "d" "a" 1
+spacingpair "a" " " 1
+spacingpair " " "A" -13
+spacingpair "A" "i" 1
+]Shion Uzuki      Maeda Ai[
+x 0
+y 860
+spacingpair " " " " -1
+spacingpair " " "S" -1
+spacingpair "u" "z" 1
+]KOS-MOS        Suzuki Mariko[
+x 0
+y 1180
+spacing "n" 1
+spacingpair " " " " -1
+spacingpair " " "T" -5
+spacingpair "T" "a" -27
+spacingpair "a" "k" 1
+spacingpair "i" "d" 1
+spacingpair "d" "e" 1
+spacingpair "e" "y" 1
+]Jin Uzuki        Tanaka Hideyuki[
+x 0
+y 1820
+spacing "h" 1
+spacing "o" 1
+spacingpair "Y" "u" -13
+spacingpair "i" " " 1
+spacingpair " " " " -1
+spacingpair " " "S" -1
+spacingpair "i" "n" 1
+spacingpair "n" "d" 1
+spacingpair "d" "o" 1
+spacingpair "a" "o" 1
+]Yuri Mizurahi   Shindo Naomi[
+x 0
+y 2140
+spacing "o" 1
+spacingpair " " " " -1
+spacingpair " " "P" -1
+spacingpair "a" "r" 1
+]Doctus   Park Romi[
+x 0
+y 2460
+spacingpair "A" "r" 1
+spacingpair "d" "e" 1
+spacingpair "e" "l" 1
+spacingpair "l" "" 1
+]Armadel[
+font 556
+height 240
+]　[space 53][
+font 555
+height 240
+spacingpair "a" "w" 1
+spacingpair "w" "a" 1
+spacingpair "a" "s" 1
+spacingpair " " "A" -13
+spacingpair "A" "y" -4
+]Kawasumi Ayako[
+x 0
+y 2860
+spacingpair "G" "r" -1
+spacingpair " " "H" -1
+spacingpair "a" "s" 1
+spacingpair "i" " " 1
+spacingpair " " "T" -4
+spacingpair "T" "a" -27
+]Grimore  Hashi Takaya[
+x 0
+y 3500
+spacing "0" 1
+spacing "e" 1
+spacing "a" 1
+spacingpair "l" "i" 1
+spacingpair "i" "a" 1
+spacingpair "n" "" 1
+]100-Series Realian[
+font 556
+height 240
+]　[space 53][
+font 555
+height 240
+spacingpair "o" "n" 1
+spacingpair "n" "a" 1
+spacingpair "a" "k" 1
+spacingpair " " "A" -13
+spacingpair "A" "i" 1
+] Nonaka Ai[
+x 0
+y 3920
+spacingpair "o" "y" 1
+spacingpair " " " " -1
+spacingpair " " "T" -5
+spacingpair "T" "a" -27
+spacingpair "F" "u" -1
+spacingpair "j" "i" 1
+spacingpair "i" "k" 1
+]mystery boy    Takimoto Fujiko[
+x 0
+y 4560
+spacingpair "u" "o" 1
+spacingpair "o" " " 1
+spacingpair " " " " -1
+spacingpair " " "K" -1
+spacingpair "a" "z" 1
+spacingpair "h" "i" 1
+spacingpair "i" "r" 1
+spacingpair "a" "k" 1
+]Suo Uzuki   Kazuhiro Nakata[
+x 0
+y 4880
+spacingpair "a" "p" 1
+spacingpair "p" "t" 1
+spacingpair "i" "n" 1
+spacingpair "n" " " 1
+spacingpair " " "M" -1
+spacingpair " " "Y" -4
+spacingpair "Y" "u" -13
+spacingpair "j" "i" 1
+spacingpair "i" "" 1
+]Captain  Mikimoto Yuji[
+x 0
+y 5520
+spacingpair " " " " -1
+spacingpair " " "H" -1
+spacingpair "a" "t" 1
+spacingpair "n" "o" 1
+spacingpair "o" " " 1
+spacingpair "W" "a" -10
+]  Hatano Wataru[
+x 0
+y 5840
+spacingpair " " " " -1
+spacingpair " " "Y" -5
+spacingpair "Y" "a" -17
+spacingpair "a" "m" 1
+spacingpair " " "T" -4
+spacingpair "T" "a" -27
+spacingpair "i" "s" 1
+]        Yamamoto Taisuke[
+x 0
+y 6160
+spacing " " -1
+spacingpair "*" "*" 1
+spacingpair "*" "(" 1
+]        *************([
+font 556
+height 240
+letterspacing 53
+]１名確認中[
+font 555
+height 240
+letterspacing 0
+])[
+x 0
+y 6880
+spacingpair "e" "p" 1
+spacingpair "p" "i" 1
+spacingpair "i" "r" 1
+spacingpair " " " " -1
+spacingpair " " "T" -5
+spacingpair "T" "o" -27
+spacingpair "u" "m" 1
+spacingpair " " "Y" -4
+spacingpair "Y" "u" -13
+]Nepirim    Touma Yumi[
+x 0
+y 7840
+spacing "n" 1
+spacing "e" 1
+spacingpair "d" "u" 1
+spacingpair "u" "c" 1
+spacingpair "o" "n" 1
+spacingpair "g" "n" 1
+spacingpair " " "" -1
+]Production Designer  [
+x 0
+y 8160
+spacingpair "I" "T" -1
+spacingpair "T" "A" -19
+spacingpair " " "K" -1
+spacingpair "I" "C" -1
+spacingpair "H" "I" 1
+]MUGITANI KOICHI[
+font 556
+height 240
+]（[space 53][
+font 555
+height 240
+spacingpair "H" "O" 1
+]CHOCO[
+font 556
+height 240
+]）[space 53][
+font 555
+height 240
+x 0
+y 8900
+spacing "o" 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Music Composer   [
+x 0
+y 9220
+spacingpair "a" "j" 1
+spacingpair "j" "i" 1
+spacingpair "i" "u" 1
+spacingpair "u" "r" 1
+spacingpair " " "Y" -4
+spacingpair "Y" "u" -13
+]Kajiura Yuki[
+x 0
+y 9860
+spacingpair "G" "r" -1
+spacingpair "p" "h" 1
+spacingpair "h" "i" 1
+spacingpair "i" "c" 1
+spacingpair " " "A" -14
+spacingpair "A" "r" 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Graphic Artist    [
+x 0
+y 10180
+spacingpair "b" "u" 1
+spacingpair "u" "e" 1
+spacingpair "e" " " 1
+spacingpair " " "Y" -4
+spacingpair "Y" "a" -17
+spacingpair "a" "s" 1
+spacingpair "i" "(" 1
+]Sibue Yasushi([
+font 556
+height 240
+spacing "ム" 53
+spacingpair "株" "式" 53
+spacingpair "式" "会" 53
+spacingpair "会" "社" 53
+spacingpair "社" "バ" 53
+spacingpair "バ" "ン" 53
+spacingpair "ン" "ダ" 53
+spacingpair "ダ" "イ" 27
+spacingpair "イ" "ナ" 43
+spacingpair "ナ" "ム" 37
+spacingpair "コ" "ゲ" 53
+spacingpair "ゲ" "ー" 43
+spacingpair "ー" "ム" 41
+spacingpair "ス" "" 53
+]株式会社バンダイナムコゲームス[
+font 555
+height 240
+])[
+x 0
+y 11220
+spacing "a" 1
+spacingpair " " "S" -1
+spacingpair "p" "e" 1
+spacingpair "e" "c" 1
+spacingpair "l" " " 1
+spacingpair " " "T" -4
+spacingpair "n" "k" 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Music  Special Thanks     [
+x 0
+y 11540
+spacingpair "e" "i" 1
+spacingpair "i" "i" 1
+spacingpair "i" "c" 1
+spacingpair "i" " " 1
+spacingpair "o" "z" 1
+]Keiichi Nozaki[
+font 556
+height 240
+]（[space 53][
+font 555
+height 240
+spacing "n" 1
+spacingpair "T" "O" -4
+spacingpair "i" "n" 1
+]VICTOR Entertainment[
+font 556
+height 240
+]）[space 53][
+font 555
+height 240
+x 0
+y 11960
+spacingpair "Y" "a" -17
+spacingpair "a" "s" 1
+spacingpair "n" "o" 1
+spacingpair "o" "r" 1
+spacingpair "P" "A" -18
+spacingpair "R" "A" 1
+spacingpair "T" " " -5
+spacingpair "U" "C" 1
+spacingpair "C" "E" 1
+]Yasunori Mori(SPACE CRAFT PRODUCE)[
+x 0
+y 12600
+spacing "e" 1
+spacing "n" 1
+spacing "a" 1
+spacingpair "g" "n" 1
+spacingpair "p" "e" 1
+spacingpair "l" " " 1
+spacingpair " " "T" -4
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Design Special Thanks     [
+x 0
+y 12920
+spacing "." -1
+spacingpair "I" "." -1
+spacingpair "L" "T" -18
+spacingpair "T" "D" -1
+]KUSANAGI.CO.LTD [
+x 0
+y 13240
+spacingpair "Y" "a" -17
+spacingpair "a" "n" 1
+spacingpair "n" "a" 1
+spacingpair "a" "s" 1
+spacingpair " " "T" -4
+spacingpair "T" "a" -27
+]Yanase Takayuki[
+x 0
+y 13560
+spacing "T" -27
+spacingpair "d" "a" 1
+spacingpair "a" " " 1
+spacingpair " " "T" -4
+]Terada Tsutomu[
+x 0
+y 14200
+spacing "a" 1
+spacingpair "V" "o" -13
+spacingpair "i" "c" 1
+spacingpair " " "S" -1
+spacingpair "p" "e" 1
+spacingpair "e" "c" 1
+spacingpair "l" " " 1
+spacingpair " " "T" -4
+spacingpair "n" "k" 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Voice -Over  Special Thanks     [
+x 0
+y 14520
+spacingpair "L" "F" 1
+spacingpair " " "H" -1
+]HALF H[
+font 556
+height 240
+]･[space -67][
+font 555
+height 240
+spacingpair "P" " " -4
+spacingpair " " "S" -1
+spacingpair "D" "I" 1
+spacingpair "O" "" -1
+]P STUDIO[
+x 0
+y 15560
+spacing "e" 1
+spacingpair "W" "e" -5
+spacingpair "b" " " 1
+spacingpair "g" "n" 1
+spacingpair "n" "" 1
+]Web design[
+font 556
+height 240
+]　[space 53][
+font 555
+height 240
+] [
+x 0
+y 15980
+]okamoto[
+font 556
+height 240
+]－[space 53][
+font 555
+height 240
+spacingpair "e" "s" 1
+spacingpair "g" "n" 1
+spacingpair "n" "" 1
+]design[
+font 556
+height 240
+x 0
+y 17020
+]【[space 53][
+font 555
+height 240
+spacingpair "n" "o" 1
+spacingpair "o" "l" 1
+spacingpair "l" "i" 1
+spacingpair "i" "t" 1
+spacingpair "t" "" -1
+]Monolithsoft[
+font 556
+height 240
+]　[space 53][
+font 555
+height 240
+spacingpair "f" "f" -4
+]staff[
+font 556
+height 240
+]】[space 53][
+font 555
+height 240
+x 0
+y 17440
+spacing "e" 1
+spacing "n" 1
+spacing "a" 1
+spacingpair "g" "n" 1
+spacingpair "p" "e" 1
+spacingpair "l" " " 1
+spacingpair " " "T" -4
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Design Special Thanks     [
+x 0
+y 17760
+spacing "d" 1
+spacingpair "T" "a" -27
+spacingpair "a" "h" 1
+spacingpair "h" "i" 1
+spacingpair "i" "r" 1
+spacingpair "a" "" 1
+]Tadahiro Usuda[
+x 0
+y 18080
+spacing "T" -27
+spacingpair "n" "i" 1
+spacingpair "i" "y" 1
+spacingpair " " "T" -4
+]Taniyama Tetsuya[
+x 0
+y 18400
+spacing "i" 1
+spacingpair " " " " -1
+spacingpair " " "M" -1
+spacingpair "h" "u" 1
+spacingpair "u" "i" 1
+]  Murata Shuichi[
+x 0
+y 19040
+spacingpair "u" "b" 1
+spacingpair "b" "l" 1
+spacingpair "l" "i" 1
+spacingpair "i" "c" 1
+spacingpair "f" "f" -4
+]Publicity Staff[
+x 0
+y 19360
+spacingpair "o" "m" 1
+spacingpair " " "T" -4
+spacingpair "T" "a" -27
+spacingpair "d" "a" 1
+spacingpair "a" "s" 1
+spacingpair "i" " " 1
+]Nomura Tadashi [
+x 0
+y 19680
+spacingpair " " " " -1
+spacingpair " " "I" -1
+spacingpair "I" "s" -1
+spacingpair "i" "w" 1
+spacingpair "w" "a" 1
+spacingpair "a" "t" 1
+]    Ishiwata Natsuko [
+x 0
+y 20000
+spacing "a" 1
+spacingpair " " " " -1
+spacingpair " " "K" -1
+spacingpair "g" "a" 1
+spacingpair "w" "a" 1
+spacingpair " " "Y" -4
+spacingpair "Y" "o" -22
+spacingpair "o" "k" 1
+]    Kigawa Yoko[
+x 0
+y 20640
+spacingpair "p" "e" 1
+spacingpair "e" "c" 1
+spacingpair "a" "l" 1
+spacingpair "l" "" 1
+]Special[
+font 556
+height 240
+]　[space 53][
+font 555
+height 240
+spacingpair "a" "n" 1
+spacingpair "n" "k" 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Thanks     [
+x 0
+y 21040
+spacingpair "Y" "u" -13
+spacingpair "h" "i" 1
+spacingpair "i" "r" 1
+]Yuki Mitsuhiro[
+letterspacing -1
+x 0
+y 21360
+]    [
+font 556
+height 240
+letterspacing 0
+]　[space 53][
+font 555
+height 240
+spacingpair "n" "d" 1
+spacingpair "d" " " 1
+]And more…[
+x 0
+y 22080
+spacing "n" 1
+spacingpair "d" "u" 1
+spacingpair "u" "c" 1
+spacingpair "o" "n" 1
+spacingpair "o" "o" 1
+spacingpair "o" "r" 1
+spacingpair "i" "n" 1
+spacingpair "a" "t" 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Production Coordinator        [
+x 0
+y 22400
+spacing "i" 1
+spacingpair "I" "s" -1
+spacingpair "n" "i" 1
+spacingpair "o" "j" 1
+spacingpair "j" "i" 1
+]Ishitani Koji[
+x 0
+y 23040
+spacingpair "i" "r" 1
+spacingpair " " "" -1
+]Director  [
+x 0
+y 23360
+spacingpair "a" "g" 1
+spacingpair "g" "a" 1
+spacingpair "a" "t" 1
+spacingpair " " "Y" -4
+spacingpair "Y" "o" -22
+spacingpair "o" "k" 1
+]Nagata Yoko[
+x 0
+y 24640
+spacing "u" 1
+spacingpair "p" "e" 1
+spacingpair "e" "r" 1
+spacingpair "O" "r" -1
+spacingpair "g" "i" 1
+spacingpair "i" "n" 1
+spacingpair "n" "a" 1
+spacingpair "a" "l" 1
+spacingpair "l" " " 1
+spacingpair " " "A" -13
+spacingpair "A" "u" 1
+spacingpair "o" "r" 1
+spacingpair " " "" -1
+]Supervisor & Original Author  [
+x 0
+y 24960
+spacing "T" -27
+spacingpair "h" "a" 1
+spacingpair "a" "s" 1
+spacingpair "i" " " 1
+spacingpair " " "T" -4
+]Takahashi Tetsuya[
+x 0
+y 25920
+spacingpair "e" "n" 1
+spacingpair "n" "a" 1
+spacingpair "a" "r" 1
+spacingpair "o" " " 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Senario   [
+x 0
+y 26240
+spacingpair "Y" "o" -22
+spacingpair "o" "n" 1
+spacingpair "n" "e" 1
+spacingpair "e" "s" 1
+spacingpair "o" "r" 1
+spacingpair "h" "i" 1
+spacingpair "i" "k" 1
+]Yonesaka Norihiko[
+x 0
+y 27200
+spacingpair " " " " -1
+spacingpair " " "D" -1
+spacingpair "L" "O" 1
+spacingpair "Y" "" -4
+]         DEVELOPED BY[
+x 0
+y 27520
+spacing "T" -1
+spacingpair " " " " -1
+spacingpair " " "M" -1
+spacingpair "F" "T" -1
+spacingpair "W" "A" -10
+spacingpair "I" "N" -1
+spacingpair "C" "." 1
+]     MONOLITH SOFTWARE INC.[
+font 556
+height 240
+x 0
+y 28480
+spacing "ム" 53
+spacing "ス" 53
+spacingpair "【" "株" 53
+spacingpair "株" "式" 53
+spacingpair "式" "会" 53
+spacingpair "会" "社" 53
+spacingpair "社" "バ" 53
+spacingpair "バ" "ン" 53
+spacingpair "ン" "ダ" 53
+spacingpair "ダ" "イ" 27
+spacingpair "イ" "ナ" 43
+spacingpair "ナ" "ム" 37
+spacingpair "コ" "ゲ" 53
+spacingpair "ゲ" "ー" 43
+spacingpair "ー" "ム" 41
+spacingpair "　" "ス" 53
+spacingpair "タ" "ッ" 53
+spacingpair "ッ" "フ" 34
+spacingpair "フ" "】" 53
+spacingpair "】" "" 53
+]【株式会社バンダイナムコゲームス　スタッフ】[
+font 555
+height 240
+x 0
+y 28900
+spacingpair "a" "l" 1
+spacingpair "l" "e" 1
+spacingpair "e" "s" 1
+spacingpair "o" "n" 1
+spacingpair "n" "" 1
+]Sales&Promotion[
+font 556
+height 240
+]　[space 53][
+font 555
+height 240
+x 0
+y 29300
+spacing "i" 1
+spacingpair "F" "u" -1
+spacingpair "j" "i" 1
+]Hiroshi Fujii[
+x 0
+y 29620
+spacing "a" 1
+spacingpair "i" " " 1
+spacingpair "I" "k" -1
+spacingpair "d" "a" 1
+]Satoshi Ikeda[
+x 0
+y 30260
+spacingpair "d" "u" 1
+spacingpair "u" "c" 1
+spacingpair " " " " -1
+spacingpair " " "" -1
+]Producer   [
+x 0
+y 30580
+spacing "i" 1
+spacingpair " " "O" -1
+spacingpair "O" "k" -1
+spacingpair "h" "i" 1
+spacingpair "n" "i" 1
+] Okamoto Shinichiro[
+x 0
+y 31220
+spacing "d" 1
+spacingpair " " " " -1
+spacingpair " " "P" -1
+spacingpair "u" "c" 1
+]  Produced by [
+font 556
+height 240
+spacing "ム" 53
+spacingpair "株" "式" 53
+spacingpair "式" "会" 53
+spacingpair "会" "社" 53
+spacingpair "社" "バ" 53
+spacingpair "バ" "ン" 53
+spacingpair "ン" "ダ" 53
+spacingpair "ダ" "イ" 27
+spacingpair "イ" "ナ" 43
+spacingpair "ナ" "ム" 37
+spacingpair "コ" "ゲ" 53
+spacingpair "ゲ" "ー" 43
+spacingpair "ー" "ム" 41
+spacingpair "ス" "" 53
+]株式会社バンダイナムコゲームス

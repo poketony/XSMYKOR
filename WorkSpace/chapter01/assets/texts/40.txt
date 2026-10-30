@@ -1,0 +1,18 @@
+[
+xmin 7
+ymin 82
+xmax 1881
+ymax 600
+][
+font 34
+height 600
+color #ffffff
+y 520
+spacingpair "T" "." -121
+spacingpair "." "C" -16
+spacingpair "C" "." -100
+spacingpair "." "4" -17
+spacingpair "4" "7" -33
+spacingpair "7" "6" -33
+spacingpair "6" "_" -33
+]T.C.476_

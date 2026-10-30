@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5101
+ymax 2484
+wordwrap 1
+multiline 1
+readonly 1
+font 49
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]連邦接触小委員会、専門委員の一人。T.C.4752年、拡散するグノーシス現象を憂慮した彼女は、自ら進んで接触小委員会の設立を提唱する。現在のM.O.M.O.の保護者でもあり、百式レアリエンは彼女の亡夫ヨアキムによって開発された。

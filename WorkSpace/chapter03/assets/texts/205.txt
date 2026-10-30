@@ -1,0 +1,24 @@
+[
+xmin 10
+ymin 38
+xmax 2319
+ymax 243
+][
+font 49
+height 220
+color #ffffff
+y 220
+spacingpair "キ" "ャ" 32
+spacingpair "ャ" "ラ" 1
+spacingpair "ラ" "ク" 16
+spacingpair "ク" "タ" 12
+spacingpair "タ" "ー" 18
+spacingpair "ー" "紹" 32
+spacingpair "紹" "介" 49
+spacingpair "介" "" 49
+]キャラクター紹介…[space 24][
+color #ffcc00
+spacingpair "メ" "リ" 9
+spacingpair "リ" "ス" -26
+spacingpair "ス" "" 36
+]メリス

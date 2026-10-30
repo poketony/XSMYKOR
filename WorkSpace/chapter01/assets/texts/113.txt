@@ -1,0 +1,17 @@
+[
+xmin -1071
+ymin 8
+xmax 3961
+ymax 312
+translatex -1083
+][
+font 112
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]宇宙港で兄さんと別れて約1[space 83][
+resetspacing
+spacingpair "年" "後" 71
+spacingpair "後" "" 71
+]年後━[space 71]

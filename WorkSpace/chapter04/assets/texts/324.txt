@@ -1,0 +1,14 @@
+[
+xmin 9
+ymin 41
+xmax 2185
+ymax 244
+][
+font 235
+height 220
+letterspacing 49
+color #ffffff
+y 220
+]用語解説…[space 24][
+color #ffcc00
+]断章保持者

@@ -1,0 +1,55 @@
+[
+xmin -2105
+ymin 5
+xmax 4808
+ymax 783
+translatex -2126
+][
+font 288
+height 300
+color #ffffff
+y 260
+spacingpair "グ" "ノ" 19
+spacingpair "ノ" "ー" 58
+spacingpair "ー" "シ" 67
+spacingpair "シ" "ス" 52
+spacingpair "ス" "出" 67
+spacingpair "出" "現" 67
+spacingpair "現" "場" 67
+spacingpair "場" "所" 67
+spacingpair "所" "の" 67
+spacingpair "の" "中" 67
+spacingpair "中" "心" 67
+spacingpair "心" "部" 67
+spacingpair "部" "へ" 67
+spacingpair "へ" "移" 67
+spacingpair "移" "動" 67
+spacingpair "動" "し" 67
+spacingpair "し" "た" 67
+spacingpair "た" "私" 67
+spacingpair "私" "と" 67
+spacingpair "と" "百" 67
+spacingpair "百" "式" 67
+spacingpair "式" "は" 67
+spacingpair "は" "、" 67
+spacingpair "、" "" 67
+]グノーシス出現場所の中心部へ移動した私と百式は、[
+x 1420
+y 760
+][space -133][
+resetspacing
+spacingpair "そ" "こ" 67
+spacingpair "こ" "に" 67
+spacingpair "に" "一" 67
+spacingpair "一" "人" 67
+spacingpair "人" "の" 67
+spacingpair "の" "少" 67
+spacingpair "少" "年" 67
+spacingpair "年" "を" 67
+spacingpair "を" "発" 67
+spacingpair "発" "見" 67
+spacingpair "見" "し" 67
+spacingpair "し" "た" 67
+spacingpair "た" "。" 67
+spacingpair "。" "" 67
+]そこに一人の少年を発見した。

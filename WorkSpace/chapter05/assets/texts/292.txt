@@ -1,0 +1,27 @@
+[
+xmin 9
+ymin 38
+xmax 1772
+ymax 520
+][
+font 106
+height 220
+color #ffffff
+y 220
+spacingpair "キ" "ャ" 32
+spacingpair "ャ" "ラ" 1
+spacingpair "ラ" "ク" 16
+spacingpair "ク" "タ" 12
+spacingpair "タ" "ー" 18
+spacingpair "ー" "紹" 32
+spacingpair "紹" "介" 49
+spacingpair "介" "" 49
+]キャラクター紹介…[space 24][
+color #ffcc00
+x 0
+y 500
+spacingpair "グ" "リ" 42
+spacingpair "リ" "モ" -26
+spacingpair "モ" "ア" 36
+spacingpair "ア" "" 17
+]グリモア

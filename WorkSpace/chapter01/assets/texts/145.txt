@@ -1,0 +1,98 @@
+[
+xmin 3
+ymin 10
+xmax 3371
+ymax 6813
+][
+font 112
+height 220
+letterspacing 49
+color #ffffff
+y 200
+]私は今、スキエンティアと呼ばれ[
+x 0
+y 500
+]る組織の協力を得て[
+resetspacing
+spacing "." 2
+spacingpair "U" "." 20
+spacingpair "M" "." 25
+spacingpair "N" "." 32
+]U.M.N.[
+resetspacing
+spacingpair "に" "存" 49
+spacingpair "存" "在" 49
+spacingpair "在" "" 49
+]に存在[
+x 0
+y 800
+]するヴェクターの重要管理領域へ[
+x 0
+y 1100
+]の潜入を試みている。[
+x 0
+y 1700
+]私がヴェクターをやめ、スキエン[
+x 0
+y 2000
+]ティアと行動を共にするきっかけ[
+x 0
+y 2300
+]となった事件。後にグノーシス・[
+x 0
+y 2600
+]テロと呼ばれるその事件は、私と[
+x 0
+y 2900
+]私の周りの人間をも巻き込み、そ[
+x 0
+y 3200
+]れぞれの心に不安と不信感を植え[
+x 0
+y 3500
+]付けていった。[
+x 0
+y 4100
+]この不信感を拭い去ることができ[
+x 0
+y 4400
+]なかった私は、わだかまりを抱え[
+x 0
+y 4700
+]たまま、[
+resetspacing
+spacing "O" 20
+spacing "S" 57
+spacingpair "K" "O" 20
+spacingpair "-" "M" -4
+spacingpair "M" "O" 25
+]KOS-MOS[
+resetspacing
+spacing "と" 49
+spacingpair "接" "す" 49
+spacingpair "す" "る" 49
+spacingpair "る" "こ" 49
+spacingpair "こ" "と" 49
+]と接すること[
+x 0
+y 5000
+]ができず、ヴェクターを去ること[
+x 0
+y 5300
+]を決めたのだった。[
+x 0
+y 5900
+]だから、私はこの目で確かめなけ[
+x 0
+y 6200
+]ればならない。[
+x 0
+y 6500
+]あの時知ってしまった秘密…[space 24][
+resetspacing
+spacingpair "そ" "の" 49
+spacingpair "の" "" 49
+]その[
+x 0
+y 6800
+]すべてを。

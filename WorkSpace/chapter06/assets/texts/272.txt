@@ -1,0 +1,38 @@
+[
+xmin 22
+ymin 3
+xmax 5351
+ymax 293
+][
+font 103
+height 300
+color #ffffff
+y 260
+spacingpair "シ" "オ" 67
+spacingpair "オ" "" 67
+]シオ[
+resetspacing
+spacingpair "ン" "・" 7
+spacingpair "・" "" 7
+]ン・[
+resetspacing
+spacingpair "ウ" "ヅ" 67
+spacingpair "ヅ" "" 67
+]ウヅキ[space -33][
+font 103
+height 280
+letterspacing 62
+]（少女時代）[space -138]（[space 62][
+resetspacing
+spacingpair "c" "v" 68
+spacingpair "v" "" 68
+]cv[
+resetspacing
+spacingpair "：" "前" 62
+spacingpair "前" "田" 62
+spacingpair "田" "" 62
+]：前田 [space 23][
+resetspacing
+spacingpair "愛" "）" 62
+spacingpair "）" "" 62
+]愛）

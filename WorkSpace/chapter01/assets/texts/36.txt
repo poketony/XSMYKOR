@@ -1,0 +1,12 @@
+[
+xmin 7
+ymin 92
+xmax 567
+ymax 600
+][
+font 34
+height 600
+color #ffffff
+y 520
+spacingpair "T" "_" -67
+]T_

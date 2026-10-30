@@ -1,0 +1,49 @@
+[
+xmin 9
+ymin 35
+xmax 6356
+ymax 244
+][
+font 235
+height 220
+letterspacing 49
+color #ffffff
+y 220
+]用語解説…[space 24][
+letterspacing 0
+color #ffcc00
+spacingpair "レ" "メ" 9
+spacingpair "メ" "ゲ" 10
+spacingpair "ゲ" "ト" 49
+spacingpair "ト" "ン" -28
+spacingpair "ン" "の" 19
+spacingpair "の" "断" 40
+spacingpair "断" "章" 49
+spacingpair "章" "" 49
+]レメゲトンの断章[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ヴ" "ェ" 25
+spacingpair "ェ" "ク" 1
+spacingpair "ク" "タ" 11
+spacingpair "タ" "ー" 18
+spacingpair "ー" "" 32
+]ヴェクター[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ロ" "ス" 11
+spacingpair "ス" "ト" 35
+spacingpair "ト" "・" -28
+spacingpair "・" "エ" -61
+spacingpair "エ" "ル" 32
+spacingpair "ル" "サ" 47
+spacingpair "サ" "レ" 39
+spacingpair "レ" "ム" 9
+spacingpair "ム" "" 31
+]ロスト・エルサレム[
+color #ffffff
+]、[space -25][
+color #ffcc00
+]U[space -12]．[space -106]M[space -9]．[space -106]N[space 9]．[space -106]

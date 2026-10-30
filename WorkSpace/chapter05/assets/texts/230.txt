@@ -1,0 +1,12 @@
+[
+xmin 30
+ymin 3
+xmax 1902
+ymax 304
+][
+font 113
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]フェブロニア

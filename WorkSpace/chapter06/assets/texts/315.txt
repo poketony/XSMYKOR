@@ -1,0 +1,22 @@
+[
+xmin 50
+ymin 12
+xmax 3650
+ymax 311
+][
+font 314
+height 320
+letterspacing 91
+color #000000
+y 280
+]これは[
+resetspacing
+spacing "—" 55
+]———[
+resetspacing
+spacingpair "私" "の" 91
+spacingpair "の" "記" 91
+spacingpair "記" "憶" 91
+spacingpair "憶" "？" 91
+spacingpair "？" "" 91
+]私の記憶？

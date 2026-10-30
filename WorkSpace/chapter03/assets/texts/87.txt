@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5101
+ymax 2484
+wordwrap 1
+multiline 1
+readonly 1
+font 60
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]対グノーシス用索敵レアリエン。主に艦船用に開発されたD.S.S.S.とヒルベルトエフェクトを統合した「百式システム」のパーソナルデバイスの役割を持つ。出力は弱いが、単体でのヒルベルトエフェクト使用も可能。

@@ -1,0 +1,11 @@
+[
+xmin 24
+ymin 17
+xmax 296
+ymax 294
+][
+font 314
+height 320
+color #000000
+y 280
+]た[space 91]

@@ -1,0 +1,11 @@
+[
+xmin 16
+ymin 14
+xmax 306
+ymax 309
+][
+font 314
+height 320
+color #000000
+y 280
+]女[space 91]

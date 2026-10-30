@@ -1,0 +1,26 @@
+[
+xmin 10
+ymin 38
+xmax 1568
+ymax 521
+][
+font 235
+height 220
+color #ffffff
+y 220
+spacingpair "キ" "ャ" 32
+spacingpair "ャ" "ラ" 1
+spacingpair "ラ" "ク" 16
+spacingpair "ク" "タ" 12
+spacingpair "タ" "ー" 18
+spacingpair "ー" "紹" 32
+spacingpair "紹" "介" 49
+spacingpair "介" "" 49
+]キャラクター紹介[
+x 0
+y 500
+]…[space 24][
+color #ffcc00
+spacingpair "百" "式" 49
+spacingpair "式" "" 49
+]百式

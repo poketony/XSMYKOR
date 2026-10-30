@@ -1,0 +1,19 @@
+[
+xmin 18
+ymin 27
+xmax 1820
+ymax 285
+][
+font 103
+height 320
+color #ffffff
+y 280
+spacing "i" 12
+spacingpair "S" "-" 100
+spacingpair "-" "D" 11
+spacingpair "D" "i" 48
+spacingpair "v" "i" 77
+spacingpair "s" "i" 94
+spacingpair "o" "n" 59
+spacingpair "n" "" 59
+]S-Division

@@ -1,0 +1,25 @@
+[
+xmin 10
+ymin 6
+xmax 4088
+ymax 315
+][
+font 113
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]謎の少年（[
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "瀧" 71
+spacingpair "瀧" "本" 71
+spacingpair "本" "富" 71
+spacingpair "富" "士" 71
+spacingpair "士" "子" 71
+spacingpair "子" "）" 71
+spacingpair "）" "" 71
+]：瀧本富士子）

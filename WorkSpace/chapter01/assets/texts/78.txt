@@ -1,0 +1,20 @@
+[
+xmin 21
+ymin 7
+xmax 1625
+ymax 313
+][
+font 47
+height 320
+color #ffffff
+y 280
+spacingpair "U" "-" 47
+spacingpair "-" "T" 12
+spacingpair "T" "I" 65
+spacingpair "I" "C" -6
+spacingpair "C" "" 48
+]U-TIC[
+resetspacing
+spacingpair "機" "関" 71
+spacingpair "関" "" 71
+]機関

@@ -1,0 +1,13 @@
+[
+xmin 492
+ymin 6
+xmax 4302
+ymax 314
+translatex 480
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]謎のエージェントに関して

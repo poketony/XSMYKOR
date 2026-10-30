@@ -1,0 +1,29 @@
+[
+xmin 9
+ymin 41
+xmax 2115
+ymax 519
+][
+font 96
+height 220
+letterspacing 49
+color #ffffff
+y 220
+]用語解説…[space 24][
+letterspacing 0
+color #ffcc00
+x 0
+y 500
+spacing "S" 23
+spacingpair "K" "O" -1
+spacingpair "-" "M" 11
+spacingpair "M" "O" -9
+spacingpair " " "" 6
+]KO[space 3]S-MO[space 2]S [
+resetspacing
+spacingpair "バ" "ー" 42
+spacingpair "ー" "ジ" 32
+spacingpair "ジ" "ョ" 23
+spacingpair "ョ" "ン" -33
+spacingpair "ン" "" 19
+]バージョン3[space 37]

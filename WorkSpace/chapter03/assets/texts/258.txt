@@ -1,0 +1,49 @@
+[
+xmin 9
+ymin 35
+xmax 6210
+ymax 244
+][
+font 49
+height 220
+letterspacing 49
+color #ffffff
+y 220
+]用語解説…[space 24][
+letterspacing 0
+color #ffcc00
+spacingpair "．" "グ" -106
+spacingpair "グ" "ノ" 42
+spacingpair "ノ" "ー" -6
+spacingpair "ー" "シ" 32
+spacingpair "シ" "ス" 23
+spacingpair "ス" "" 35
+]．グノーシス[
+color #ffffff
+]、[space -25][
+color #ffcc00
+]U[space -12]．[space -106]M[space -9]．[space -106]N[space 9]．[space -106][
+color #ffffff
+]、[space -25][
+letterspacing 49
+color #ffcc00
+]星団連邦[
+letterspacing 0
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ヴ" "ェ" 25
+spacingpair "ェ" "ク" 1
+spacingpair "ク" "タ" 11
+spacingpair "タ" "ー" 18
+spacingpair "ー" "" 32
+]ヴェクター[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "転" "移" 49
+spacingpair "移" "コ" 49
+spacingpair "コ" "ラ" -4
+spacingpair "ラ" "ム" 16
+spacingpair "ム" "" 30
+]転移コラム

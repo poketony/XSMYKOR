@@ -1,0 +1,78 @@
+[
+xmin 9
+ymin 36
+xmax 5985
+ymax 602
+][
+font 49
+height 220
+letterspacing 49
+color #ffffff
+y 220
+]用語解説…[space 24][
+letterspacing 0
+color #ffcc00
+spacingpair "レ" "ア" 9
+spacingpair "ア" "リ" 17
+spacingpair "リ" "エ" -26
+spacingpair "エ" "ン" 32
+spacingpair "ン" "" 20
+]レアリエン[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "U" "−" -12
+spacingpair "−" "T" 24
+spacingpair "T" "I" 19
+spacingpair "I" "C" -20
+spacingpair "C" "" -3
+]U−TIC[
+resetspacing
+spacingpair "機" "関" 49
+spacingpair "関" "" 49
+]機関[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ヨ" "ア" -6
+spacingpair "ア" "キ" 16
+spacingpair "キ" "ム" 32
+spacingpair "ム" "・" 30
+spacingpair "・" "ミ" -61
+spacingpair "ミ" "ズ" -6
+spacingpair "ズ" "ラ" 42
+spacingpair "ラ" "ヒ" 16
+spacingpair "ヒ" "" -7
+]ヨアキム・ミズラヒ[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ミ" "ル" -6
+spacingpair "ル" "チ" 47
+spacingpair "チ" "ア" 41
+spacingpair "ア" "" 17
+]ミルチア[
+color #ffffff
+]、[space -25][
+color #ffcc00
+x 0
+y 580
+spacingpair "　" "ラ" -105
+spacingpair "ラ" "ビ" 17
+spacingpair "ビ" "ュ" 5
+spacingpair "ュ" "リ" 3
+spacingpair "リ" "ン" -27
+spacingpair "ン" "ト" 20
+spacingpair "ト" "ス" -29
+spacingpair "ス" "" 35
+]　[space -106]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　[space -105]　ラビュリントス[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ミ" "ル" -6
+spacingpair "ル" "チ" 47
+spacingpair "チ" "ア" 41
+spacingpair "ア" "紛" 17
+spacingpair "紛" "争" 49
+spacingpair "争" "" 49
+]ミルチア紛争

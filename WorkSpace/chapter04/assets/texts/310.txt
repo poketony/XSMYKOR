@@ -1,0 +1,101 @@
+[
+xmin -1862
+ymin 6
+xmax 4585
+ymax 2115
+translatex -1881
+][
+font 288
+height 280
+color #ffffff
+x 980
+y 240
+spacingpair "少" "年" 62
+spacingpair "年" "は" 62
+spacingpair "は" "断" 62
+spacingpair "断" "章" 62
+spacingpair "章" "の" 62
+spacingpair "の" "力" 62
+spacingpair "力" "で" 62
+spacingpair "で" "グ" 62
+spacingpair "グ" "ノ" 17
+spacingpair "ノ" "ー" 54
+spacingpair "ー" "シ" 62
+spacingpair "シ" "ス" 48
+spacingpair "ス" "を" 62
+spacingpair "を" "操" 62
+spacingpair "操" "り" 62
+spacingpair "り" "、" 62
+spacingpair "、" "" 62
+]少年は断章の力でグノーシスを操り、[
+x 760
+y 700
+spacing "の" 62
+spacingpair "グ" "リ" 62
+spacingpair "リ" "モ" 62
+spacingpair "モ" "ア" 62
+spacingpair "ア" "の" 62
+spacingpair "少" "女" 62
+spacingpair "女" "を" 62
+spacingpair "を" "探" 62
+spacingpair "探" "し" 62
+spacingpair "し" "て" 48
+spacingpair "て" "い" 62
+spacingpair "い" "た" 62
+spacingpair "た" "の" 62
+spacingpair "だ" "ろ" 62
+spacingpair "ろ" "う" 62
+spacingpair "う" "。" 62
+spacingpair "。" "" 62
+]グリモアの少女を探していたのだろう。[space -125][
+x 0
+y 1160
+spacing "の" 62
+spacing "だ" 62
+spacingpair "そ" "の" 62
+spacingpair "グ" "ノ" 17
+spacingpair "ノ" "ー" 54
+spacingpair "ー" "シ" 62
+spacingpair "シ" "ス" 48
+spacingpair "ス" "を" 62
+spacingpair "を" "倒" 62
+spacingpair "倒" "し" 62
+spacingpair "し" "て" 48
+spacingpair "て" "い" 62
+spacingpair "い" "く" 62
+spacingpair "く" "我" 62
+spacingpair "我" "々" 62
+spacingpair "々" "が" 62
+spacingpair "が" "邪" 62
+spacingpair "邪" "魔" 62
+spacingpair "魔" "だ" 62
+spacingpair "っ" "た" 62
+spacingpair "た" "の" 62
+spacingpair "。" "" 62
+]そのグノーシスを倒していく我々が邪魔だったのだ。[
+letterspacing 62
+x 1640
+y 1640
+]少年が百式に接触するや、[
+letterspacing 0
+x 840
+y 2100
+spacingpair "彼" "女" 62
+spacingpair "女" "は" 62
+spacingpair "は" "グ" 62
+spacingpair "グ" "ノ" 17
+spacingpair "ノ" "ー" 54
+spacingpair "ー" "シ" 62
+spacingpair "シ" "ス" 48
+spacingpair "ス" "化" 62
+spacingpair "化" "さ" 62
+spacingpair "さ" "せ" 62
+spacingpair "せ" "ら" 62
+spacingpair "ら" "れ" 62
+spacingpair "れ" "て" 51
+spacingpair "て" "い" 62
+spacingpair "い" "っ" 62
+spacingpair "っ" "た" 62
+spacingpair "た" "。" 62
+spacingpair "。" "" 62
+]彼女はグノーシス化させられていった。

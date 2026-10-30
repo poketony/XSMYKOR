@@ -1,0 +1,12 @@
+[
+xmin 4
+ymin 8
+xmax 1275
+ymax 313
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]星団連邦

@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 4061
+ymax 1360
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]人類に対して敵対行動をとるという事実以外、全てが謎に包まれている存在。実在事象とは切り離された“ある領域”に存在するため、通常、接触できない。

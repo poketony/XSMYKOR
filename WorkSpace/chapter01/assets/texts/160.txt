@@ -1,0 +1,12 @@
+[
+xmin 17
+ymin 6
+xmax 4793
+ymax 317
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]グノーシス襲撃事件に関する報告

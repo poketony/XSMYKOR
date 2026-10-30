@@ -1,0 +1,12 @@
+[
+xmin 14
+ymin 8
+xmax 3897
+ymax 293
+][
+font 58
+height 300
+letterspacing 67
+color #ffffff
+y 260
+]スキエンティアに関する情報

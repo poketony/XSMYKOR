@@ -1,13 +1,18 @@
 import com.eclipsesource.json.*;
 import com.jpexs.decompiler.flash.SWF;
+import com.jpexs.decompiler.flash.importers.svg.SvgImporter;
 import com.jpexs.decompiler.flash.tags.*;
 import com.jpexs.decompiler.flash.tags.base.*;
 import com.jpexs.decompiler.flash.types.*;
 import java.awt.Font;
+import java.awt.image.BufferedImage;
 import java.io.*;
+import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
+import java.security.MessageDigest;
 import java.util.*;
+import javax.imageio.ImageIO;
 
 /** Emit only replacement tag payloads; Python preserves the original SWF container. */
 public class RebuildText {
@@ -19,6 +24,7 @@ public class RebuildText {
     static JsonArray changes = new JsonArray();
     static JsonArray additions = new JsonArray();
     static JsonArray checks = new JsonArray();
+    static JsonArray graphicChecks = new JsonArray();
 
     static String normal(String value) {
         return value.replace("\r\n", "\n").replace('\r', '\n');
@@ -33,10 +39,78 @@ public class RebuildText {
     }
 
     static void emit(Tag tag) throws Exception {
+        emit(tag, tag.getId());
+    }
+
+    static void emit(Tag tag, int sourceCode) throws Exception {
         int id = ((CharacterTag) tag).getCharacterId();
         String file = "tag-" + tag.getId() + "-" + id + ".bin";
         Files.write(out.resolve(file), tag.getData());
-        changes.add(new JsonObject().add("code", tag.getId()).add("id", id).add("file", file));
+        changes.add(new JsonObject().add("code", sourceCode).add("new_code", tag.getId()).add("id", id).add("file", file));
+    }
+
+    static String digest(byte[] data) throws Exception {
+        StringBuilder result = new StringBuilder();
+        for (byte value : MessageDigest.getInstance("SHA-256").digest(data)) result.append(String.format("%02x", value & 255));
+        return result.toString();
+    }
+
+    static String pixels(BufferedImage image) throws Exception {
+        int width = image.getWidth(), height = image.getHeight();
+        ByteBuffer data = ByteBuffer.allocate(8 + width * height * 4);
+        data.putInt(width).putInt(height);
+        for (int pixel : image.getRGB(0, 0, width, height, null, 0, width)) data.putInt(pixel);
+        return digest(data.array());
+    }
+
+    static void graphics(Path list) throws Exception {
+        JsonArray edits = JsonArray.readFrom(new String(Files.readAllBytes(list), StandardCharsets.UTF_8));
+        for (JsonValue value : edits) {
+            JsonObject edit = value.asObject();
+            int id = edit.getInt("symbol_id", -1);
+            CharacterTag original = swf.getCharacter(id);
+            Path file = Paths.get(edit.getString("path", ""));
+            byte[] data = Files.readAllBytes(file);
+            Tag replacement;
+            JsonObject check = new JsonObject().add("symbol_id", id).add("kind", edit.getString("kind", ""));
+            require(original != null, "Unknown graphic symbol: " + file);
+            int sourceCode = original.getId();
+            if (edit.getString("kind", "").equals("images")) {
+                require(original instanceof ImageTag, "Not an image symbol: " + file);
+                require(data.length >= 8 && Arrays.equals(Arrays.copyOf(data, 8),
+                        new byte[]{(byte)137, 80, 78, 71, 13, 10, 26, 10}), "Not a PNG file: " + file);
+                BufferedImage image = ImageIO.read(new ByteArrayInputStream(data));
+                require(image != null, "Cannot decode PNG: " + file);
+                java.awt.Dimension size = ((ImageTag)original).getImageDimension();
+                require(image.getWidth() == size.width && image.getHeight() == size.height,
+                        "PNG dimensions differ from original " + size.width + "x" + size.height + ": " + file);
+                // Lossless2 works in the original SWF versions and retains the alpha channel.
+                DefineBitsLossless2Tag bitmap = new DefineBitsLossless2Tag(swf);
+                bitmap.characterID = id;
+                bitmap.setImage(data);
+                replacement = bitmap;
+                check.add("pixels_sha256", pixels(bitmap.getImageCached().getBufferedImage()));
+            } else {
+                require(original instanceof ShapeTag, "Not a shape symbol: " + file);
+                Set<Integer> before = new HashSet<>(swf.getCharacters(false).keySet());
+                replacement = new SvgImporter().importSvg((ShapeTag)original, new String(data, StandardCharsets.UTF_8));
+                require(replacement instanceof ShapeTag, "Cannot import SVG: " + file);
+                swf.updateCharacters();
+                // SVG patterns may introduce embedded bitmap symbols. Insert them before their shape.
+                for (CharacterTag added : new TreeMap<>(swf.getCharacters(false)).values()) {
+                    if (before.contains(added.getCharacterId())) continue;
+                    require(added instanceof ImageTag, "Unexpected SVG dependency: " + file);
+                    String name = "graphic-" + added.getCharacterId() + ".bin";
+                    Files.write(out.resolve(name), added.getData());
+                    additions.add(new JsonObject().add("code", added.getId()).add("id", added.getCharacterId())
+                            .add("before_character", id).add("file", name));
+                }
+                check.add("payload_sha256", digest(replacement.getData()));
+            }
+            require(((CharacterTag)replacement).getCharacterId() == id, "Graphic symbol ID changed: " + file);
+            emit(replacement, sourceCode);
+            graphicChecks.add(check);
+        }
     }
 
     static int advance(char c, int height) {
@@ -210,6 +284,18 @@ public class RebuildText {
     static void verify(String[] args) throws Exception {
         try (FileInputStream input = new FileInputStream(args[1])) { swf = new SWF(input, false); }
         JsonObject manifest = JsonObject.readFrom(new String(Files.readAllBytes(Paths.get(args[2])), StandardCharsets.UTF_8));
+        for (JsonValue value : manifest.get("graphic_checks").asArray()) {
+            JsonObject check = value.asObject();
+            CharacterTag tag = swf.getCharacter(check.getInt("symbol_id", -1));
+            if (check.getString("kind", "").equals("images")) {
+                require(tag instanceof DefineBitsLossless2Tag, "Saved image is not lossless");
+                require(pixels(((ImageTag)tag).getImageCached().getBufferedImage()).equals(check.getString("pixels_sha256", "")),
+                        "Saved image pixels/alpha differ: " + tag.getCharacterId());
+            } else {
+                require(tag instanceof ShapeTag && digest(tag.getData()).equals(check.getString("payload_sha256", "")),
+                        "Saved SVG shape differs: " + check.getInt("symbol_id", -1));
+            }
+        }
         for (JsonValue v : manifest.get("checks").asArray()) {
             JsonObject check = v.asObject();
             TextTag tag = (TextTag)swf.getCharacter(check.getInt("symbol_id", -1));
@@ -235,13 +321,14 @@ public class RebuildText {
             }
             require(text.toString().equals(entry.getString("[KOR]", "").replace(SEP, "")), "Saved animated phrase mismatch");
         }
-        System.out.println("Saved text, fonts and animated phrases verified.");
+        System.out.println("Saved text, fonts, animated phrases and graphics verified.");
     }
 
     public static void main(String[] args) throws Exception {
         if (args[0].equals("verify")) { verify(args); return; }
         out = Paths.get(args[4]);
         try (FileInputStream input = new FileInputStream(args[0])) { swf = new SWF(input, false); }
+        if (args.length > 6) graphics(Paths.get(args[6]));
         JsonArray entries = JsonArray.readFrom(new String(Files.readAllBytes(Paths.get(args[1])), StandardCharsets.UTF_8));
         Font condensed = Font.createFont(Font.TRUETYPE_FONT, new File(args[2]));
         Font fallback = Font.createFont(Font.TRUETYPE_FONT, new File(args[3]));
@@ -306,7 +393,8 @@ public class RebuildText {
             emit(tag);
             checks.add(new JsonObject().add("id",entry.getString("id", "")).add("symbol_id",entry.getInt("symbol_id", -1)).add("expected", ko));
         }
-        Files.write(out.resolve("changes.json"), new JsonObject().add("replacements",changes).add("additions",additions).add("checks",checks).toString().getBytes(StandardCharsets.UTF_8));
+        Files.write(out.resolve("changes.json"), new JsonObject().add("replacements",changes).add("additions",additions)
+                .add("checks",checks).add("graphic_checks",graphicChecks).toString().getBytes(StandardCharsets.UTF_8));
         System.out.println("Font: " + condensed.getFontName() + "; glyphs: " + font.getCharacterCount() + "; text tags: " + checks.size());
     }
 }

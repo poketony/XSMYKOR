@@ -1,0 +1,12 @@
+[
+xmin 6
+ymin 4
+xmax 1918
+ymax 316
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]接触小委員会

@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 6781
+ymax 3520
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 220
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]地球圏を後にした人類によって設立された、約50万の恒星系自治州からなる巨大な連邦国家。主星はフィフス・エルサレム。約50万にも及ぶ惑星国家から成立している。その大規模かつ広範囲におよぶ連邦の成立には、過去の移動・通信手段と比べて物理的時間的制約を大幅に軽減することが可能となったU.M.N.の存在が大きい。最高決議機関は枢機院である。

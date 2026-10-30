@@ -1,0 +1,23 @@
+[
+xmin 9
+ymin 41
+xmax 2105
+ymax 244
+][
+font 235
+height 220
+letterspacing 49
+color #ffffff
+y 220
+]用語解説…[space 24][
+letterspacing 0
+color #ffcc00
+spacing "i" -10
+spacingpair "S" "-" 23
+spacingpair "-" "D" 11
+spacingpair "D" "i" -5
+spacingpair "v" "i" 25
+spacingpair "s" "i" 25
+spacingpair "o" "n" 23
+spacingpair "n" "" 18
+]S-Division

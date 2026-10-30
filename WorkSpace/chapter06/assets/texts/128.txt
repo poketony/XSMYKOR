@@ -1,0 +1,24 @@
+[
+xmin 23
+ymin 3
+xmax 4408
+ymax 315
+][
+font 103
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ジン・ウヅキ（[
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "田" 71
+spacingpair "田" "中" 71
+spacingpair "中" "秀" 71
+spacingpair "秀" "幸" 71
+spacingpair "幸" "）" 71
+spacingpair "）" "" 71
+]：田中秀幸）

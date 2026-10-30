@@ -1,0 +1,82 @@
+[
+  {
+    "tag_path": "root/105:22",
+    "original_bytes": 102,
+    "rebuilt_bytes": 102
+  },
+  {
+    "tag_path": "root/113:39/tail",
+    "original_bytes": 100,
+    "rebuilt_bytes": null
+  },
+  {
+    "tag_path": "root/178:48",
+    "original_bytes": 3100,
+    "rebuilt_bytes": 3100
+  },
+  {
+    "tag_path": "root/186:48",
+    "original_bytes": 19992,
+    "rebuilt_bytes": 19992
+  },
+  {
+    "tag_path": "root/188:48",
+    "original_bytes": 23,
+    "rebuilt_bytes": 21
+  },
+  {
+    "tag_path": "root/27:22",
+    "original_bytes": 144,
+    "rebuilt_bytes": 143
+  },
+  {
+    "tag_path": "root/29:48",
+    "original_bytes": 23,
+    "rebuilt_bytes": 21
+  },
+  {
+    "tag_path": "root/438:22",
+    "original_bytes": 65,
+    "rebuilt_bytes": 65
+  },
+  {
+    "tag_path": "root/441:48",
+    "original_bytes": 7061,
+    "rebuilt_bytes": 7061
+  },
+  {
+    "tag_path": "root/628:22",
+    "original_bytes": 71,
+    "rebuilt_bytes": 71
+  },
+  {
+    "tag_path": "root/734:22",
+    "original_bytes": 71,
+    "rebuilt_bytes": 71
+  },
+  {
+    "tag_path": "root/74:48",
+    "original_bytes": 702,
+    "rebuilt_bytes": 702
+  },
+  {
+    "tag_path": "root/849:22",
+    "original_bytes": 111657,
+    "rebuilt_bytes": 111414
+  },
+  {
+    "tag_path": "root/873:48",
+    "original_bytes": 4202,
+    "rebuilt_bytes": 4202
+  },
+  {
+    "tag_path": "root/874:48",
+    "original_bytes": 3549,
+    "rebuilt_bytes": 3549
+  },
+  {
+    "tag_path": "root/877:22",
+    "original_bytes": 1871,
+    "rebuilt_bytes": 1865
+  }
+]

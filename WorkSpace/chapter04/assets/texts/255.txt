@@ -1,0 +1,23 @@
+[
+xmin 9
+ymin 41
+xmax 2106
+ymax 244
+][
+font 235
+height 220
+letterspacing 49
+color #ffffff
+y 220
+]用語解説…[space 24][
+letterspacing 0
+color #ffcc00
+spacing "." 12
+spacingpair "E" "." -8
+spacingpair "S" "." 23
+]E.S.[
+resetspacing
+spacingpair "ル" "ベ" 47
+spacingpair "ベ" "ン" 41
+spacingpair "ン" "" 20
+]ルベン

@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5561
+ymax 3060
+wordwrap 1
+multiline 1
+readonly 1
+font 49
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]ツォアル事変の最終局面となる紛争で、シオンの故郷であるミルチアが戦場となり、連邦政府軍とU-TIC機関との激戦が繰り広げられた“ミルチア紛争”を指す。連邦政府軍は、ミルチアに対し三度の降下作戦を実施し、第三次降下作戦の実施には、特殊部隊であるU.R.T.V.も投入している。記録では、第三次降下作戦の折にU-TIC機関創設者であるヨアキム・ミズラヒによって引き起こされたゾハルの暴走が原因で、局所事象変移が起こったとされている。

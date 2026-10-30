@@ -1,0 +1,15 @@
+[
+xmin 21
+ymin 30
+xmax 1155
+ymax 284
+][
+font 58
+height 320
+letterspacing 21
+color #ffffff
+y 280
+spacingpair "U" "." 26
+spacingpair "M" "." 32
+spacingpair "N" "." 44
+]U.M.N.

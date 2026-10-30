@@ -1,0 +1,12 @@
+[
+xmin 26
+ymin 5
+xmax 2225
+ymax 302
+][
+font 103
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ラビュリントス

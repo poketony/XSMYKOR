@@ -1,0 +1,11 @@
+[
+xmin 66
+ymin 28
+xmax 250
+ymax 288
+][
+font 314
+height 320
+color #000000
+y 280
+]？[space 91]

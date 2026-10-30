@@ -1,0 +1,24 @@
+[
+xmin 12
+ymin 6
+xmax 3768
+ymax 315
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ネピリム（[
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "冬" 71
+spacingpair "冬" "馬" 71
+spacingpair "馬" "由" 71
+spacingpair "由" "美" 71
+spacingpair "美" "）" 71
+spacingpair "）" "" 71
+]：冬馬由美）

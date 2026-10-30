@@ -1,0 +1,21 @@
+[
+xmin -222
+ymin -6
+xmax 3080
+ymax 295
+translatex -228
+][
+font 44
+height 400
+letterspacing -45
+color #ffffff
+y 280
+spacing "T" 23
+spacing " " 34
+spacing "E" 1
+spacing "N" 45
+spacing "." 34
+spacingpair "B" "E" 45
+spacingpair "O" "N" 1
+spacingpair "I" "N" 23
+]TO BE CONTINUED...

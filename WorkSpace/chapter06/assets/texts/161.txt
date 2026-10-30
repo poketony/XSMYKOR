@@ -1,0 +1,12 @@
+[
+xmin 10
+ymin 6
+xmax 3191
+ymax 315
+][
+font 103
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]謎のレアリエンの少女

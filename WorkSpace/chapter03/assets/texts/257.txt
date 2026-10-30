@@ -1,0 +1,27 @@
+[
+xmin 21
+ymin 7
+xmax 4370
+ymax 317
+][
+font 58
+height 320
+letterspacing 21
+color #ffffff
+y 280
+spacingpair "U" "." 26
+spacingpair "M" "." 32
+spacingpair "N" "." 44
+]U.M.N.[
+resetspacing
+spacingpair "に" "関" 71
+spacingpair "関" "す" 71
+spacingpair "す" "る" 71
+spacingpair "る" "不" 71
+spacingpair "不" "審" 71
+spacingpair "審" "点" 71
+spacingpair "点" "の" 71
+spacingpair "の" "報" 71
+spacingpair "報" "告" 71
+spacingpair "告" "" 71
+]に関する不審点の報告

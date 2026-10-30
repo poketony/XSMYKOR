@@ -1,0 +1,12 @@
+[
+xmin 33
+ymin 7
+xmax 1581
+ymax 303
+][
+font 113
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ヴェクター

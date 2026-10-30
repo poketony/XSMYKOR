@@ -1,0 +1,40 @@
+[
+xmin 7
+ymin 41
+xmax 3819
+ymax 524
+][
+font 96
+height 220
+letterspacing 49
+color #000000
+y 220
+]用語解説…[space 24][
+letterspacing 0
+color #ff6600
+x 0
+y 500
+spacingpair "シ" "オ" 23
+spacingpair "オ" "ン" 39
+spacingpair "ン" "・" 19
+spacingpair "・" "ウ" -61
+spacingpair "ウ" "ヅ" 6
+spacingpair "ヅ" "キ" 37
+spacingpair "キ" "（" 32
+spacingpair "（" "少" -61
+spacingpair "少" "女" 49
+spacingpair "女" "時" 49
+spacingpair "時" "代" 49
+spacingpair "代" "）" 49
+spacingpair "）" "" -61
+]シオン・ウヅキ（少女時代）[
+color #000000
+]、[space -25][
+color #ff6600
+spacing "ウ" 6
+spacingpair "ス" "オ" 35
+spacingpair "オ" "ウ" 39
+spacingpair "・" "ウ" -61
+spacingpair "ヅ" "キ" 37
+spacingpair "キ" "" 32
+]スオウ・ウヅキ

@@ -1,0 +1,12 @@
+[
+xmin 48
+ymin 23
+xmax 1586
+ymax 304
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]レアリエン

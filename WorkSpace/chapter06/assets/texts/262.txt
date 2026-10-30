@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 6781
+ymax 3520
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 220
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]仮想空間内の侵入者を自動で算出し、それを除去する役割をもったプログラムのこと。 これに駆逐されるということは、侵入者の精神が駆逐されるという意味合いもあり、駆逐された場合は、現実世界において精神破綻を起こすことが確認されている。プログラム名は、ヒトの身体に侵入する細菌を食べる細胞（マクロファージ）から名付けられた。

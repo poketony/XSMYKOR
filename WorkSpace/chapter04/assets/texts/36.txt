@@ -1,0 +1,21 @@
+[
+xmin 16
+ymin 36
+xmax 987
+ymax 244
+][
+font 33
+height 280
+letterspacing -46
+color #ffffff
+y 240
+spacingpair "L" "O" 14
+spacingpair "A" "D" 15
+spacingpair "I" "N" 10
+spacingpair "N" "G" 15
+spacingpair "G" "" -6
+]LOADING[
+font 35
+height 280
+letterspacing 0
+].[space -3]

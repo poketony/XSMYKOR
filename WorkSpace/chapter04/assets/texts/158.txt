@@ -1,0 +1,12 @@
+[
+xmin 29
+ymin 7
+xmax 1912
+ymax 313
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ミルチア紛争

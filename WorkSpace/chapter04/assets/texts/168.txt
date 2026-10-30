@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 4501
+ymax 4460
+wordwrap 1
+multiline 1
+readonly 1
+font 49
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 20
+]劇中、度々シオンの前に現れるレアリエン。自分の妹達を救ってくれるように懇願し、人も物もすべての意識が存在するためにも、ゾハルの制御システムを破壊して、未来を変えて欲しいとシオンに望みを託す。

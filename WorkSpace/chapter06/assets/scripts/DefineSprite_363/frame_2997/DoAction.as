@@ -1,0 +1,1 @@
+this.fadeOutBGM(1);

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 22,
+    "name": "_ゴシック",
+    "flags": 4,
+    "language_code": 2,
+    "glyph_count": 0
+  },
+  {
+    "id": 33,
+    "name": "HelveticaNeue Condensed",
+    "flags": 4,
+    "language_code": 1,
+    "glyph_count": 7
+  },
+  {
+    "id": 35,
+    "name": "ヒラギノ角ゴ Pro W3",
+    "flags": 4,
+    "language_code": 2,
+    "glyph_count": 1
+  },
+  {
+    "id": 47,
+    "name": "A-OTF 新ゴ Pro B",
+    "flags": 4,
+    "language_code": 2,
+    "glyph_count": 129
+  },
+  {
+    "id": 49,
+    "name": "_ゴシック",
+    "flags": 4,
+    "language_code": 2,
+    "glyph_count": 0
+  },
+  {
+    "id": 144,
+    "name": "Univers 57 Condensed",
+    "flags": 4,
+    "language_code": 1,
+    "glyph_count": 12
+  },
+  {
+    "id": 159,
+    "name": "Osaka",
+    "flags": 4,
+    "language_code": 2,
+    "glyph_count": 59
+  },
+  {
+    "id": 255,
+    "name": "A-OTF 新ゴ Pro M",
+    "flags": 4,
+    "language_code": 2,
+    "glyph_count": 27
+  }
+]

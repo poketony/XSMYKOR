@@ -1,0 +1,25 @@
+[
+xmin 9
+ymin 7
+xmax 4315
+ymax 313
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]百式（量産型）[space -129]（[space 71][
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "野" 71
+spacingpair "野" "中" 71
+spacingpair "中" "" 71
+]：野中 [space 27][
+resetspacing
+spacingpair "藍" "）" 71
+spacingpair "）" "" 71
+]藍）

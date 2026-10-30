@@ -1,0 +1,11 @@
+[
+xmin 6
+ymin 12
+xmax 313
+ymax 309
+][
+font 314
+height 320
+color #000000
+y 280
+]憶[space 91]

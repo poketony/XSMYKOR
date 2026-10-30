@@ -1,0 +1,12 @@
+[
+xmin 9
+ymin 8
+xmax 2050
+ymax 313
+][
+font 58
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]百式（量産型）

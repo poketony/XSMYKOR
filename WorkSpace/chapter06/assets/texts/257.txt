@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 4761
+ymax 4460
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 20
+]物腰が柔らかな紳士然としているが、ある目的の達成のため、グリモアの少女とレメゲトンの断章を捜している。今から数千年前、ヴェクターのゾハル解析プロジェクトに参加していたプログラマーであり、グノーシス召還プログラム“レメゲトン”の製作者。

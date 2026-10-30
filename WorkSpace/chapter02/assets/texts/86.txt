@@ -1,0 +1,20 @@
+[
+xmin 64
+ymin 6
+xmax 2113
+ymax 313
+][
+font 47
+height 320
+color #ffffff
+y 280
+spacingpair "1" "4" 100
+spacingpair "4" "" 101
+]14[
+resetspacing
+spacingpair "年" "前" 71
+spacingpair "前" "の" 71
+spacingpair "の" "紛" 71
+spacingpair "紛" "争" 71
+spacingpair "争" "" 71
+]年前の紛争

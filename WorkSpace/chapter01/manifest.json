@@ -1,0 +1,31 @@
+{
+  "original": "original_asset/XS II to III - One Year Missing - Chapter 01.swf",
+  "original_sha256": "b4555bda19166f66a67c23b835a92bce61e2986285952a3afe633e6aa32cebc3",
+  "tool": "JPEXS FFDec 26.4.0",
+  "export_counts": {
+    "texts": 49,
+    "images": 41,
+    "shapes": 47,
+    "fonts": 7,
+    "movies": 1,
+    "sounds": 27,
+    "scripts": 108
+  },
+  "catalog_rows": {
+    "text": 49,
+    "script_literal": 27
+  },
+  "original_warnings": [],
+  "xml_roundtrip": {
+    "uncompressed_byte_identical": false,
+    "original_payload_records": 21702,
+    "rebuilt_payload_records": 21702,
+    "changed_payloads": 7,
+    "changed_tag_types": {
+      "22": 3,
+      "48": 4
+    }
+  },
+  "playback_verified": false,
+  "tool_warning_counts": {}
+}

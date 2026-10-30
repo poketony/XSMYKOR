@@ -1,0 +1,12 @@
+[
+xmin 15
+ymin 6
+xmax 4474
+ymax 315
+][
+font 58
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]グリモアの少女についての考察

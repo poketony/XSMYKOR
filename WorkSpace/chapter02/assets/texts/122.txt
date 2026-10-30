@@ -1,0 +1,12 @@
+[
+xmin 37
+ymin 7
+xmax 2844
+ymax 305
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ヨアキム・ミズラヒ

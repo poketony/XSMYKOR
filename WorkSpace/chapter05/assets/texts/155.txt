@@ -1,0 +1,24 @@
+[
+xmin 18
+ymin 6
+xmax 4728
+ymax 315
+][
+font 113
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ユリ・ミズラヒ（[
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "進" 71
+spacingpair "進" "藤" 71
+spacingpair "藤" "尚" 71
+spacingpair "尚" "美" 71
+spacingpair "美" "）" 71
+spacingpair "）" "" 71
+]：進藤尚美）

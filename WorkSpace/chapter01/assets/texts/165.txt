@@ -1,0 +1,17 @@
+[
+xmin 168
+ymin 6
+xmax 4635
+ymax 717
+translatex 160
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+x 160
+y 280
+]「グリモアの少女」に関する[
+x 0
+y 680
+]接触小委員会による調査報告書

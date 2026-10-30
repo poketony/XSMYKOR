@@ -1,0 +1,24 @@
+[
+xmin 95
+ymin 6
+xmax 3982
+ymax 315
+][
+font 58
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ドクトゥス（[
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "朴" 71
+spacingpair "朴" "" 71
+]：朴 [space 27]　[space 71] [space 27][
+resetspacing
+spacingpair "美" "）" 71
+spacingpair "）" "" 71
+]美）

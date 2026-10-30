@@ -1,0 +1,13 @@
+[
+xmin 68
+ymin 5
+xmax 4726
+ymax 257
+translatex 60
+][
+font 47
+height 260
+letterspacing 58
+color #ffffff
+y 220
+]事件現場において保護した少女について

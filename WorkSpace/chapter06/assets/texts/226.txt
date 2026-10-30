@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 4761
+ymax 4460
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 20
+]フェブロニアの妹であるレアリエン。セシリーはセシリアの愛称。キャスはカタリナの愛称。フェブロニアは、人とウ・ドゥによる呪縛＝ゾハル制御システムからの二人の解放をシオンに求めた。

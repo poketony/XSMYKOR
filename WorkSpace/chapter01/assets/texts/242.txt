@@ -1,0 +1,50 @@
+[
+xmin 10
+ymin 38
+xmax 2092
+ymax 961
+][
+font 149
+height 220
+color #ffffff
+y 220
+spacingpair "キ" "ャ" 32
+spacingpair "ャ" "ラ" 1
+spacingpair "ラ" "ク" 16
+spacingpair "ク" "タ" 12
+spacingpair "タ" "ー" 18
+spacingpair "ー" "紹" 32
+spacingpair "紹" "介" 49
+spacingpair "介" "" 49
+]キャラクター紹介…[space 24][
+color #ffcc00
+x 0
+y 580
+spacingpair "ド" "ク" -27
+spacingpair "ク" "ト" 12
+spacingpair "ト" "ゥ" -28
+spacingpair "ゥ" "ス" -24
+spacingpair "ス" "" 35
+]ドクトゥス[
+color #ffffff
+]、[space -25][
+color #ffcc00
+]　[space -106][
+resetspacing
+spacing "S" 23
+spacingpair "K" "O" -1
+spacingpair "-" "M" 11
+spacingpair "M" "O" -9
+]KO[space 3]S-MO[space 2]S、[space -25][
+x 0
+y 940
+spacing "の" 40
+spacingpair "謎" "の" 49
+spacingpair "レ" "ア" 10
+spacingpair "ア" "リ" 17
+spacingpair "リ" "エ" -26
+spacingpair "エ" "ン" 32
+spacingpair "ン" "の" 20
+spacingpair "少" "女" 49
+spacingpair "女" "" 49
+]謎のレアリエンの少女

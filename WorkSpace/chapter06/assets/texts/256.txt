@@ -1,0 +1,30 @@
+[
+xmin 15
+ymin 6
+xmax 5151
+ymax 309
+][
+font 103
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]グリモア・ヴェルム[
+font 103
+height 280
+letterspacing 0
+]（[space 62][
+resetspacing
+spacingpair "c" "v" 68
+spacingpair "v" "" 68
+]cv[
+resetspacing
+spacingpair "：" "土" 62
+spacingpair "土" "師" 62
+spacingpair "師" "" 62
+]：土師 [space 23][
+resetspacing
+spacingpair "孝" "也" 62
+spacingpair "也" "）" 62
+spacingpair "）" "" 62
+]孝也）

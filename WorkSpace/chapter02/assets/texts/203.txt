@@ -1,0 +1,46 @@
+[
+xmin 10
+ymin 36
+xmax 5342
+ymax 242
+][
+font 159
+height 220
+color #ffcc00
+y 220
+spacingpair "ミ" "ズ" -6
+spacingpair "ズ" "ラ" 42
+spacingpair "ラ" "ヒ" 16
+spacingpair "ヒ" "脳" -7
+spacingpair "脳" "物" 49
+spacingpair "物" "理" 49
+spacingpair "理" "学" 49
+spacingpair "学" "研" 49
+spacingpair "研" "究" 49
+spacingpair "究" "所" 49
+spacingpair "所" "" 49
+]ミズラヒ脳物理学研究所[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ヨ" "ア" -6
+spacingpair "ア" "キ" 16
+spacingpair "キ" "ム" 32
+spacingpair "ム" "・" 30
+spacingpair "・" "ミ" -61
+spacingpair "ミ" "ズ" -6
+spacingpair "ズ" "ラ" 42
+spacingpair "ラ" "ヒ" 16
+spacingpair "ヒ" "" -7
+]ヨアキム・ミズラヒ[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ユ" "リ" 42
+spacingpair "リ" "・" -26
+spacingpair "・" "ミ" -61
+spacingpair "ミ" "ズ" -6
+spacingpair "ズ" "ラ" 42
+spacingpair "ラ" "ヒ" 16
+spacingpair "ヒ" "" -7
+]ユリ・ミズラヒ

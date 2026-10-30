@@ -1,0 +1,24 @@
+[
+xmin 31
+ymin 10
+xmax 3698
+ymax 1351
+][
+font 314
+height 320
+color #000000
+x 1540
+y 280
+spacingpair "違" "う" 91
+spacingpair "う" "" 91
+]違う[
+letterspacing 91
+x 340
+y 800
+]これは少女の[
+resetspacing
+spacing "—" 55
+]———[
+x 0
+y 1320
+]アルマデルの記憶だった

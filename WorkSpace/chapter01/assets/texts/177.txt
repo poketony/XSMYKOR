@@ -1,0 +1,23 @@
+[
+xmin 10
+ymin 38
+xmax 2137
+ymax 243
+][
+font 149
+height 220
+color #ffffff
+y 220
+spacingpair "キ" "ャ" 32
+spacingpair "ャ" "ラ" 1
+spacingpair "ラ" "ク" 16
+spacingpair "ク" "タ" 12
+spacingpair "タ" "ー" 18
+spacingpair "ー" "紹" 32
+spacingpair "紹" "介" 49
+spacingpair "介" "" 49
+]キャラクター紹介…[space 24][
+color #ffcc00
+spacingpair "ユ" "リ" 42
+spacingpair "リ" "" -26
+]ユリ

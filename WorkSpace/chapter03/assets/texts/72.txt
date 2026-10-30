@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5101
+ymax 2484
+wordwrap 1
+multiline 1
+readonly 1
+font 60
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]グノーシス現象に対処するため、連邦政府によって設立された研究委員会。小委員会といっても、その構成人員は各関係省庁、財界人、各専門分野の研究者達と多岐にわたり、全体数で約２０００人。その中枢機能である専門委員は７名で構成されており、ユリ・ミズラヒもその一人である。

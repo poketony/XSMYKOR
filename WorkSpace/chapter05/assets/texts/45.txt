@@ -1,0 +1,14 @@
+[
+xmin 24
+ymin 0
+xmax 619
+ymax 202
+][
+font 44
+height 280
+color #ffffff
+y 200
+spacingpair "E" "X" -31
+spacingpair "X" "T" -15
+spacingpair "T" "" -16
+]NEXT

@@ -1,0 +1,24 @@
+[
+xmin 2
+ymin 6
+xmax 3128
+ymax 314
+][
+font 113
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]艦長（[
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "幹" 71
+spacingpair "幹" "本" 71
+spacingpair "本" "雄" 71
+spacingpair "雄" "之" 71
+spacingpair "之" "）" 71
+spacingpair "）" "" 71
+]：幹本雄之）

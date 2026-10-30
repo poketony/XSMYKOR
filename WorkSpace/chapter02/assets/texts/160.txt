@@ -1,0 +1,40 @@
+[
+xmin 7
+ymin 38
+xmax 2219
+ymax 600
+][
+font 159
+height 220
+color #ffffff
+y 220
+spacingpair "キ" "ャ" 32
+spacingpair "ャ" "ラ" 1
+spacingpair "ラ" "ク" 16
+spacingpair "ク" "タ" 12
+spacingpair "タ" "ー" 18
+spacingpair "ー" "紹" 32
+spacingpair "紹" "介" 49
+spacingpair "介" "" 49
+]キャラクター紹介…[space 24][
+color #ffcc00
+x 0
+y 580
+spacingpair "シ" "オ" 23
+spacingpair "オ" "ン" 39
+spacingpair "ン" "" 19
+]シオン[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacing "S" 23
+spacingpair "K" "O" -1
+spacingpair "-" "M" 11
+spacingpair "M" "O" -9
+]KO[space 3]S-MO[space 2]S[
+color #ffffff
+]、[space -25][
+color #ffcc00
+spacingpair "ユ" "リ" 42
+spacingpair "リ" "" -26
+]ユリ

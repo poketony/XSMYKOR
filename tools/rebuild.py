@@ -1,4 +1,4 @@
-"""Rebuild selected Japanese SWFs using nonempty [KOR] in the chapter JSON files."""
+"""Rebuild SWFs from chapter translations and editable WorkSpace graphics."""
 
 import argparse
 import hashlib
@@ -10,6 +10,7 @@ import struct
 import subprocess
 import sys
 import tempfile
+import xml.etree.ElementTree as ET
 import zlib
 
 
@@ -18,6 +19,7 @@ LAB = ROOT / "codex-lab"
 BUILD = LAB / "build"
 FFDEC = LAB / "tools/ffdec_26.4.0/ffdec.jar"
 SEP = "\n--- RECORDSEPARATOR ---\n"
+CHARACTER_CODES = {2, 6, 11, 20, 21, 22, 32, 33, 35, 36, 37, 39, 48, 83, 90}
 
 
 def require(condition, message):
@@ -94,14 +96,14 @@ def replace_tags(raw, replacements, additions, action_changes):
         frame = 1
         entries, tail = tags(container)
         for index, (code, payload, original) in enumerate(entries):
-            identifier = int.from_bytes(payload[:2], "little") if code in (11, 33, 37, 39, 48) else None
-            if owner == 0 and code == 39:
+            identifier = int.from_bytes(payload[:2], "little") if code in CHARACTER_CODES else None
+            if owner == 0 and identifier is not None:
                 for addition in additions:
-                    if addition["before_sprite"] == identifier:
+                    if addition.get("before_character", addition.get("before_sprite")) == identifier:
                         output.extend(pack_tag(addition["code"], addition["payload"]))
                         inserted.add(addition["id"])
             if (code, identifier) in replacements:
-                output.extend(pack_tag(code, replacements[code, identifier]))
+                output.extend(pack_tag(*replacements[code, identifier]))
                 used.add((code, identifier))
             elif code == 39:
                 child = walk(payload[4:], identifier)
@@ -133,21 +135,25 @@ def verify_preservation(before, after, replacements, additions, action_changes, 
         new_tags, new_tail = tags(right)
         require(old_tail == new_tail, f"Opaque trailer changed in sprite {owner}")
         if owner == 0:
-            new_tags = [t for t in new_tags if not (t[0] in (11, 33) and int.from_bytes(t[1][:2], "little") in new_ids)]
+            added = {int.from_bytes(t[1][:2], "little"): (t[0], t[1]) for t in new_tags
+                     if t[0] in CHARACTER_CODES and int.from_bytes(t[1][:2], "little") in new_ids}
+            require(added == {a["id"]: (a["code"], a["payload"]) for a in additions}, "Added symbol payload differs")
+            new_tags = [t for t in new_tags if not (t[0] in CHARACTER_CODES and int.from_bytes(t[1][:2], "little") in new_ids)]
         require(len(old_tags) == len(new_tags), "Existing tag count changed")
         frame = 1
         for index, ((code, old, _), (new_code, new, _)) in enumerate(zip(old_tags, new_tags)):
-            require(code == new_code, "Tag order changed")
-            identifier = int.from_bytes(old[:2], "little") if code in (11, 33, 37, 39, 48) else None
+            identifier = int.from_bytes(old[:2], "little") if code in CHARACTER_CODES else None
+            replacement = replacements.get((code, identifier))
+            require(new_code == (replacement[0] if replacement else code), "Tag order/type changed")
             if code == 39:
                 require(old[:4] == new[:4], "Sprite ID/frame count changed")
                 walk(old[4:], new[4:], identifier)
             else:
                 checked += 1
-                if old != new:
+                if code != new_code or old != new:
                     changed += 1
                     if (code, identifier) in replacements:
-                        require(new == replacements[code, identifier], "Text/font replacement differs")
+                        require((new_code, new) == replacement, "Replacement payload differs")
                     elif (owner, frame, index) in action_changes:
                         require(new == action_changes[owner, frame, index], "Script replacement differs")
                     else:
@@ -178,17 +184,48 @@ def literal(value):
     return json.dumps(value, ensure_ascii=False)
 
 
+def graphics_inputs(chapter, original_hash):
+    folder = ROOT / f"WorkSpace/chapter{chapter:02}"
+    baseline = folder / "graphics-baseline.json"
+    require(baseline.is_file(), f"그래픽 작업 기준 파일이 없습니다: {baseline}")
+    manifest = read(baseline)
+    require(manifest["chapter"] == chapter and manifest["original_sha256"] == original_hash,
+            f"그래픽 작업본의 장/원본 해시가 다릅니다: {baseline}")
+    hashes, edits = {}, []
+    for name, expected in manifest["files"].items():
+        relative = Path(name)
+        require(len(relative.parts) == 3 and relative.parts[0] == "assets" and
+                (relative.parts[1], relative.suffix) in {("images", ".png"), ("shapes", ".svg")} and
+                relative.stem.isascii() and relative.stem.isdecimal(), f"잘못된 그래픽 경로: {name}")
+        path = folder / relative
+        require(path.is_file(), f"그래픽 파일이 없습니다: {path}")
+        hashes[name] = sha(path)
+        if hashes[name] != expected:
+            if relative.suffix == ".svg":
+                try:
+                    document = ET.parse(path)
+                except ET.ParseError as error:
+                    raise ValueError(f"잘못된 SVG 파일: {path}: {error}") from error
+                require(document.getroot().tag == "{http://www.w3.org/2000/svg}svg", f"SVG 루트가 올바르지 않습니다: {path}")
+            edits.append({"path": str(path), "symbol_id": int(relative.stem), "kind": relative.parts[1]})
+    actual = {p.relative_to(folder).as_posix() for category, suffix in (("images", ".png"), ("shapes", ".svg"))
+              for p in (folder / "assets" / category).iterdir() if p.suffix.lower() == suffix}
+    require(actual == hashes.keys(), "그래픽 파일명이 기준 목록과 다릅니다. 심벌 번호와 확장자를 유지하세요.")
+    return folder, sha(baseline), hashes, edits
+
+
 def build(chapter, font, fallback, classes):
     original = ROOT / f"original_asset/XS II to III - One Year Missing - Chapter {chapter:02}.swf"
     translation = ROOT / f"WorkSpace/translations/chapter{chapter:02}.json"
     original_hash, translation_hash = sha(original), sha(translation)
+    graphics_folder, baseline_hash, graphics_hashes, graphics_edits = graphics_inputs(chapter, original_hash)
     entries = read(translation)
     require(len({e["id"] for e in entries}) == len(entries), "Duplicate record IDs")
     require(all(isinstance(e.get("[KOR]", ""), str) for e in entries), "[KOR] must be a string")
     source = raw_swf(original)
     log = BUILD / f"chapter{chapter:02}-build.log"
     log.write_text("", encoding="utf-8")
-    print(f"\nChapter {chapter:02}: scripts, text and embedded Galmuri11 Condensed...", flush=True)
+    print(f"\nChapter {chapter:02}: scripts, text, embedded font and {len(graphics_edits)} edited graphics...", flush=True)
     # This context owns only the newly created run directory, never user inputs.
     with tempfile.TemporaryDirectory(prefix=f"chapter{chapter:02}-", dir=BUILD) as temporary:
         work = Path(temporary).resolve()
@@ -233,12 +270,15 @@ def build(chapter, font, fallback, classes):
                 require(actual.strip() == wanted.strip(), f"Recompiled script differs: {relative}")
         payload_folder = work / "text"
         payload_folder.mkdir()
+        graphics_file = work / "graphics.json"
+        graphics_file.write_text(json.dumps(graphics_edits, ensure_ascii=False), encoding="utf-8")
         library = str(FFDEC.parent / "lib/*")
         classpath = library + os.pathsep + str(classes)
         run(["java", "-Xmx2g", "-Djava.awt.headless=true", "-cp", classpath, "RebuildText",
-             original, translation, font, fallback, payload_folder, chapter], log)
+             original, translation, font, fallback, payload_folder, chapter, graphics_file], log)
         manifest = read(payload_folder / "changes.json")
-        replacements = {(e["code"], e["id"]): (payload_folder / e["file"]).read_bytes() for e in manifest["replacements"]}
+        replacements = {(e["code"], e["id"]): (e.get("new_code", e["code"]), (payload_folder / e["file"]).read_bytes())
+                        for e in manifest["replacements"]}
         additions = [dict(e, payload=(payload_folder / e["file"]).read_bytes()) for e in manifest["additions"]]
         final = replace_tags(source, replacements, additions, action_changes)
         owners = {e["layout_owner_sprite"] for e in entries if e.get("animated_glyph_instances") and e.get("[KOR]", "").strip()}
@@ -248,12 +288,18 @@ def build(chapter, font, fallback, classes):
         run(["java", "-Xmx2g", "-Djava.awt.headless=true", "-cp", classpath, "RebuildText",
              "verify", candidate, payload_folder / "changes.json", translation], log)
         require(sha(original) == original_hash and sha(translation) == translation_hash, "Input changed while building")
+        _, current_baseline, current_graphics, _ = graphics_inputs(chapter, original_hash)
+        require(current_baseline == baseline_hash and current_graphics == graphics_hashes,
+                "Graphic input changed while building")
         output = BUILD / f"chapter{chapter:02}-ko.swf"
         candidate.replace(output)
         report = dict(verification, chapter=chapter, original_sha256=original_hash, translation_sha256=translation_hash,
                       output_sha256=sha(output), font="Galmuri11 Condensed", font_file_sha256=sha(font),
                       script_records_applied=applied_scripts, text_tags_applied=len(manifest["checks"]),
-                      animated_phrase_count=len(owners), new_glyph_symbols=len(additions),
+                      graphics_applied=len(graphics_edits), graphics_verified=True,
+                      graphics_inputs={"folder": graphics_folder.relative_to(ROOT).as_posix(), "files": graphics_hashes},
+                      animated_phrase_count=len(owners), new_glyph_symbols=sum("before_sprite" in a for a in additions),
+                      new_graphic_symbols=sum("before_character" in a for a in additions),
                       empty_kor_keeps_japanese=True, roundtrip_text_verified=True, runtime_verified=False)
         (BUILD / f"chapter{chapter:02}-verification.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"OK: {output}", flush=True)

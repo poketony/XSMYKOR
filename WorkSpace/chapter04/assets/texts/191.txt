@@ -1,0 +1,12 @@
+[
+xmin 48
+ymin 5
+xmax 2553
+ymax 314
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]レメゲトンの断章

@@ -1,0 +1,19 @@
+[
+xmin 23
+ymin 16
+xmax 1651
+ymax 307
+][
+font 113
+height 320
+color #ffffff
+y 280
+spacing "." 21
+spacingpair "E" "." 47
+spacingpair "S" "." 101
+]E.S.[
+resetspacing
+spacingpair "ル" "ベ" 71
+spacingpair "ベ" "ン" 71
+spacingpair "ン" "" 71
+]ルベン

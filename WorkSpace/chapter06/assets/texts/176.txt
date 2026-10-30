@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5101
+ymax 2720
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 20
+]U−TIC機関が設立される以前、ヨアキム・ミズラヒが所長を務めていた研究所。脳神経学と事象物理学とを統合した特殊な研究所で、ヴェクターがそのスポンサードをしていた。レメゲトンを再生させ、ネピリムの歌声システムを完成させるが、その際に特異タイプのレアリエンを献体として使用している。

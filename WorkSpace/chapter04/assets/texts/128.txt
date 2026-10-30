@@ -1,0 +1,12 @@
+[
+xmin 12
+ymin 8
+xmax 1266
+ymax 302
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ネピリム

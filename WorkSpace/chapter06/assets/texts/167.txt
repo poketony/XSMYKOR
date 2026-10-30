@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5101
+ymax 2484
+wordwrap 1
+multiline 1
+readonly 1
+font 105
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]遥か数千年前に失われた、人類の故郷。地球。現在はその場所がどこにあったのかさえ判らなくなっている。

@@ -1,0 +1,12 @@
+[
+xmin 95
+ymin 14
+xmax 1585
+ymax 307
+][
+font 47
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ドクトゥス

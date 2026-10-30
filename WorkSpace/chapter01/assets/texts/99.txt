@@ -1,0 +1,29 @@
+[
+xmin 21
+ymin 8
+xmax 4584
+ymax 313
+][
+font 47
+height 320
+color #ffffff
+y 280
+spacing "O" 47
+spacing "S" 101
+spacingpair "K" "O" 47
+spacingpair "-" "M" 11
+spacingpair "M" "O" 53
+]KOS-MOS（[space 71][
+resetspacing
+spacingpair "c" "v" 77
+spacingpair "v" "" 77
+]cv[
+resetspacing
+spacingpair "：" "鈴" 71
+spacingpair "鈴" "木" 71
+spacingpair "木" "麻" 71
+spacingpair "麻" "里" 71
+spacingpair "里" "子" 71
+spacingpair "子" "）" 71
+spacingpair "）" "" 71
+]：鈴木麻里子）

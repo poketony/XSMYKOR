@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5101
+ymax 2720
+wordwrap 1
+multiline 1
+readonly 1
+font 115
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 20
+]実数領域と相反する領域である虚数領域との境界が曖昧となり、空間の構造体そのものが変化する現象。劇中で、ゾハルの暴走等によって引き起こされる現象であり、ミルチアやアリアドネ、ロスト・エルサレムの消滅も局所事象変移によるものである。この局所変移は、EPRレーダーによって確認することができる

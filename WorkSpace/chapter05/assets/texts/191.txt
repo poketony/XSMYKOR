@@ -1,0 +1,12 @@
+[
+xmin 18
+ymin 7
+xmax 2204
+ymax 305
+][
+font 113
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ユリ・ミズラヒ

@@ -1,0 +1,12 @@
+[
+xmin 19
+ymin 6
+xmax 2233
+ymax 307
+][
+font 103
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]マクロファージ

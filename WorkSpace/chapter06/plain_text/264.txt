@@ -1,0 +1,5 @@
+KOS-MOS 
+--- RECORDSEPARATOR ---
+バージョン
+--- RECORDSEPARATOR ---
+3

@@ -1,0 +1,12 @@
+[
+xmin 34
+ymin 20
+xmax 2866
+ymax 307
+][
+font 58
+height 320
+letterspacing 71
+color #ffffff
+y 280
+]ロスト・エルサレム

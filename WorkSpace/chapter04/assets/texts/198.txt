@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 5261
+ymax 2784
+wordwrap 1
+multiline 1
+readonly 1
+font 49
+height 240
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]ヴェクター製のE.S.。元は接触小委員会へ研究用として貸与されていた機体だが、今回の事件調査の為、メインパイロット候補としてジン・ウヅキを指名し、彼のコンディションに合わせ再調整されている。現在はまだ、プロトタイプの試験段階機体。
