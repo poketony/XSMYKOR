@@ -751,8 +751,8 @@
     "source": "plain_text/34.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING",
-    "[KOR]": "불러오는 중",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch02:text36",
@@ -761,8 +761,8 @@
     "source": "plain_text/36.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n.",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n.",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n.",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch02:text37",
@@ -771,8 +771,8 @@
     "source": "plain_text/37.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n..",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n..",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n..",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch02:text38",
@@ -781,8 +781,8 @@
     "source": "plain_text/38.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n...",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n...",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n...",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch02:text39",
@@ -791,8 +791,8 @@
     "source": "plain_text/39.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n....",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n....",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n....",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch02:text48",
@@ -841,7 +841,7 @@
     "source": "plain_text/65.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "シオン・ウヅキ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：前田愛）",
-    "[KOR]": "시온 우즈키(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 마에다 아이)",
+    "[KOR]": "시온 우즈키(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 마에다 아이)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -861,7 +861,7 @@
     "source": "plain_text/72.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ジン・ウヅキ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：田中秀幸）",
-    "[KOR]": "진 우즈키(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 타나카 히데유키)",
+    "[KOR]": "진 우즈키(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 타나카 히데유키)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -961,7 +961,7 @@
     "source": "plain_text/89.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ユリ・ミズラヒ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：進藤尚美）",
-    "[KOR]": "유리 미즈라히(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 신도 나오미)",
+    "[KOR]": "유리 미즈라히(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 신도 나오미)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -981,7 +981,7 @@
     "source": "plain_text/94.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ドクトゥス（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：朴\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n美）",
-    "[KOR]": "도크투스(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 박\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n로미)",
+    "[KOR]": "도크투스(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 박\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n로미)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1001,7 +1001,7 @@
     "source": "plain_text/100.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "KOS-MOS\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：鈴木麻里子）",
-    "[KOR]": "KOS-MOS\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 스즈키 마리코)",
+    "[KOR]": "KOS-MOS\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 스즈키 마리코)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1181,7 +1181,7 @@
     "source": "plain_text/131.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ネピリム（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：冬馬由美）",
-    "[KOR]": "네피림(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 토마 유미)",
+    "[KOR]": "네피림(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 토마 유미)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1201,8 +1201,8 @@
     "source": "plain_text/145.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "NEXT",
-    "[KOR]": "다음",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "NEXT",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch02:text160",
@@ -1351,7 +1351,7 @@
     "source": "plain_text/314.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "TO BE CONTINUED...",
-    "[KOR]": "다음에 계속…",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "TO BE CONTINUED...",
+    "review_status": "retained_english_original"
   }
 ]

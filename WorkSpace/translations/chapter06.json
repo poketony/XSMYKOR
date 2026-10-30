@@ -289,8 +289,8 @@
     "source": "plain_text/30.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING",
-    "[KOR]": "불러오는 중",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch06:text32",
@@ -299,8 +299,8 @@
     "source": "plain_text/32.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n.",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n.",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n.",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch06:text33",
@@ -309,8 +309,8 @@
     "source": "plain_text/33.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n..",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n..",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n..",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch06:text34",
@@ -319,8 +319,8 @@
     "source": "plain_text/34.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n...",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n...",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n...",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch06:text35",
@@ -329,8 +329,8 @@
     "source": "plain_text/35.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "LOADING\n--- RECORDSEPARATOR ---\n....",
-    "[KOR]": "불러오는 중\n--- RECORDSEPARATOR ---\n....",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "LOADING\n--- RECORDSEPARATOR ---\n....",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch06:text45",
@@ -339,8 +339,8 @@
     "source": "plain_text/45.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "NEXT",
-    "[KOR]": "다음",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "NEXT",
+    "review_status": "retained_english_original"
   },
   {
     "id": "ch06:text97",
@@ -399,7 +399,7 @@
     "source": "plain_text/121.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "シオン・ウヅキ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：前田愛）",
-    "[KOR]": "시온 우즈키(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 마에다 아이)",
+    "[KOR]": "시온 우즈키(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 마에다 아이)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -419,7 +419,7 @@
     "source": "plain_text/128.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ジン・ウヅキ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：田中秀幸）",
-    "[KOR]": "진 우즈키(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 타나카 히데유키)",
+    "[KOR]": "진 우즈키(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 타나카 히데유키)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -519,7 +519,7 @@
     "source": "plain_text/145.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ユリ・ミズラヒ（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：進藤尚美）",
-    "[KOR]": "유리 미즈라히(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 신도 나오미)",
+    "[KOR]": "유리 미즈라히(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 신도 나오미)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -539,7 +539,7 @@
     "source": "plain_text/150.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ドクトゥス（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：朴\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n美）",
-    "[KOR]": "도크투스(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 박\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n로미)",
+    "[KOR]": "도크투스(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 박\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n로미)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -559,7 +559,7 @@
     "source": "plain_text/156.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "KOS-MOS\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：鈴木麻里子）",
-    "[KOR]": "KOS-MOS\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 스즈키 마리코)",
+    "[KOR]": "KOS-MOS\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 스즈키 마리코)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -739,7 +739,7 @@
     "source": "plain_text/189.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "ネピリム（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：冬馬由美）",
-    "[KOR]": "네피림(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 토마 유미)",
+    "[KOR]": "네피림(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 토마 유미)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -779,7 +779,7 @@
     "source": "plain_text/199.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "艦長（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：幹本雄之）",
-    "[KOR]": "함장(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 미키모토 유지)",
+    "[KOR]": "함장(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 미키모토 유지)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -969,7 +969,7 @@
     "source": "plain_text/236.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "百式（量産型\n--- RECORDSEPARATOR ---\n）\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：野中\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n藍）",
-    "[KOR]": "백식(양산형\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 노나카\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n아이)",
+    "[KOR]": "백식(양산형\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 노나카\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n아이)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -989,7 +989,7 @@
     "source": "plain_text/241.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "謎の少年（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：瀧本富士子）",
-    "[KOR]": "정체불명의 소년(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 타키모토 후지코)",
+    "[KOR]": "정체불명의 소년(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 타키모토 후지코)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1089,7 +1089,7 @@
     "source": "plain_text/256.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "グリモア・ヴェルム\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：土師\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n孝也）",
-    "[KOR]": "그리모어 베룸\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 하시\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n타카야)",
+    "[KOR]": "그리모어 베룸\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 하시\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n타카야)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1149,7 +1149,7 @@
     "source": "plain_text/267.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "スオウ・ウヅキ\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：中多\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n和宏）",
-    "[KOR]": "스오 우즈키\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 나카타\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n카즈히로)",
+    "[KOR]": "스오 우즈키\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 나카타\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n카즈히로)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1169,7 +1169,7 @@
     "source": "plain_text/272.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "シオ\n--- RECORDSEPARATOR ---\nン・\n--- RECORDSEPARATOR ---\nウヅ\n--- RECORDSEPARATOR ---\nキ\n--- RECORDSEPARATOR ---\n（少女時代\n--- RECORDSEPARATOR ---\n）\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n：前田\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n愛）",
-    "[KOR]": "시\n--- RECORDSEPARATOR ---\n온 \n--- RECORDSEPARATOR ---\n우즈\n--- RECORDSEPARATOR ---\n키\n--- RECORDSEPARATOR ---\n(어린 시절\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\n성우\n--- RECORDSEPARATOR ---\n: 마에다\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n아이)",
+    "[KOR]": "시\n--- RECORDSEPARATOR ---\n온 \n--- RECORDSEPARATOR ---\n우즈\n--- RECORDSEPARATOR ---\n키\n--- RECORDSEPARATOR ---\n(어린 시절\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\ncv\n--- RECORDSEPARATOR ---\n: 마에다\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\n아이)",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1735,7 +1735,7 @@
     "source": "plain_text/557.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "~Voice Actor\n--- RECORDSEPARATOR ---\nShion Uzuki      Maeda Ai\n--- RECORDSEPARATOR ---\nKOS-MOS        Suzuki Mariko\n--- RECORDSEPARATOR ---\nJin Uzuki        Tanaka Hideyuki\n--- RECORDSEPARATOR ---\nYuri Mizurahi   Shindo Naomi\n--- RECORDSEPARATOR ---\nDoctus   Park Romi\n--- RECORDSEPARATOR ---\nArmadel\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nKawasumi Ayako\n--- RECORDSEPARATOR ---\nGrimore  Hashi Takaya\n--- RECORDSEPARATOR ---\n100-Series Realian\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n Nonaka Ai\n--- RECORDSEPARATOR ---\nmystery boy    Takimoto Fujiko\n--- RECORDSEPARATOR ---\nSuo Uzuki   Kazuhiro Nakata\n--- RECORDSEPARATOR ---\nCaptain  Mikimoto Yuji\n--- RECORDSEPARATOR ---\n  Hatano Wataru\n--- RECORDSEPARATOR ---\n        Yamamoto Taisuke\n--- RECORDSEPARATOR ---\n        *************(\n--- RECORDSEPARATOR ---\n１名確認中\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\nNepirim    Touma Yumi\n--- RECORDSEPARATOR ---\nProduction Designer  \n--- RECORDSEPARATOR ---\nMUGITANI KOICHI\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\nCHOCO\n--- RECORDSEPARATOR ---\n）\n--- RECORDSEPARATOR ---\nMusic Composer   \n--- RECORDSEPARATOR ---\nKajiura Yuki\n--- RECORDSEPARATOR ---\nGraphic Artist    \n--- RECORDSEPARATOR ---\nSibue Yasushi(\n--- RECORDSEPARATOR ---\n株式会社バンダイナムコゲームス\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\nMusic  Special Thanks     \n--- RECORDSEPARATOR ---\nKeiichi Nozaki\n--- RECORDSEPARATOR ---\n（\n--- RECORDSEPARATOR ---\nVICTOR Entertainment\n--- RECORDSEPARATOR ---\n）\n--- RECORDSEPARATOR ---\nYasunori Mori(SPACE CRAFT PRODUCE)\n--- RECORDSEPARATOR ---\nDesign Special Thanks     \n--- RECORDSEPARATOR ---\nKUSANAGI.CO.LTD \n--- RECORDSEPARATOR ---\nYanase Takayuki\n--- RECORDSEPARATOR ---\nTerada Tsutomu\n--- RECORDSEPARATOR ---\nVoice -Over  Special Thanks     \n--- RECORDSEPARATOR ---\nHALF H\n--- RECORDSEPARATOR ---\n･\n--- RECORDSEPARATOR ---\nP STUDIO\n--- RECORDSEPARATOR ---\nWeb design\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\nokamoto\n--- RECORDSEPARATOR ---\n－\n--- RECORDSEPARATOR ---\ndesign\n--- RECORDSEPARATOR ---\n【\n--- RECORDSEPARATOR ---\nMonolithsoft\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nstaff\n--- RECORDSEPARATOR ---\n】\n--- RECORDSEPARATOR ---\nDesign Special Thanks     \n--- RECORDSEPARATOR ---\nTadahiro Usuda\n--- RECORDSEPARATOR ---\nTaniyama Tetsuya\n--- RECORDSEPARATOR ---\n  Murata Shuichi\n--- RECORDSEPARATOR ---\nPublicity Staff\n--- RECORDSEPARATOR ---\nNomura Tadashi \n--- RECORDSEPARATOR ---\n    Ishiwata Natsuko \n--- RECORDSEPARATOR ---\n    Kigawa Yoko\n--- RECORDSEPARATOR ---\nSpecial\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nThanks     \n--- RECORDSEPARATOR ---\nYuki Mitsuhiro\n--- RECORDSEPARATOR ---\n    \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nAnd more…\n--- RECORDSEPARATOR ---\nProduction Coordinator        \n--- RECORDSEPARATOR ---\nIshitani Koji\n--- RECORDSEPARATOR ---\nDirector  \n--- RECORDSEPARATOR ---\nNagata Yoko\n--- RECORDSEPARATOR ---\nSupervisor & Original Author  \n--- RECORDSEPARATOR ---\nTakahashi Tetsuya\n--- RECORDSEPARATOR ---\nSenario   \n--- RECORDSEPARATOR ---\nYonesaka Norihiko\n--- RECORDSEPARATOR ---\n         DEVELOPED BY\n--- RECORDSEPARATOR ---\n     MONOLITH SOFTWARE INC.\n--- RECORDSEPARATOR ---\n【株式会社バンダイナムコゲームス　スタッフ】\n--- RECORDSEPARATOR ---\nSales&Promotion\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nHiroshi Fujii\n--- RECORDSEPARATOR ---\nSatoshi Ikeda\n--- RECORDSEPARATOR ---\nProducer   \n--- RECORDSEPARATOR ---\n Okamoto Shinichiro\n--- RECORDSEPARATOR ---\n  Produced by \n--- RECORDSEPARATOR ---\n株式会社バンダイナムコゲームス",
-    "[KOR]": "~출연 성우\n--- RECORDSEPARATOR ---\n시온 우즈키      마에다 아이\n--- RECORDSEPARATOR ---\nKOS-MOS        스즈키 마리코\n--- RECORDSEPARATOR ---\n진 우즈키        타나카 히데유키\n--- RECORDSEPARATOR ---\n유리 미즈라히   신도 나오미\n--- RECORDSEPARATOR ---\n도크투스   박로미\n--- RECORDSEPARATOR ---\n알마델\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n카와스미 아야코\n--- RECORDSEPARATOR ---\n그리모어  하시 타카야\n--- RECORDSEPARATOR ---\n백식 리얼리언\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n 노나카 아이\n--- RECORDSEPARATOR ---\n정체불명의 소년    타키모토 후지코\n--- RECORDSEPARATOR ---\n스오 우즈키   나카타 카즈히로\n--- RECORDSEPARATOR ---\n함장  미키모토 유지\n--- RECORDSEPARATOR ---\n  하타노 와타루\n--- RECORDSEPARATOR ---\n        야마모토 타이스케\n--- RECORDSEPARATOR ---\n        *************(\n--- RECORDSEPARATOR ---\n1명 확인 중\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\n네피림    토마 유미\n--- RECORDSEPARATOR ---\n프로덕션 디자인  \n--- RECORDSEPARATOR ---\n무기타니 코이치\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\nCHOCO\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\n음악   \n--- RECORDSEPARATOR ---\n카지우라 유키\n--- RECORDSEPARATOR ---\n그래픽    \n--- RECORDSEPARATOR ---\n시부에 야스시(\n--- RECORDSEPARATOR ---\n주식회사 반다이남코게임스\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\n음악 협력     \n--- RECORDSEPARATOR ---\nKeiichi Nozaki\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\nVICTOR Entertainment\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\nYasunori Mori(SPACE CRAFT PRODUCE)\n--- RECORDSEPARATOR ---\n디자인 협력     \n--- RECORDSEPARATOR ---\nKUSANAGI.CO.LTD \n--- RECORDSEPARATOR ---\nYanase Takayuki\n--- RECORDSEPARATOR ---\nTerada Tsutomu\n--- RECORDSEPARATOR ---\n음성 녹음 협력     \n--- RECORDSEPARATOR ---\nHALF H\n--- RECORDSEPARATOR ---\n･\n--- RECORDSEPARATOR ---\nP STUDIO\n--- RECORDSEPARATOR ---\n웹 디자인\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\nokamoto\n--- RECORDSEPARATOR ---\n－\n--- RECORDSEPARATOR ---\ndesign\n--- RECORDSEPARATOR ---\n【\n--- RECORDSEPARATOR ---\nMonolithsoft\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n스태프\n--- RECORDSEPARATOR ---\n】\n--- RECORDSEPARATOR ---\n디자인 협력     \n--- RECORDSEPARATOR ---\nTadahiro Usuda\n--- RECORDSEPARATOR ---\nTaniyama Tetsuya\n--- RECORDSEPARATOR ---\n  Murata Shuichi\n--- RECORDSEPARATOR ---\n홍보 스태프\n--- RECORDSEPARATOR ---\nNomura Tadashi \n--- RECORDSEPARATOR ---\n    Ishiwata Natsuko \n--- RECORDSEPARATOR ---\n    Kigawa Yoko\n--- RECORDSEPARATOR ---\n특별\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n협력     \n--- RECORDSEPARATOR ---\nYuki Mitsuhiro\n--- RECORDSEPARATOR ---\n    \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n그 밖의 많은 분들…\n--- RECORDSEPARATOR ---\n제작 코디네이터        \n--- RECORDSEPARATOR ---\nIshitani Koji\n--- RECORDSEPARATOR ---\n연출  \n--- RECORDSEPARATOR ---\nNagata Yoko\n--- RECORDSEPARATOR ---\n감수·원작  \n--- RECORDSEPARATOR ---\nTakahashi Tetsuya\n--- RECORDSEPARATOR ---\n시나리오   \n--- RECORDSEPARATOR ---\nYonesaka Norihiko\n--- RECORDSEPARATOR ---\n         개발\n--- RECORDSEPARATOR ---\n     MONOLITH SOFTWARE INC.\n--- RECORDSEPARATOR ---\n【주식회사 반다이남코게임스 스태프】\n--- RECORDSEPARATOR ---\n판매·홍보\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nHiroshi Fujii\n--- RECORDSEPARATOR ---\nSatoshi Ikeda\n--- RECORDSEPARATOR ---\n프로듀서   \n--- RECORDSEPARATOR ---\n Okamoto Shinichiro\n--- RECORDSEPARATOR ---\n  제작 \n--- RECORDSEPARATOR ---\n주식회사 반다이남코게임스",
+    "[KOR]": "~Voice Actor\n--- RECORDSEPARATOR ---\nShion Uzuki      Maeda Ai\n--- RECORDSEPARATOR ---\nKOS-MOS        Suzuki Mariko\n--- RECORDSEPARATOR ---\nJin Uzuki        Tanaka Hideyuki\n--- RECORDSEPARATOR ---\nYuri Mizurahi   Shindo Naomi\n--- RECORDSEPARATOR ---\nDoctus   Park Romi\n--- RECORDSEPARATOR ---\nArmadel\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nKawasumi Ayako\n--- RECORDSEPARATOR ---\nGrimore  Hashi Takaya\n--- RECORDSEPARATOR ---\n100-Series Realian\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n Nonaka Ai\n--- RECORDSEPARATOR ---\nmystery boy    Takimoto Fujiko\n--- RECORDSEPARATOR ---\nSuo Uzuki   Kazuhiro Nakata\n--- RECORDSEPARATOR ---\nCaptain  Mikimoto Yuji\n--- RECORDSEPARATOR ---\n  Hatano Wataru\n--- RECORDSEPARATOR ---\n        Yamamoto Taisuke\n--- RECORDSEPARATOR ---\n        *************(\n--- RECORDSEPARATOR ---\n1명 확인 중\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\nNepirim    Touma Yumi\n--- RECORDSEPARATOR ---\nProduction Designer  \n--- RECORDSEPARATOR ---\nMUGITANI KOICHI\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\nCHOCO\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\nMusic Composer   \n--- RECORDSEPARATOR ---\nKajiura Yuki\n--- RECORDSEPARATOR ---\nGraphic Artist    \n--- RECORDSEPARATOR ---\nSibue Yasushi(\n--- RECORDSEPARATOR ---\n주식회사 반다이남코게임스\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\nMusic  Special Thanks     \n--- RECORDSEPARATOR ---\nKeiichi Nozaki\n--- RECORDSEPARATOR ---\n(\n--- RECORDSEPARATOR ---\nVICTOR Entertainment\n--- RECORDSEPARATOR ---\n)\n--- RECORDSEPARATOR ---\nYasunori Mori(SPACE CRAFT PRODUCE)\n--- RECORDSEPARATOR ---\nDesign Special Thanks     \n--- RECORDSEPARATOR ---\nKUSANAGI.CO.LTD \n--- RECORDSEPARATOR ---\nYanase Takayuki\n--- RECORDSEPARATOR ---\nTerada Tsutomu\n--- RECORDSEPARATOR ---\nVoice -Over  Special Thanks     \n--- RECORDSEPARATOR ---\nHALF H\n--- RECORDSEPARATOR ---\n･\n--- RECORDSEPARATOR ---\nP STUDIO\n--- RECORDSEPARATOR ---\nWeb design\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\n \n--- RECORDSEPARATOR ---\nokamoto\n--- RECORDSEPARATOR ---\n－\n--- RECORDSEPARATOR ---\ndesign\n--- RECORDSEPARATOR ---\n【\n--- RECORDSEPARATOR ---\nMonolithsoft\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nstaff\n--- RECORDSEPARATOR ---\n】\n--- RECORDSEPARATOR ---\nDesign Special Thanks     \n--- RECORDSEPARATOR ---\nTadahiro Usuda\n--- RECORDSEPARATOR ---\nTaniyama Tetsuya\n--- RECORDSEPARATOR ---\n  Murata Shuichi\n--- RECORDSEPARATOR ---\nPublicity Staff\n--- RECORDSEPARATOR ---\nNomura Tadashi \n--- RECORDSEPARATOR ---\n    Ishiwata Natsuko \n--- RECORDSEPARATOR ---\n    Kigawa Yoko\n--- RECORDSEPARATOR ---\nSpecial\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nThanks     \n--- RECORDSEPARATOR ---\nYuki Mitsuhiro\n--- RECORDSEPARATOR ---\n    \n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nAnd more…\n--- RECORDSEPARATOR ---\nProduction Coordinator        \n--- RECORDSEPARATOR ---\nIshitani Koji\n--- RECORDSEPARATOR ---\nDirector  \n--- RECORDSEPARATOR ---\nNagata Yoko\n--- RECORDSEPARATOR ---\nSupervisor & Original Author  \n--- RECORDSEPARATOR ---\nTakahashi Tetsuya\n--- RECORDSEPARATOR ---\nSenario   \n--- RECORDSEPARATOR ---\nYonesaka Norihiko\n--- RECORDSEPARATOR ---\n         DEVELOPED BY\n--- RECORDSEPARATOR ---\n     MONOLITH SOFTWARE INC.\n--- RECORDSEPARATOR ---\n【주식회사 반다이남코게임스 스태프】\n--- RECORDSEPARATOR ---\nSales&Promotion\n--- RECORDSEPARATOR ---\n　\n--- RECORDSEPARATOR ---\nHiroshi Fujii\n--- RECORDSEPARATOR ---\nSatoshi Ikeda\n--- RECORDSEPARATOR ---\nProducer   \n--- RECORDSEPARATOR ---\n Okamoto Shinichiro\n--- RECORDSEPARATOR ---\n  Produced by \n--- RECORDSEPARATOR ---\n주식회사 반다이남코게임스",
     "review_status": "text_reviewed_runtime_not_retested"
   },
   {
@@ -1745,7 +1745,7 @@
     "source": "plain_text/562.txt",
     "source_tag": "DefineTextTag",
     "[JPN]": "TO BE CONTINUED...",
-    "[KOR]": "다음에 계속…",
-    "review_status": "text_reviewed_runtime_not_retested"
+    "[KOR]": "TO BE CONTINUED...",
+    "review_status": "retained_english_original"
   }
 ]

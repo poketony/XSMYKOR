@@ -5,11 +5,13 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import struct
 import subprocess
 import sys
 import tempfile
+import unicodedata
 import xml.etree.ElementTree as ET
 import zlib
 
@@ -184,6 +186,23 @@ def literal(value):
     return json.dumps(value, ensure_ascii=False)
 
 
+def english_only(value):
+    value = unicodedata.normalize("NFKC", value.replace(SEP, ""))
+    return bool(re.search(r"[A-Za-z]", value)) and all(
+        not c.isalpha() or "A" <= c <= "Z" or "a" <= c <= "z" for c in value)
+
+
+def preserve_english(source, translated):
+    if not translated.strip():
+        return translated
+    if english_only(source):
+        return source
+    original, parts = source.split(SEP), translated.split(SEP)
+    if len(original) == len(parts):
+        return SEP.join(jp if english_only(jp) else ko for jp, ko in zip(original, parts))
+    return translated
+
+
 def graphics_inputs(chapter, original_hash):
     folder = ROOT / f"WorkSpace/chapter{chapter:02}"
     baseline = folder / "graphics-baseline.json"
@@ -214,10 +233,11 @@ def graphics_inputs(chapter, original_hash):
     return folder, sha(baseline), hashes, edits
 
 
-def build(chapter, font, fallback, classes):
+def build(chapter, font, fallback, classes, heavy, regular):
     original = ROOT / f"original_asset/XS II to III - One Year Missing - Chapter {chapter:02}.swf"
     translation = ROOT / f"WorkSpace/translations/chapter{chapter:02}.json"
     original_hash, translation_hash = sha(original), sha(translation)
+    font_hashes = {path: sha(path) for path in (font, fallback, heavy, regular)}
     graphics_folder, baseline_hash, graphics_hashes, graphics_edits = graphics_inputs(chapter, original_hash)
     entries = read(translation)
     require(len({e["id"] for e in entries}) == len(entries), "Duplicate record IDs")
@@ -244,9 +264,10 @@ def build(chapter, font, fallback, classes):
             text = (export / "scripts" / relative).read_text(encoding="utf-8-sig")
             translated = text
             for record in records:
-                jp, ko = literal(record["[JPN]"]), record.get("[KOR]", "")
+                jp = literal(record["[JPN]"])
+                ko = preserve_english(record["[JPN]"], record.get("[KOR]", ""))
                 require(translated.count(jp) == 1, f"Source string missing or ambiguous: {record['id']}")
-                if ko.strip():
+                if ko.strip() and ko != record["[JPN]"]:
                     translated = translated.replace(jp, literal(ko), 1)
                     applied_scripts += 1
             if translated != text:
@@ -274,8 +295,8 @@ def build(chapter, font, fallback, classes):
         graphics_file.write_text(json.dumps(graphics_edits, ensure_ascii=False), encoding="utf-8")
         library = str(FFDEC.parent / "lib/*")
         classpath = library + os.pathsep + str(classes)
-        run(["java", "-Xmx2g", "-Djava.awt.headless=true", "-cp", classpath, "RebuildText",
-             original, translation, font, fallback, payload_folder, chapter, graphics_file], log)
+        run(["java", "-Xmx2g", "-Djava.awt.headless=true", "-Dfile.encoding=UTF-8", "-cp", classpath, "RebuildText",
+             original, translation, font, fallback, payload_folder, chapter, graphics_file, heavy, regular], log)
         manifest = read(payload_folder / "changes.json")
         replacements = {(e["code"], e["id"]): (e.get("new_code", e["code"]), (payload_folder / e["file"]).read_bytes())
                         for e in manifest["replacements"]}
@@ -285,9 +306,10 @@ def build(chapter, font, fallback, classes):
         verification = verify_preservation(source, final, replacements, additions, action_changes, owners)
         candidate = work / "result.swf"
         candidate.write_bytes(b"CWS" + final[3:8] + zlib.compress(final[8:]))
-        run(["java", "-Xmx2g", "-Djava.awt.headless=true", "-cp", classpath, "RebuildText",
+        run(["java", "-Xmx2g", "-Djava.awt.headless=true", "-Dfile.encoding=UTF-8", "-cp", classpath, "RebuildText",
              "verify", candidate, payload_folder / "changes.json", translation], log)
         require(sha(original) == original_hash and sha(translation) == translation_hash, "Input changed while building")
+        require(all(sha(path) == digest for path, digest in font_hashes.items()), "Font input changed while building")
         _, current_baseline, current_graphics, _ = graphics_inputs(chapter, original_hash)
         require(current_baseline == baseline_hash and current_graphics == graphics_hashes,
                 "Graphic input changed while building")
@@ -295,11 +317,16 @@ def build(chapter, font, fallback, classes):
         candidate.replace(output)
         report = dict(verification, chapter=chapter, original_sha256=original_hash, translation_sha256=translation_hash,
                       output_sha256=sha(output), font="Galmuri11 Condensed", font_file_sha256=sha(font),
+                      mapped_fonts=manifest["font_checks"],
                       script_records_applied=applied_scripts, text_tags_applied=len(manifest["checks"]),
                       graphics_applied=len(graphics_edits), graphics_verified=True,
+                      english_originals_preserved=sum("text_sha256" in c for c in manifest["english_checks"]),
+                      english_text_records_preserved=sum("record_index" in c for c in manifest["english_checks"]),
+                      english_text_and_fonts_verified=True,
                       graphics_inputs={"folder": graphics_folder.relative_to(ROOT).as_posix(), "files": graphics_hashes},
                       animated_phrase_count=len(owners), new_glyph_symbols=sum("before_sprite" in a for a in additions),
-                      new_graphic_symbols=sum("before_character" in a for a in additions),
+                      new_graphic_symbols=sum("before_character" in a and a.get("kind") != "font" for a in additions),
+                      new_font_symbols=sum(a.get("kind") == "font" for a in additions),
                       empty_kor_keeps_japanese=True, roundtrip_text_verified=True, runtime_verified=False)
         (BUILD / f"chapter{chapter:02}-verification.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"OK: {output}", flush=True)
@@ -326,13 +353,17 @@ def main():
     require(font is not None, "설치된 Galmuri11-Condensed.ttf를 찾지 못했습니다.")
     fallback = font.with_name("Galmuri11.ttf")
     require(fallback.is_file(), f"일본어 대체 글꼴이 필요합니다: {fallback}")
+    heavy = next((p / "a견고딕.ttf" for p in folders if (p / "a견고딕.ttf").is_file()), None)
+    regular = next((p / "a고딕14.ttf" for p in folders if (p / "a고딕14.ttf").is_file()), None)
+    require(heavy is not None, "설치된 a견고딕.ttf를 찾지 못했습니다.")
+    require(regular is not None, "설치된 a고딕14.ttf를 찾지 못했습니다.")
     BUILD.mkdir(parents=True, exist_ok=True)
     classes = BUILD / "java"
     classes.mkdir(exist_ok=True)
     run(["javac", "-encoding", "UTF-8", "-cp", FFDEC.parent / "lib/*", "-d", classes, ROOT / "tools/RebuildText.java"], BUILD / "compile.log")
     chapters = range(1, 7) if choice.lower() in ("all", "0") else [int(choice)]
     for chapter in chapters:
-        build(chapter, font, fallback, classes)
+        build(chapter, font, fallback, classes, heavy, regular)
     print("\n완료. 결과와 검증 기록: " + str(BUILD))
 
 

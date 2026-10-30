@@ -6,11 +6,14 @@ import com.jpexs.decompiler.flash.tags.base.*;
 import com.jpexs.decompiler.flash.types.*;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
 import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.security.MessageDigest;
+import java.text.Normalizer;
 import java.util.*;
 import javax.imageio.ImageIO;
 
@@ -19,12 +22,17 @@ public class RebuildText {
     static final String SEP = "\n--- RECORDSEPARATOR ---\n";
     static SWF swf;
     static DefineFont2Tag font;
+    static DefineFont2Tag dialogueFont;
+    static Map<Integer, String> originalFontNames = new HashMap<>();
+    static Map<String, DefineFont2Tag> translatedFonts = new LinkedHashMap<>();
     static Path out;
     static int nextId;
     static JsonArray changes = new JsonArray();
     static JsonArray additions = new JsonArray();
     static JsonArray checks = new JsonArray();
     static JsonArray graphicChecks = new JsonArray();
+    static JsonArray englishChecks = new JsonArray();
+    static JsonArray fontChecks = new JsonArray();
 
     static String normal(String value) {
         return value.replace("\r\n", "\n").replace('\r', '\n');
@@ -32,6 +40,130 @@ public class RebuildText {
 
     static String plain(TextTag tag) {
         return normal(String.join(SEP, tag.getTexts()));
+    }
+
+    static boolean englishOnly(String value) {
+        String text = Normalizer.normalize(value.replace(SEP, ""), Normalizer.Form.NFKC);
+        return text.matches("(?s).*[A-Za-z].*") && text.codePoints().allMatch(c ->
+                !Character.isLetter(c) || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z');
+    }
+
+    static String preserveEnglish(String source, String translated) {
+        if (translated.trim().isEmpty()) return translated;
+        if (englishOnly(source)) return source;
+        String[] original = source.split(SEP, -1), parts = translated.split(SEP, -1);
+        if (original.length == parts.length) {
+            for (int i = 0; i < parts.length; i++) if (englishOnly(original[i])) parts[i] = original[i];
+            return String.join(SEP, parts);
+        }
+        return translated;
+    }
+
+    static String mappedFamily(int sourceId) {
+        String family = originalFontNames.get(sourceId);
+        if (Arrays.asList("A-OTF 新ゴ Pro B", "ヒラギノ角ゴ Pro W6", "A-OTF ゴシックMB101 Pro B").contains(family)) return "a견고딕";
+        if (Arrays.asList("Osaka", "ヒラギノ角ゴ Pro W3").contains(family)) return "a고딕14";
+        return null;
+    }
+
+    static DefineFont2Tag translationFont(int sourceId) {
+        DefineFont2Tag replacement = translatedFonts.get(mappedFamily(sourceId));
+        return replacement == null ? dialogueFont : replacement;
+    }
+
+    static void collectCharacters(Map<String, SortedSet<Character>> needed, int sourceId, String text) {
+        String family = mappedFamily(sourceId);
+        if (family == null) return;
+        SortedSet<Character> characters = needed.computeIfAbsent(family, unused -> new TreeSet<>());
+        for (char c : text.toCharArray()) if (!Character.isISOControl(c) || c == '\u000b') characters.add(c);
+    }
+
+    static int sourceAdvance(DefineFont2Tag source, int index) {
+        if (source.hasLayout()) return (int)Math.round(source.getGlyphAdvance(index));
+        Map<Integer, Integer> counts = new TreeMap<>();
+        for (CharacterTag tag : swf.getCharacters(false).values()) if (tag instanceof StaticTextTag) {
+            int fontId = 0, height = 0;
+            for (TEXTRECORD record : ((StaticTextTag)tag).textRecords) {
+                if (record.styleFlagsHasFont) { fontId = record.fontId; height = record.textHeight; }
+                if (fontId != source.fontID || height <= 0) continue;
+                for (GLYPHENTRY glyph : record.glyphEntries) if (glyph.glyphIndex == index) {
+                    int advance = (int)Math.round(glyph.glyphAdvance * 1024.0 / height);
+                    counts.put(advance, counts.getOrDefault(advance, 0) + 1);
+                }
+            }
+        }
+        require(!counts.isEmpty(), "Missing authored advance for original glyph " + source.fontID + ":" + index);
+        int result = 0, most = -1;
+        for (Map.Entry<Integer, Integer> entry : counts.entrySet()) if (entry.getValue() > most) {
+            result = entry.getKey(); most = entry.getValue();
+        }
+        return result;
+    }
+
+    static void prepareFonts(JsonArray entries, Path heavyFile, Path regularFile) throws Exception {
+        Map<String, SortedSet<Character>> needed = new LinkedHashMap<>();
+        for (JsonValue value : entries) {
+            JsonObject entry = value.asObject();
+            if (entry.getString("kind", "").equals("script_dialogue") || entry.getString("kind", "").equals("animated_glyph_definition")) continue;
+            String jp = entry.getString("[JPN]", ""), ko = preserveEnglish(jp, entry.getString("[KOR]", ""));
+            if (ko.trim().isEmpty() || ko.equals(jp) || englishOnly(jp)) continue;
+            TextTag text = (TextTag)swf.getCharacter(entry.getInt("symbol_id", -1));
+            if (text instanceof StaticTextTag) {
+                List<Style> source = styles((StaticTextTag)text);
+                String[] original = jp.split(SEP, -1), parts = ko.split(SEP, -1);
+                if (parts.length == source.size()) {
+                    for (int i = 0; i < parts.length; i++) if (!englishOnly(original[i])) collectCharacters(needed, source.get(i).fontId, parts[i]);
+                } else collectCharacters(needed, source.get(0).fontId, ko);
+            } else collectCharacters(needed, ((DefineEditTextTag)text).fontId, ko);
+        }
+        for (Map.Entry<String, SortedSet<Character>> item : needed.entrySet()) {
+            String name = item.getKey();
+            Path file = name.equals("a견고딕") ? heavyFile : regularFile;
+            Font face = Font.createFont(Font.TRUETYPE_FONT, file.toFile());
+            require(face.getPSName().replace("-", "").equals(name.equals("a견고딕") ? "KoreanGDH" : "KoreanGD14R"),
+                    "Incorrect font face: " + face.getPSName() + " in " + file);
+            List<DefineFont2Tag> sources = new ArrayList<>();
+            for (Tag tag : swf.getTags()) if (tag instanceof DefineFont2Tag && name.equals(mappedFamily(((DefineFont2Tag)tag).fontID))) sources.add((DefineFont2Tag)tag);
+            require(!sources.isEmpty(), "No original font for " + name);
+            DefineFont2Tag replacement = new DefineFont2Tag(swf);
+            replacement.fontID = nextId++;
+            replacement.fontName = name;
+            replacement.languageCode = new LANGCODE(3);
+            replacement.fontFlagsWideCodes = true;
+            replacement.setHasLayout(true);
+            LineMetrics metrics = face.deriveFont(1024f).getLineMetrics("가", new FontRenderContext(null, true, true));
+            replacement.fontAscent = Math.round(metrics.getAscent());
+            replacement.fontDescent = Math.round(metrics.getDescent());
+            replacement.fontLeading = Math.round(metrics.getLeading());
+            JsonArray fallbacks = new JsonArray();
+            for (char c : item.getValue()) {
+                if (!Character.isISOControl(c) && face.canDisplay(c)) {
+                    require(replacement.addCharacter(c, face), "Cannot embed glyph in " + name);
+                } else {
+                    DefineFont2Tag source = null;
+                    for (DefineFont2Tag candidate : sources) if (candidate.charToGlyph(c) >= 0) { source = candidate; break; }
+                    require(source != null, "Unsupported glyph in " + name + ": U+" + Integer.toHexString(c));
+                    int index = source.charToGlyph(c);
+                    replacement.codeTable.add((int)c);
+                    replacement.glyphShapeTable.add(source.glyphShapeTable.get(index));
+                    int advance = sourceAdvance(source, index);
+                    replacement.fontAdvanceTable.add(advance);
+                    replacement.fontBoundsTable.add(new RECT(source.getGlyphBounds(index)));
+                    fallbacks.add(new JsonObject().add("codepoint", String.format("U+%04X", (int)c)).add("original_font_id", source.fontID)
+                            .add("advance_units", advance).add("advance_source", source.hasLayout() ? "font_layout" : "authored_text_record"));
+                }
+            }
+            swf.addTag(swf.indexOfTag(sources.get(0)), replacement);
+            swf.updateCharacters();
+            translatedFonts.put(name, replacement);
+            String payload = "font-" + replacement.fontID + ".bin";
+            Files.write(out.resolve(payload), replacement.getData());
+            additions.add(new JsonObject().add("code", replacement.getId()).add("id", replacement.fontID)
+                    .add("kind", "font").add("before_character", sources.get(0).fontID).add("file", payload));
+            fontChecks.add(new JsonObject().add("id", replacement.fontID).add("name", name).add("face", face.getPSName())
+                    .add("file", file.getFileName().toString()).add("source_sha256", digest(Files.readAllBytes(file)))
+                    .add("payload_sha256", digest(replacement.getData())).add("glyph_count", replacement.getCharacterCount()).add("fallback_glyphs", fallbacks));
+        }
     }
 
     static void require(boolean condition, String message) {
@@ -146,23 +278,23 @@ public class RebuildText {
     }
 
     static class Style {
-        int x, y, height, oldWidth;
+        int x, y, height, oldWidth, fontId;
         RGB color;
-        Style(int x, int y, int height, int oldWidth, RGB color) {
-            this.x = x; this.y = y; this.height = height; this.oldWidth = oldWidth; this.color = color;
+        Style(int x, int y, int height, int oldWidth, RGB color, int fontId) {
+            this.x = x; this.y = y; this.height = height; this.oldWidth = oldWidth; this.color = color; this.fontId = fontId;
         }
     }
 
     static List<Style> styles(StaticTextTag tag) {
         List<Style> result = new ArrayList<>();
-        int x = 0, y = 0, height = 240;
+        int x = 0, y = 0, height = 240, fontId = 0;
         RGB color = new RGB(255, 255, 255);
         for (TEXTRECORD r : tag.textRecords) {
             if (r.styleFlagsHasXOffset) x = r.xOffset;
             if (r.styleFlagsHasYOffset) y = r.yOffset;
-            if (r.styleFlagsHasFont) height = r.textHeight;
+            if (r.styleFlagsHasFont) { height = r.textHeight; fontId = r.fontId; }
             if (r.styleFlagsHasColor) color = tag.getTextNum() == 2 ? r.textColorA : r.textColor;
-            result.add(new Style(x, y, height, r.getTotalAdvance(), color));
+            result.add(new Style(x, y, height, r.getTotalAdvance(), color, fontId));
             x += r.getTotalAdvance();
         }
         return result;
@@ -185,8 +317,30 @@ public class RebuildText {
         return lines;
     }
 
-    static void staticText(StaticTextTag tag, String translation) {
+    static JsonArray glyphs(TEXTRECORD record) {
+        JsonArray result = new JsonArray();
+        for (GLYPHENTRY glyph : record.glyphEntries) result.add(new JsonArray().add(glyph.glyphIndex).add(glyph.glyphAdvance));
+        return result;
+    }
+
+    static TEXTRECORD retainedRecord(StaticTextTag tag, int index, Style style, int x) throws Exception {
+        TEXTRECORD old = tag.textRecords.get(index), result = new TEXTRECORD();
+        result.styleFlagsHasFont = result.styleFlagsHasColor = true;
+        result.styleFlagsHasXOffset = result.styleFlagsHasYOffset = true;
+        result.fontId = style.fontId; result.textHeight = style.height;
+        result.xOffset = x; result.yOffset = style.y;
+        result.textColor = style.color;
+        result.textColorA = style.color instanceof RGBA ? (RGBA)style.color : new RGBA(style.color.red, style.color.green, style.color.blue, 255);
+        result.glyphEntries = new ArrayList<>(old.glyphEntries);
+        englishChecks.add(new JsonObject().add("symbol_id", tag.getCharacterId()).add("record_index", index)
+                .add("font_id", style.fontId).add("font_sha256", digest(swf.getCharacter(style.fontId).getData()))
+                .add("glyphs", glyphs(old)));
+        return result;
+    }
+
+    static void staticText(StaticTextTag tag, String translation) throws Exception {
         List<Style> before = styles(tag);
+        String[] original = plain(tag).split(SEP, -1);
         String[] parts = translation.split(SEP, -1);
         List<TEXTRECORD> result = new ArrayList<>();
         if (parts.length == before.size()) {
@@ -195,14 +349,21 @@ public class RebuildText {
                 Style s = before.get(i);
                 if (s.y != previousY || tag.textRecords.get(i).styleFlagsHasXOffset) cursor = s.x;
                 require(parts[i].indexOf('\n') < 0, "Unexpected newline in static text record " + tag.characterID);
-                result.add(record(parts[i], cursor, s.y, s.height, s.color));
-                cursor += width(parts[i], s.height);
+                if (englishOnly(original[i])) {
+                    result.add(retainedRecord(tag, i, s, cursor));
+                    cursor += s.oldWidth;
+                } else {
+                    font = translationFont(s.fontId);
+                    result.add(record(parts[i], cursor, s.y, s.height, s.color));
+                    cursor += width(parts[i], s.height);
+                }
                 previousY = s.y;
             }
         } else {
             // The opening transcript is one translated paragraph stream rather than FFDec records.
             require(tag.characterID == 145, "Record separator count differs for text " + tag.characterID);
             Style s = before.get(0);
+            font = translationFont(s.fontId);
             int y = s.y;
             for (String line : wrap(translation, s.height, tag.textBounds.getWidth())) {
                 result.add(record(line, 0, y, s.height, s.color)); y += 300;
@@ -241,6 +402,7 @@ public class RebuildText {
             JsonObject first = instances.get(position).asObject();
             PlaceObject2Tag anchor = placed.get(first.getInt("depth", -1));
             int height = before.get(start).height;
+            font = translationFont(before.get(start).fontId);
             float scale = anchor.matrix.hasScale ? anchor.matrix.scaleX : 1;
             int originalSpan = 0;
             for (int j = start; j < end; j++) originalSpan += before.get(j).oldWidth;
@@ -284,6 +446,26 @@ public class RebuildText {
     static void verify(String[] args) throws Exception {
         try (FileInputStream input = new FileInputStream(args[1])) { swf = new SWF(input, false); }
         JsonObject manifest = JsonObject.readFrom(new String(Files.readAllBytes(Paths.get(args[2])), StandardCharsets.UTF_8));
+        for (JsonValue value : manifest.get("font_checks").asArray()) {
+            JsonObject check = value.asObject();
+            FontTag font = (FontTag)swf.getCharacter(check.getInt("id", -1));
+            require(font != null && font.getFontNameIntag().equals(check.getString("name", "")) &&
+                    digest(font.getData()).equals(check.getString("payload_sha256", "")), "Embedded mapped font differs");
+        }
+        for (JsonValue value : manifest.get("english_checks").asArray()) {
+            JsonObject check = value.asObject();
+            TextTag tag = (TextTag)swf.getCharacter(check.getInt("symbol_id", -1));
+            if (check.get("text_sha256") != null) {
+                require(digest(tag.getData()).equals(check.getString("text_sha256", "")), "English text payload changed");
+            } else {
+                StaticTextTag text = (StaticTextTag)tag;
+                int index = check.getInt("record_index", -1);
+                require(styles(text).get(index).fontId == check.getInt("font_id", -1) &&
+                        glyphs(text.textRecords.get(index)).equals(check.get("glyphs")), "English glyphs/font changed");
+                require(digest(swf.getCharacter(check.getInt("font_id", -1)).getData()).equals(check.getString("font_sha256", "")),
+                        "Original English font outlines changed");
+            }
+        }
         for (JsonValue value : manifest.get("graphic_checks").asArray()) {
             JsonObject check = value.asObject();
             CharacterTag tag = swf.getCharacter(check.getInt("symbol_id", -1));
@@ -305,7 +487,14 @@ public class RebuildText {
                 wanted = wanted.replace("\n", "");
             }
             require(actual.equals(wanted), "Saved text mismatch " + check.getString("id", "") + ": " + actual);
-            for (int id : tag.getFontIds()) require(((FontTag)swf.getCharacter(id)).getFontNameIntag().equals("Galmuri11 Condensed"), "Text font differs");
+            Set<Integer> expectedFonts = new HashSet<>();
+            for (JsonValue value : check.get("fonts").asArray()) {
+                JsonObject expected = value.asObject();
+                int id = expected.getInt("id", -1);
+                expectedFonts.add(id);
+                require(((FontTag)swf.getCharacter(id)).getFontNameIntag().equals(expected.getString("name", "")), "Text font differs");
+            }
+            require(new HashSet<>(tag.getFontIds()).equals(expectedFonts), "Saved text font IDs differ");
         }
         JsonArray entries = JsonArray.readFrom(new String(Files.readAllBytes(Paths.get(args[3])), StandardCharsets.UTF_8));
         for (JsonValue v : entries) {
@@ -322,6 +511,7 @@ public class RebuildText {
             require(text.toString().equals(entry.getString("[KOR]", "").replace(SEP, "")), "Saved animated phrase mismatch");
         }
         System.out.println("Saved text, fonts, animated phrases and graphics verified.");
+        System.out.println("Original English text/font checks passed: " + manifest.get("english_checks").asArray().size());
     }
 
     public static void main(String[] args) throws Exception {
@@ -329,6 +519,8 @@ public class RebuildText {
         out = Paths.get(args[4]);
         try (FileInputStream input = new FileInputStream(args[0])) { swf = new SWF(input, false); }
         if (args.length > 6) graphics(Paths.get(args[6]));
+        for (CharacterTag tag : swf.getCharacters(false).values()) if (tag instanceof FontTag)
+            originalFontNames.put(tag.getCharacterId(), ((FontTag)tag).getFontNameIntag());
         JsonArray entries = JsonArray.readFrom(new String(Files.readAllBytes(Paths.get(args[1])), StandardCharsets.UTF_8));
         Font condensed = Font.createFont(Font.TRUETYPE_FONT, new File(args[2]));
         Font fallback = Font.createFont(Font.TRUETYPE_FONT, new File(args[3]));
@@ -337,6 +529,7 @@ public class RebuildText {
         int[] fontIds = {0,15,22,17,22,18,18};
         int[] fieldIds = {0,16,23,18,23,19,19};
         font = (DefineFont2Tag)swf.getCharacter(fontIds[chapter]);
+        dialogueFont = font;
         require(font.getCharacterCount() == 0, "Expected original empty dialogue font");
         nextId = Collections.max(swf.getCharacters(false).keySet()) + 1;
         SortedSet<Character> charset = new TreeSet<>();
@@ -368,6 +561,7 @@ public class RebuildText {
             break;
         }
         emit(font);
+        prepareFonts(entries, Paths.get(args[7]), Paths.get(args[8]));
         DefineEditTextTag dialogue = (DefineEditTextTag)swf.getCharacter(fieldIds[chapter]);
         dialogue.useOutlines = true; dialogue.setModified(true); emit(dialogue);
         for (JsonValue v : entries) {
@@ -378,9 +572,15 @@ public class RebuildText {
             String jp = entry.getString("[JPN]", ""), ko = entry.getString("[KOR]", "");
             require(plain(tag).equals(jp), "Source text differs: " + entry.getString("id", ""));
             if (kind.equals("animated_glyph_definition")) continue;
+            if (englishOnly(jp)) {
+                englishChecks.add(new JsonObject().add("symbol_id", tag.getCharacterId()).add("text_sha256", digest(tag.getData())));
+                continue;
+            }
+            ko = preserveEnglish(jp, ko);
             if (ko.trim().isEmpty() || ko.equals(jp)) continue;
             if (tag instanceof DefineEditTextTag) {
                 DefineEditTextTag t = (DefineEditTextTag)tag;
+                font = translationFont(t.fontId);
                 t.initialText = ko.replace('\n', '\r');
                 t.hasText = true; t.hasFont = true; t.fontId = font.fontID; t.useOutlines = true;
                 t.setModified(true);
@@ -391,10 +591,16 @@ public class RebuildText {
                 staticText(t, ko);
             }
             emit(tag);
-            checks.add(new JsonObject().add("id",entry.getString("id", "")).add("symbol_id",entry.getInt("symbol_id", -1)).add("expected", ko));
+            JsonArray fonts = new JsonArray();
+            for (int id : tag.getFontIds()) fonts.add(new JsonObject().add("id", id)
+                    .add("name", ((FontTag)swf.getCharacter(id)).getFontNameIntag()));
+            checks.add(new JsonObject().add("id",entry.getString("id", "")).add("symbol_id",entry.getInt("symbol_id", -1))
+                    .add("expected", ko).add("fonts", fonts));
         }
         Files.write(out.resolve("changes.json"), new JsonObject().add("replacements",changes).add("additions",additions)
-                .add("checks",checks).add("graphic_checks",graphicChecks).toString().getBytes(StandardCharsets.UTF_8));
-        System.out.println("Font: " + condensed.getFontName() + "; glyphs: " + font.getCharacterCount() + "; text tags: " + checks.size());
+                .add("checks",checks).add("graphic_checks",graphicChecks).add("english_checks",englishChecks)
+                .add("font_checks",fontChecks).toString().getBytes(StandardCharsets.UTF_8));
+        System.out.println("Dialogue font: " + condensed.getFontName() + "; glyphs: " + dialogueFont.getCharacterCount() + "; text tags: " + checks.size());
+        System.out.println("Mapped fonts embedded: " + fontChecks);
     }
 }
